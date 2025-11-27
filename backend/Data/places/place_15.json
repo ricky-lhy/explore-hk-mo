@@ -1,0 +1,31 @@
+{
+    "id": 15,
+    "name": "氹仔村",
+    "description": {
+      "content": "氹仔村融合葡式風情與澳門文化，保留古建築、石板路與小食店，是感受昔日氹仔風貌的迷人小村。",
+      "source": "ai"
+    },
+    "region": "macau",
+    "category": "landmarks",
+    "hours": null,
+    "location": {
+      "address": "中國 澳門 官也街",
+      "latitude": 22.159325,
+      "longitude": 113.56419
+    },
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/d0/05/fb/caption.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-o/09/e3/4a/57/taipa-village-macau.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-o/09/e3/4b/c5/dining.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-o/09/e3/4b/c6/dining.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-o/09/e3/4b/ed/street-signs.jpg"
+    ],
+    "rating": 4.1,
+    "ranking": 15,
+    "phone": "+853 2857 6116",
+    "website": "http://www.taipavillagemacau.com",
+    "_connection": {
+      "type": "tripadvisor",
+      "locationId": 2535490
+    }
+}

@@ -1,0 +1,38 @@
+{
+  "id": 6,
+  "name": "香港迪士尼樂園",
+  "description": {
+    "content": "位於大嶼山的香港迪士尼樂園是全球第5座迪士尼主題樂園，佔地126公頃，設有多個主題園區與遊行表演，適合家庭與情侶同遊。",
+    "source": "tripadvisor"
+  },
+  "region": "hong-kong",
+  "category": "entertainment",
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "20:00" },
+      { "day": 2, "open": "10:00", "close": "20:00" },
+      { "day": 3, "open": "10:00", "close": "20:00" },
+      { "day": 4, "open": "10:00", "close": "20:00" },
+      { "day": 5, "open": "10:00", "close": "20:00" },
+      { "day": 6, "open": "10:00", "close": "20:00" },
+      { "day": 7, "open": "10:00", "close": "20:00" }
+    ]
+  },
+  "location": {
+    "address": "香港 大嶼山",
+    "latitude": 22.31292,
+    "longitude": 114.0421
+  },
+  "images": [
+    "https://www.tripadvisor.com.tw/Attraction_Review-g294217-d543602-m66827-Reviews-Hong_Kong_Disneyland-Hong_Kong.html#photos"
+  ],
+  "rating": 4.2,
+  "ranking": 5,
+  "phone": "+852 3550 3388",
+  "website": "http://www.hongkongdisneyland.com/?CMP=AFC-ChnBrdTripAdvisorIntlParkHmpg",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 543602
+  }
+}

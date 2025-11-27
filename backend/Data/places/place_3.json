@@ -1,0 +1,37 @@
+{
+  "id": 3,
+  "name": "香港歷史博物館",
+  "description": {
+    "content": "香港歷史博物館於1975年創立，展示香港自然與人文歷史，收藏豐富的文物、圖片與地圖，並透過展覽與教育活動推廣香港的文化遺產。主要展區「香港故事」介紹本地歷史發展。",
+    "source": "tripadvisor"
+  },
+  "region": "hong-kong",
+  "category": "museums",
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "18:00" },
+      { "day": 3, "open": "10:00", "close": "18:00" },
+      { "day": 4, "open": "10:00", "close": "18:00" },
+      { "day": 5, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "19:00" },
+      { "day": 7, "open": "10:00", "close": "19:00" }
+    ]
+  },
+  "location": {
+    "address": "香港 九龍尖沙嘴東漆咸道南100號",
+    "latitude": 22.301949,
+    "longitude": 114.17759
+  },
+  "images": [
+    "https://www.tripadvisor.com.tw/Attraction_Review-g294217-d311604-m66827-Reviews-Hong_Kong_Museum_of_History-Hong_Kong.html#photos"
+  ],
+  "rating": 4.6,
+  "ranking": 25,
+  "phone": "+852 2724 9042",
+  "website": "http://www.lcsd.gov.hk/CE/Museum/History/index.php",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 311604
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "id": 12,
+    "name": "聖保羅大教堂遺址(大三巴牌坊)",
+    "description": {
+      "content": "聖保羅大教堂遺址（大三巴牌坊）為澳門地標，原為17世紀教堂遺跡，融合歐洲與東方風格，象徵中西文化交流。",
+      "source": "ai"
+    },
+    "region": "macau",
+    "category": "landmarks",
+    "hours": null,
+    "location": {
+      "address": "中國 澳門 大三巴街",
+      "latitude": 22.197697,
+      "longitude": 113.540855
+    },
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-o/09/6a/c1/a3/ruins-of-st-paul-s-cathedral.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/9e/0d/95/caption.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-w/31/7f/d1/05/caption.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-w/31/7f/d1/04/caption.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-w/31/7f/d1/03/caption.jpg"
+    ],
+    "rating": 4.1,
+    "ranking": 11,
+    "_connection": {
+      "type": "tripadvisor",
+      "locationId": 446837
+    }
+}

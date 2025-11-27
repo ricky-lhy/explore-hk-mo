@@ -1,0 +1,38 @@
+{
+  "id": 5,
+  "name": "天際100香港觀景台",
+  "description": {
+    "content": "位於環球貿易廣場100樓的天際100觀景台，可俯瞰維港全景，是香港最高的室內觀景點之一，並設有互動展示與咖啡廳。",
+    "source": "tripadvisor"
+  },
+  "region": "hong-kong",
+  "category": "landmarks",
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "20:30" },
+      { "day": 2, "open": "10:00", "close": "20:30" },
+      { "day": 3, "open": "10:00", "close": "20:30" },
+      { "day": 4, "open": "10:00", "close": "20:30" },
+      { "day": 5, "open": "10:00", "close": "20:30" },
+      { "day": 6, "open": "10:00", "close": "20:30" },
+      { "day": 7, "open": "10:00", "close": "20:30" }
+    ]
+  },
+  "location": {
+    "address": "香港 柯士甸道西1號 九龍環球貿易廣場100樓",
+    "latitude": 22.303345,
+    "longitude": 114.1602
+  },
+  "images": [
+    "https://www.tripadvisor.com.tw/Attraction_Review-g294217-d2136178-m66827-Reviews-Sky100_Hong_Kong_Observation_Deck-Hong_Kong.html#photos"
+  ],
+  "rating": 4.3,
+  "ranking": 19,
+  "phone": "+852 2613 3888",
+  "website": "http://www.sky100.com.hk",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2136178
+  }
+}

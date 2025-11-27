@@ -1,0 +1,37 @@
+{
+  "id": 2,
+  "name": "香港科學館",
+  "description": {
+    "content": "1992年開幕，位於尖沙咀東部。館中有取自世界各地及本地創作的展品約500多件，分佈在五個主要展覽廳，即展覽簡介、科學、生命科學、科技及為三歲至七歲兒童設計的兒童天地。其中60％的展品可讓觀眾觸摸及操作，可以增加参觀者對科學地興趣，特別適合親子同遊。",
+    "source": "tripadvisor"
+  },
+  "region": "hong-kong",
+  "category": "museums",
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "19:00" },
+      { "day": 2, "open": "10:00", "close": "19:00" },
+      { "day": 3, "open": "10:00", "close": "19:00" },
+      { "day": 5, "open": "10:00", "close": "19:00" },
+      { "day": 6, "open": "10:00", "close": "21:00" },
+      { "day": 7, "open": "10:00", "close": "21:00" }
+    ]
+  },
+  "location": {
+    "address": "香港 科學館道2號 尖沙咀",
+    "latitude": 22.301107,
+    "longitude": 114.177376
+  },
+  "images": [
+    "https://www.tripadvisor.com.tw/Attraction_Review-g294217-d311605-m66827-Reviews-Hong_Kong_Science_Museum-Hong_Kong.html#photos"
+  ],
+  "rating": 4.2,
+  "ranking": 34,
+  "phone": "+852 2732 3232",
+  "website": "http://www.lcsd.gov.hk/CE/Museum/Science/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 311605
+  }
+}

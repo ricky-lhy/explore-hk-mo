@@ -1,0 +1,38 @@
+{
+  "id": 4,
+  "name": "香港朗豪坊",
+  "description": {
+    "content": "朗豪坊位於旺角亞皆老街8號，為集購物、餐飲及娛樂於一身的大型綜合商場，共15層樓、超過200間店舖及多元餐飲選擇。交通便利，是港九區熱門的購物及休閒地點。",
+    "source": "tripadvisor"
+  },
+  "region": "hong-kong",
+  "category": "shopping",
+  "hours": {
+  "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:30", "close": "22:30" },
+      { "day": 2, "open": "10:30", "close": "22:30" },
+      { "day": 3, "open": "10:30", "close": "22:30" },
+      { "day": 4, "open": "10:30", "close": "22:30" },
+      { "day": 5, "open": "10:30", "close": "22:30" },
+      { "day": 6, "open": "10:30", "close": "22:30" },
+      { "day": 7, "open": "10:30", "close": "22:30" }
+    ]
+  },
+  "location": {
+    "address": "香港 九龍油尖旺區亞皆老街8號",
+    "latitude": 22.318523,
+    "longitude": 114.168564
+  },
+  "images": [
+    "https://www.tripadvisor.com.tw/Attraction_Review-g294217-d2050636-m66827-Reviews-Langham_Place-Hong_Kong.html#photos"
+  ],
+  "rating": 4.0,
+  "ranking": 67,
+  "phone": "+852 3520 2800",
+  "website": "http://www.langhamplace.com.hk/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2050636
+  }
+}
