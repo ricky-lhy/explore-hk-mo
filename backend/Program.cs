@@ -3,6 +3,13 @@ using Google.Maps.Routing.V2;
 using Google.Api.Gax.Grpc;
 
 var builder = WebApplication.CreateBuilder(args);
+var googleCredentialsJson = builder.Configuration["GOOGLE_CREDENTIALS_JSON"];
+if (!string.IsNullOrWhiteSpace(googleCredentialsJson) && string.IsNullOrEmpty(Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS")))
+{
+    var filePath = Path.Combine(AppContext.BaseDirectory, "google-sa.json");
+    File.WriteAllText(filePath, googleCredentialsJson);
+    Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", filePath);
+}
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
