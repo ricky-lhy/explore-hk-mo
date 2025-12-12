@@ -5,31 +5,31 @@ export type ClientOptions = {
 }
 
 export type Connection = {
-    type?: string | null
+    type?: string
     locationId?: number
 }
 
 export type DayRouteRequest = {
-    date?: string | null
-    mode?: string | null
-    placeIds?: Array<number> | null
+    date?: string
+    mode?: string
+    placeIds?: Array<number>
 }
 
 export type DayRouteResponse = {
-    date?: string | null
-    mode?: string | null
-    legs?: Array<RouteLegDto> | null
+    date?: string
+    mode?: string
+    legs?: Array<RouteLegDto>
     totalDistance?: number
     totalDuration?: number
 }
 
 export type Description = {
-    content?: string | null
-    source?: string | null
+    content?: string
+    source?: string
 }
 
 export type HourException = {
-    date?: string | null
+    date?: string
     closed?: boolean | null
     open?: string | null
     close?: string | null
@@ -37,26 +37,26 @@ export type HourException = {
 }
 
 export type Hours = {
-    timezone?: string | null
-    regular?: Array<RegularHour> | null
+    timezone?: string
+    regular?: Array<RegularHour>
     exceptions?: Array<HourException> | null
 }
 
 export type Location = {
-    address?: string | null
+    address?: string
     latitude?: number
     longitude?: number
 }
 
 export type Place = {
     id?: number
-    name?: string | null
+    name?: string
+    region?: string
+    category?: string
     description?: Description
-    region?: string | null
-    category?: string | null
-    hours?: Hours
     location?: Location
-    images?: Array<string> | null
+    hours?: Hours
+    images?: Array<string>
     rating?: number | null
     ranking?: number | null
     phone?: string | null
@@ -66,8 +66,8 @@ export type Place = {
 
 export type RegularHour = {
     day?: number
-    open?: string | null
-    close?: string | null
+    open?: string
+    close?: string
 }
 
 export type RouteLegDto = {
@@ -75,12 +75,12 @@ export type RouteLegDto = {
     toPlaceId?: number
     distance?: number
     duration?: number
-    travelMode?: string | null
-    steps?: Array<RouteStepDto> | null
+    travelMode?: string
+    steps?: Array<RouteStepDto>
 }
 
 export type RouteStepDto = {
-    stepTravelMode?: string | null
+    stepTravelMode?: string
     distance?: number | null
     duration?: number | null
     instruction?: string | null
@@ -111,8 +111,7 @@ export type GetCategoriesResponses = {
     200: Array<string>
 }
 
-export type GetCategoriesResponse =
-    GetCategoriesResponses[keyof GetCategoriesResponses]
+export type GetCategoriesResponse = GetCategoriesResponses[keyof GetCategoriesResponses]
 
 export type GetPlacesData = {
     body?: never
@@ -152,8 +151,7 @@ export type GetPlacesByIdResponses = {
     200: Place
 }
 
-export type GetPlacesByIdResponse =
-    GetPlacesByIdResponses[keyof GetPlacesByIdResponses]
+export type GetPlacesByIdResponse = GetPlacesByIdResponses[keyof GetPlacesByIdResponses]
 
 export type PostRoutesDayData = {
     body?: DayRouteRequest
@@ -169,5 +167,4 @@ export type PostRoutesDayResponses = {
     200: DayRouteResponse
 }
 
-export type PostRoutesDayResponse =
-    PostRoutesDayResponses[keyof PostRoutesDayResponses]
+export type PostRoutesDayResponse = PostRoutesDayResponses[keyof PostRoutesDayResponses]

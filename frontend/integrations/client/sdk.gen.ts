@@ -32,11 +32,10 @@ export type Options<
 export const getCategories = <ThrowOnError extends boolean = false>(
     options?: Options<GetCategoriesData, ThrowOnError>
 ) =>
-    (options?.client ?? client).get<
-        GetCategoriesResponses,
-        unknown,
-        ThrowOnError
-    >({ url: '/categories', ...options })
+    (options?.client ?? client).get<GetCategoriesResponses, unknown, ThrowOnError>({
+        url: '/categories',
+        ...options
+    })
 
 export const getPlaces = <ThrowOnError extends boolean = false>(
     options?: Options<GetPlacesData, ThrowOnError>
@@ -49,20 +48,15 @@ export const getPlaces = <ThrowOnError extends boolean = false>(
 export const getPlacesById = <ThrowOnError extends boolean = false>(
     options: Options<GetPlacesByIdData, ThrowOnError>
 ) =>
-    (options.client ?? client).get<
-        GetPlacesByIdResponses,
-        unknown,
-        ThrowOnError
-    >({ url: '/places/{id}', ...options })
+    (options.client ?? client).get<GetPlacesByIdResponses, unknown, ThrowOnError>({
+        url: '/places/{id}',
+        ...options
+    })
 
 export const postRoutesDay = <ThrowOnError extends boolean = false>(
     options?: Options<PostRoutesDayData, ThrowOnError>
 ) =>
-    (options?.client ?? client).post<
-        PostRoutesDayResponses,
-        unknown,
-        ThrowOnError
-    >({
+    (options?.client ?? client).post<PostRoutesDayResponses, unknown, ThrowOnError>({
         url: '/routes/day',
         ...options,
         headers: {

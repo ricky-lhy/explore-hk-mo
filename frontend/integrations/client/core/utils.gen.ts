@@ -43,10 +43,7 @@ export const defaultPathSerializer = ({ path, url: _url }: PathSerializer) => {
             }
 
             if (Array.isArray(value)) {
-                url = url.replace(
-                    match,
-                    serializeArrayParam({ explode, name, style, value })
-                )
+                url = url.replace(match, serializeArrayParam({ explode, name, style, value }))
                 continue
             }
 
@@ -123,8 +120,7 @@ export function getValidRequestBody(options: {
     if (isSerializedBody) {
         if ('serializedBody' in options) {
             const hasSerializedBody =
-                options.serializedBody !== undefined &&
-                options.serializedBody !== ''
+                options.serializedBody !== undefined && options.serializedBody !== ''
 
             return hasSerializedBody ? options.serializedBody : null
         }
