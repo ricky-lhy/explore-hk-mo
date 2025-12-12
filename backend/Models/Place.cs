@@ -5,14 +5,14 @@ namespace ExploreHKMOApi.Models;
 public class Place
 {
     public int Id { get; set; }
-    public string Name { get; set; } = default!;
+    public string Name { get; set; } = null!;
+    public string Region { get; set; } = null!;
+    public string Category { get; set; } = null!;
     public Description Description { get; set; } = default!;
-    public string Region { get; set; } = default!;
-    public string Category { get; set; } = default!;
 
+    public Location Location { get; set; } = null!;
     public Hours? Hours { get; set; }
-    public Location Location { get; set; } = default!;
-    public List<string> Images { get; set; } = new();
+    public List<string> Images { get; set; } = new List<string>();
 
     public double? Rating { get; set; }
     public int? Ranking { get; set; }
