@@ -7,11 +7,20 @@ var googleCredentialsJson = builder.Configuration["GOOGLE_CREDENTIALS_JSON"];
 if (!string.IsNullOrWhiteSpace(googleCredentialsJson) && string.IsNullOrEmpty(Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS")))
 {
     var filePath = Path.Combine(AppContext.BaseDirectory, "google-sa.json");
-    File.WriteAllText(filePath, googleCredentialsJson);
+    if (!File.Exists(filePath))
+        File.WriteAllText(filePath, googleCredentialsJson);
+    
     Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", filePath);
 }
 
 builder.Services.AddControllers();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Frontend", policy =>
+    {
+        policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -27,7 +36,7 @@ builder.Services.AddSingleton<IRoutingService, GoogleRoutingService>();
 
 var app = builder.Build();
 
-
+app.UseCors("Frontend");
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
