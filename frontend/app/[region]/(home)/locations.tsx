@@ -1,12 +1,11 @@
-import { use } from 'react'
-
 import { LocationEntry, LocationEntrySkeleton } from '@/components/custom/location-entry'
 
-import { getLocationsByRegion } from '@/services/location'
+import { getLocationsByRegion } from '@/services/location/list'
+import type { LocationSortOption } from '@/services/location/sort'
 import type { Region } from '@/services/region'
 
-const Locations = ({ region }: { region: Region }) => {
-    const locations = use(getLocationsByRegion(region))
+const Locations = async ({ region, sort }: { region: Region; sort: LocationSortOption }) => {
+    const locations = await getLocationsByRegion(region, sort)
 
     return (
         <>

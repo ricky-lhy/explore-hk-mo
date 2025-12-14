@@ -1,6 +1,7 @@
 import { Suspense } from 'react'
 
 import { faChevronRight, faUpDown } from '@fortawesome/free-solid-svg-icons'
+import { parse } from 'path'
 
 import {
     Shelf,
@@ -11,13 +12,19 @@ import {
     ShelfTitle
 } from '@/components/ui/shelf'
 
-import type { Region } from '@/services/region'
+import { parseSortOption } from '@/services/location/sort'
+import { type Region, parseRegion } from '@/services/region'
+
+import { unifySearchParam } from '@/lib/utils'
 
 import { Categories, CategoriesSkeleton } from './categories'
 import { Locations, LocationsSkeleton } from './locations'
+import { LocationsActions } from './locations-actions'
 
-const Home = async ({ params }: PageProps<'/[region]'>) => {
-    const region = (await params).region as Region
+const Home = async ({ params, searchParams }: PageProps<'/[region]'>) => {
+    // Extract and parse page props
+    const region = await params.then(({ region }) => parseRegion(region))
+    const sort = await searchParams.then(({ sort }) => parseSortOption(unifySearchParam(sort)[0]))
 
     return (
         <main>
@@ -44,13 +51,11 @@ const Home = async ({ params }: PageProps<'/[region]'>) => {
             <Shelf>
                 <ShelfHeader>
                     <ShelfTitle>by Location</ShelfTitle>
-                    <ShelfActions>
-                        <ShelfActionButton icon={faUpDown} aria-label="Sort locations" />
-                    </ShelfActions>
+                    <LocationsActions sort={sort} />
                 </ShelfHeader>
                 <ShelfContent className="space-y-4.5">
-                    <Suspense fallback={<LocationsSkeleton itemsCount={4} />}>
-                        <Locations region={region} />
+                    <Suspense key={sort} fallback={<LocationsSkeleton itemsCount={4} />}>
+                        <Locations region={region} sort={sort} />
                     </Suspense>
                 </ShelfContent>
             </Shelf>

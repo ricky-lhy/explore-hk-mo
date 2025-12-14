@@ -1,3 +1,4 @@
+import type { LocationSortOption } from '@/services/location/sort'
 import type { Region } from '@/services/region'
 
 type RegionalConfig = {
@@ -22,8 +23,9 @@ const appConfigs: Record<Region, RegionalConfig> = {
     }
 } as const
 
-/** Default region when unspecified or invalid */
+/** Default values */
 export const defaultRegion: Region = 'mo'
+export const defaultLocationSortOption: LocationSortOption = 'ranking'
 
 /**
  * Gets the app configuration for a region.

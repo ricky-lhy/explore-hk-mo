@@ -28,7 +28,12 @@ const ShelfActionButton = ({
 }: Omit<ComponentProps<typeof Button>, 'children'> & {
     icon: IconDefinition
 }) => (
-    <Button size="icon-sm" variant="ghost" className={cn('text-neutral-400', className)} {...props}>
+    <Button
+        size="icon-sm"
+        variant="ghost"
+        className={cn('rounded-full text-neutral-400', className)}
+        {...props}
+    >
         <FontAwesomeIcon icon={icon} />
     </Button>
 )

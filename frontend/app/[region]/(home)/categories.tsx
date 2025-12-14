@@ -1,12 +1,10 @@
-import { use } from 'react'
-
 import { CategoryTile, CategoryTileSkeleton } from '@/components/custom/category-tile'
 
 import { getCategoriesByRegion } from '@/services/category'
 import type { Region } from '@/services/region'
 
-const Categories = ({ region }: { region: Region }) => {
-    const categories = use(getCategoriesByRegion(region))
+const Categories = async ({ region }: { region: Region }) => {
+    const categories = await getCategoriesByRegion(region)
 
     return (
         <>
