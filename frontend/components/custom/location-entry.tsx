@@ -59,7 +59,7 @@ const LocationEntrySkeleton = ({ className, ...props }: ComponentProps<'div'>) =
             {/* Cover image */}
             <Skeleton className="size-20 rounded-xl" />
             {/* Text content */}
-            <div className="flex flex-1 flex-col gap-[7px]">
+            <div className="flex flex-1 flex-col gap-1.75">
                 <Skeleton className="h-5 w-3/4 rounded-md" />
                 <Skeleton className="h-3 w-full rounded-md" />
                 <Skeleton className="h-3 w-5/6 rounded-md" />

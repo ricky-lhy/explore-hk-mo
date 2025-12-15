@@ -132,7 +132,7 @@ const DropdownMenuRadioItem = ({
         >
             <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
                 <DropdownMenuPrimitive.ItemIndicator>
-                    <FontAwesomeIcon icon={faCircle} className="mb-[3px] size-2!" />
+                    <FontAwesomeIcon icon={faCircle} className="mb-0.75 size-2!" />
                 </DropdownMenuPrimitive.ItemIndicator>
             </span>
             {children}

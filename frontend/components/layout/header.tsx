@@ -7,11 +7,7 @@ import type { Region } from '@/services/region'
 import { getAppConfigByRegion } from '@/lib/config'
 import { cn } from '@/lib/utils'
 
-const Azulejo = ({
-    className,
-    image,
-    ...props
-}: ComponentProps<'span'> & { image: string }) => (
+const Azulejo = ({ className, image, ...props }: ComponentProps<'span'> & { image: string }) => (
     <span
         className={cn('h-6 bg-size-[24px]', className)}
         style={{ backgroundImage: `url('${image}')` }}
@@ -19,18 +15,11 @@ const Azulejo = ({
     />
 )
 
-const Header = ({
-    className,
-    region,
-    ...props
-}: ComponentProps<'header'> & { region: Region }) => {
+const Header = ({ className, region, ...props }: ComponentProps<'header'> & { region: Region }) => {
     const config = getAppConfigByRegion(region)
 
     return (
-        <header
-            className={cn('my-6 flex items-end gap-2.5', className)}
-            {...props}
-        >
+        <header className={cn('my-6 flex items-end gap-2.5', className)} {...props}>
             {/* Left azulejos */}
             <Azulejo className="basis-2 -scale-x-100" image={config.pattern} />
 
