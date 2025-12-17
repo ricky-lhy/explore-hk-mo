@@ -1,7 +1,5 @@
 import { redirect } from 'next/navigation'
 
-import { Header } from '@/components/layout/header'
-
 import { validateRegion } from '@/services/region'
 
 import { defaultRegion } from '@/lib/config'
@@ -16,7 +14,6 @@ const RegionLayout = async ({ children, params }: LayoutProps<'/[region]'>) => {
 
     return (
         <>
-            <Header region={region} />
             {children}
         </>
     )
