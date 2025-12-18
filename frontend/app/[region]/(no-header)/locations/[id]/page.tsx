@@ -6,13 +6,18 @@ import { LocationLayout, LocationLayoutSkeleton } from '@/components/layout/loca
 
 import { getLocationById } from '@/services/location/single'
 
+import { LocationPageHeader } from './header'
+
 const LocationPage = async ({ params }: PageProps<'/[region]/locations/[id]'>) => {
-    const { id } = await params
+    const { id, region } = await params
 
     return (
-        <Suspense fallback={<LocationLayoutSkeleton />}>
-            <LocationContent id={Number(id)} />
-        </Suspense>
+        <>
+            <LocationPageHeader region={region} />
+            <Suspense fallback={<LocationLayoutSkeleton />}>
+                <LocationContent id={Number(id)} />
+            </Suspense>
+        </>
     )
 }
 
