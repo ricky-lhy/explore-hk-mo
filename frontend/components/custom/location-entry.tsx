@@ -1,26 +1,26 @@
 import type { ComponentProps } from 'react'
 
-import Link from 'next/link'
-
 import { RatingStars } from '@/components/atoms/rating-stars'
+import { RegionLink } from '@/components/atoms/region-link'
 import { SmartImage } from '@/components/atoms/smart-image'
+import { Skeleton } from '@/components/ui/skeleton'
 
 import type { CategoryObject } from '@/services/category'
 import { formatRatingNumber } from '@/services/location/utils'
 
 import { cn } from '@/lib/utils'
 
-import { Skeleton } from '../ui/skeleton'
-
 const LocationEntry = ({
     className,
+    identifier,
     image,
     name,
     description,
     rating,
     category,
     ...props
-}: ComponentProps<typeof Link> & {
+}: Omit<ComponentProps<typeof RegionLink>, 'href'> & {
+    identifier: string
     image?: string
     name?: string
     description?: string
@@ -28,7 +28,11 @@ const LocationEntry = ({
     category: CategoryObject
 }) => {
     return (
-        <Link className={cn('flex items-center gap-2.5', className)} {...props}>
+        <RegionLink
+            className={cn('flex items-center gap-2.5', className)}
+            href={`/locations/${identifier}`}
+            {...props}
+        >
             {/* Cover image */}
             <SmartImage
                 src={image ?? ''}
@@ -48,7 +52,7 @@ const LocationEntry = ({
                     <span>{category.name}</span>
                 </div>
             </div>
-        </Link>
+        </RegionLink>
     )
 }
 

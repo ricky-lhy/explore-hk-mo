@@ -9,11 +9,11 @@ import { getLocationById } from '@/services/location/single'
 import { LocationPageHeader } from './header'
 
 const LocationPage = async ({ params }: PageProps<'/[region]/locations/[id]'>) => {
-    const { id, region } = await params
+    const { id } = await params
 
     return (
         <>
-            <LocationPageHeader region={region} />
+            <LocationPageHeader />
             <Suspense fallback={<LocationLayoutSkeleton />}>
                 <LocationContent id={Number(id)} />
             </Suspense>

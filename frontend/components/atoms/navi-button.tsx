@@ -1,10 +1,9 @@
 import type { ComponentProps } from 'react'
 
-import Link from 'next/link'
-
 import { faChevronLeft, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import { RegionLink } from '@/components/atoms/region-link'
 import { Button } from '@/components/ui/button'
 
 import { cn } from '@/lib/utils'
@@ -25,6 +24,7 @@ const NaviButton = ({
 }) => {
     const { icon, label } = buttonConfig[appearance]
 
+    const isLink = href !== undefined
     const content = <FontAwesomeIcon icon={icon} size="lg" />
 
     return (
@@ -33,10 +33,10 @@ const NaviButton = ({
             size="icon"
             className={cn('size-12 rounded-full shadow-[0_0_8px] shadow-black/10', className)}
             aria-label={label}
-            asChild={!!href}
+            asChild={isLink}
             {...props}
         >
-            {href ? <Link href={href}>{content}</Link> : content}
+            {isLink ? <RegionLink href={href}>{content}</RegionLink> : content}
         </Button>
     )
 }

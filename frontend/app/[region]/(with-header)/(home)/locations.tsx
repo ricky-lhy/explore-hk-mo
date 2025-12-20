@@ -12,7 +12,7 @@ const Locations = async ({ region, sort }: { region: Region; sort: LocationSortO
             {locations.map(({ id, images, name, description, rating, category }) => (
                 <LocationEntry
                     key={id}
-                    href={`/${region}/locations/${id}`}
+                    identifier={`${id}`}
                     // Data fields below
                     image={images[0]}
                     name={name}

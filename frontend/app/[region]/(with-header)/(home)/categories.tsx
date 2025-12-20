@@ -11,7 +11,7 @@ const Categories = async ({ region }: { region: Region }) => {
             {categories.map(({ key, name, image }) => (
                 <CategoryTile
                     key={key}
-                    href={`/${region}/categories/${key}`}
+                    identifier={key}
                     // Data fields below
                     name={name}
                     image={image}

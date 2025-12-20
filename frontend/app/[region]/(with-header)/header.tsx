@@ -1,10 +1,11 @@
+'use client'
+
 import type { ComponentProps } from 'react'
 
 import Link from 'next/link'
 
-import type { Region } from '@/services/region'
-
 import { getAppConfigByRegion } from '@/lib/config'
+import { useRegion } from '@/lib/context'
 import { cn } from '@/lib/utils'
 
 const Azulejo = ({ className, image, ...props }: ComponentProps<'span'> & { image: string }) => (
@@ -15,7 +16,8 @@ const Azulejo = ({ className, image, ...props }: ComponentProps<'span'> & { imag
     />
 )
 
-const Header = ({ className, region, ...props }: ComponentProps<'header'> & { region: Region }) => {
+const Header = ({ className, ...props }: ComponentProps<'header'>) => {
+    const { region } = useRegion()
     const config = getAppConfigByRegion(region)
 
     return (

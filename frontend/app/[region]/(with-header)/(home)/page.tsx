@@ -1,7 +1,6 @@
 import { Suspense } from 'react'
 
-import { faChevronRight, faUpDown } from '@fortawesome/free-solid-svg-icons'
-import { parse } from 'path'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 import {
     Shelf,
@@ -13,7 +12,7 @@ import {
 } from '@/components/ui/shelf'
 
 import { parseSortOption } from '@/services/location/sort'
-import { type Region, parseRegion } from '@/services/region'
+import { parseRegion } from '@/services/region'
 
 import { unifySearchParam } from '@/lib/utils'
 
