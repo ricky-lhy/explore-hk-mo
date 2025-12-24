@@ -38,6 +38,17 @@ public class RoutesController : ControllerBase
             }
             orderedPlaces.Add(place);
         }
+        
+        var firstRegion = orderedPlaces[0].Region;
+        var allSameRegion = orderedPlaces.All(p => string.Equals(p.Region, firstRegion, StringComparison.OrdinalIgnoreCase));
+        if (!allSameRegion)
+        {
+            return UnprocessableEntity(new
+            {
+                message = "所有地點必須在同一地區",
+                regions = orderedPlaces.Select(p => new {p.Id, p.Region})
+            });
+        }
 
         var result = await _routingService.ComputeDayRouteAsync(request, orderedPlaces, cancellationToken);
         return Ok(result);
