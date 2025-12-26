@@ -14,7 +14,7 @@ const LocationHours = ({ hours }: { hours?: WeeklyHours }) => (
                 className="tabular-nums"
                 items={weekdays.map((day, index) => ({
                     key: day,
-                    value: hours[index] ? `${hours[index].open} – ${hours[index].close}` : 'Closed'
+                    value: hours[index]?.formatted ?? 'Closed'
                 }))}
             />
         )}

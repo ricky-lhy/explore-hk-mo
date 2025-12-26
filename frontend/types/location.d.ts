@@ -16,6 +16,8 @@ type DailyHours = {
     open: string
     /** Closing time in `HH:MM` format. */
     close: string
+    /** Formatted operating hours string. */
+    formatted: string
 }
 
 /** Weekly operating hours, keyed by day of the week (0 = Sunday, 6 = Saturday). */

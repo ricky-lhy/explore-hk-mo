@@ -57,7 +57,8 @@ export const placeToLocation = (place: Place): Location => {
         },
         hours: isPresent(place.hours?.regular)
             ? place.hours.regular.reduce<WeeklyHours>((hours, { day, open, close }) => {
-                  if (isPresent(day) && open && close) hours[day % 7] = { open, close }
+                  if (isPresent(day) && open && close)
+                      hours[day % 7] = { open, close, formatted: `${open} – ${close}` }
                   return hours
               }, {})
             : undefined
