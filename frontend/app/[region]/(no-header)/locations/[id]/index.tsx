@@ -1,4 +1,8 @@
+import type { ComponentProps } from 'react'
+
 import { notFound } from 'next/navigation'
+
+import { PageHeader } from '@/components/custom/page-header'
 
 import { getLocationById } from '@/services/location'
 
@@ -15,4 +19,12 @@ const LocationContent = async ({ id }: { id: number }) => {
 
 const LocationContentSkeleton = LocationLayoutSkeleton
 
-export { LocationContent, LocationContentSkeleton }
+const LocationHeader = ({ children: closeButton, ...props }: ComponentProps<typeof PageHeader>) => {
+    return (
+        <PageHeader floating {...props}>
+            {closeButton}
+        </PageHeader>
+    )
+}
+
+export { LocationContent, LocationContentSkeleton, LocationHeader }
