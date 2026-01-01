@@ -3,24 +3,32 @@ import type { LocationSortOption } from '@/types/location'
 import type { Region } from '@/types/region'
 
 type RegionalConfig = {
+    /** Region name */
+    name: string
     /** Page title */
     title: string
     /** Logo image path */
     logo: string
     /** Decoration pattern image path */
     pattern: string
+    /** Cover image path */
+    cover: string
 }
 
 const appConfigs: Record<Region, RegionalConfig> = {
     hk: {
+        name: 'Hong Kong',
         title: 'Explore Hong Kong',
         logo: '/assets/brand/hong-kong.svg',
-        pattern: '/assets/brand/azulejo.svg'
+        pattern: '/assets/brand/azulejo.svg',
+        cover: '/assets/background/cover-hong-kong.webp' // https://unsplash.com/photos/ckxoFlEtlUc
     },
     mo: {
+        name: 'Macau',
         title: 'Explore Macau',
         logo: '/assets/brand/macau.svg',
-        pattern: '/assets/brand/azulejo.svg'
+        pattern: '/assets/brand/azulejo.svg',
+        cover: '/assets/background/cover-macau.webp' // https://unsplash.com/photos/8Eu3HZXMYf8
     }
 } as const
 

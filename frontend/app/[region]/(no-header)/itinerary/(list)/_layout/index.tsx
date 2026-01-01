@@ -5,6 +5,7 @@ import { cn, isPresent } from '@/lib/utils'
 import type { DailyItinerary } from '@/types/itinerary'
 import type { Location } from '@/types/location'
 
+import { ItineraryCover, ItineraryCoverSkeleton } from './cover'
 import { ItineraryLocations, ItineraryLocationsSkeleton } from './locations'
 
 const blockStyles = {
@@ -23,6 +24,7 @@ const ItineraryLayout = ({
     details: Location[]
 }) => (
     <div className={cn(blockStyles.root, className)} {...props}>
+        <ItineraryCover />
         <div className={blockStyles.content}>
             {itinerary.map(({ date, locations }, index) => (
                 <ItineraryLocations
@@ -40,6 +42,7 @@ const ItineraryLayout = ({
 
 const ItineraryLayoutSkeleton = ({ className, ...props }: ComponentProps<'div'>) => (
     <div className={cn(blockStyles.root, className)} {...props}>
+        <ItineraryCoverSkeleton />
         <div className={blockStyles.content}>
             <ItineraryLocationsSkeleton itemsCount={2} />
             <ItineraryLocationsSkeleton itemsCount={2} />
