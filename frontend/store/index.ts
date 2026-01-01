@@ -12,7 +12,8 @@ import {
     addLocationToItinerary,
     createEmptyItinerary,
     isLocationInItinerary,
-    mergeDailyItineraries,
+    mergeDailyLocations,
+    moveLocationInItinerary,
     removeLocationFromItinerary
 } from './utils'
 
@@ -33,6 +34,14 @@ type ItineraryActions = {
 
     /** Change the start and end dates of the itinerary for a specific region */
     changeDates: (region: Region, start: string, end: string) => void
+
+    /** Move a location within the itinerary */
+    moveLocation: (
+        region: Region,
+        location: LocationID,
+        destDay: number,
+        destIndex: number
+    ) => void
 }
 
 type ItineraryStore = ItineraryState & ItineraryActions
@@ -83,11 +92,24 @@ export const useItineraryStore = create<ItineraryStore>()(
                         ...state.itineraries,
                         [region]: {
                             start: stringToDate(start),
-                            locations: mergeDailyItineraries(
+                            locations: mergeDailyLocations(
                                 state.itineraries[region].locations, // Locations
                                 dayjs(end).diff(dayjs(start), 'day') + 1 // Duration: both ends inclusive
                             )
                         }
+                    }
+                })),
+
+            moveLocation: (region, location, destDay, destIndex) =>
+                set((state) => ({
+                    itineraries: {
+                        ...state.itineraries,
+                        [region]: moveLocationInItinerary(
+                            state.itineraries[region],
+                            location,
+                            destDay,
+                            destIndex
+                        )
                     }
                 }))
         }),

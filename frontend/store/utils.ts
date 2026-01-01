@@ -27,13 +27,13 @@ export const isLocationInItinerary = (itinerary: Itinerary, location: LocationID
 }
 
 /**
- * Merge or adjust daily itineraries to match a target number of days.
+ * Merge or adjust daily locations to match a target number of days.
  *
- * @param locations - The current daily itineraries
+ * @param locations - The current daily locations
  * @param targetDays - The target number of days for the itinerary
- * @returns The adjusted daily itineraries
+ * @returns The adjusted daily locations
  */
-export const mergeDailyItineraries = (
+export const mergeDailyLocations = (
     locations: LocationID[][],
     targetDays: number
 ): LocationID[][] => {
@@ -87,5 +87,32 @@ export const removeLocationFromItinerary = (
     return {
         ...itinerary,
         locations: locations.map((day) => day.filter((locId) => locId !== location)) // Remove from all days
+    }
+}
+
+/**
+ * Move a location to a new position within the itinerary.
+ *
+ * @param itinerary - The current itinerary
+ * @param location - The location ID to move
+ * @param destDay - The destination day index to move the location to
+ * @param destIndex - The destination index within the destination day to insert the location
+ * @returns The updated itinerary with the location moved to the new position
+ */
+export const moveLocationInItinerary = (
+    { locations, ...itinerary }: Itinerary,
+    location: LocationID,
+    destDay: number,
+    destIndex: number
+): Itinerary => {
+    return {
+        ...itinerary,
+        locations: locations
+            .map((day) => day.filter((locId) => locId !== location)) // Remove from old position
+            .map((day, index) =>
+                index === destDay
+                    ? [...day.slice(0, destIndex), location, ...day.slice(destIndex)] // Insert into new position
+                    : day
+            )
     }
 }

@@ -1,10 +1,14 @@
+import { useDroppable } from '@dnd-kit/core'
+import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import dayjs from 'dayjs'
 
 import { Skeleton } from '@/components/ui/skeleton'
 
 import { Location } from '@/types/location'
 
-import { ItineraryLocation, ItineraryLocationSkeleton } from '../_components/location'
+import { ItineraryLocationSkeleton } from '../_components/location'
+import { locationToItineraryLocationProps } from '../_components/location-utils'
+import { SortableItineraryLocation } from '../_components/sortable-location'
 
 const blockStyles = {
     root: 'flex flex-col gap-4 px-4.5',
@@ -23,28 +27,29 @@ const ItineraryLocations = ({
     date: string
     /** The list of locations for the day. */
     locations: Location[]
-}) => (
-    <div className={blockStyles.root}>
-        <div className={blockStyles.title}>
-            <h2 className="text-xl font-bold">Day {day}</h2>
-            <p className="text-sm leading-tight font-medium text-neutral-500">
-                {dayjs(date).format('MMM D, YYYY (ddd)')}
-            </p>
+}) => {
+    const { setNodeRef: droppableRef } = useDroppable({ id: date })
+    return (
+        <div ref={droppableRef} className={blockStyles.root}>
+            <div className={blockStyles.title}>
+                <h2 className="text-xl font-bold">Day {day}</h2>
+                <p className="text-sm leading-tight font-medium text-neutral-500">
+                    {dayjs(date).format('MMM D, YYYY (ddd)')}
+                </p>
+            </div>
+            <SortableContext id={date} items={locations} strategy={verticalListSortingStrategy}>
+                <div className={blockStyles.content}>
+                    {locations.map((location) => (
+                        <SortableItineraryLocation
+                            key={location.id}
+                            {...locationToItineraryLocationProps(location, date)}
+                        />
+                    ))}
+                </div>
+            </SortableContext>
         </div>
-        <div className={blockStyles.content}>
-            {locations.map(({ id, name, position, hours, images }) => (
-                <ItineraryLocation
-                    key={id}
-                    identifier={id}
-                    image={images[0]}
-                    name={name}
-                    address={position.address}
-                    hours={!hours ? 'Open 24 hours' : hours[dayjs(date).day()]?.formatted}
-                />
-            ))}
-        </div>
-    </div>
-)
+    )
+}
 
 const ItineraryLocationsSkeleton = ({ itemsCount = 3 }: { itemsCount?: number }) => (
     <div className={blockStyles.root}>

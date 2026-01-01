@@ -3,7 +3,7 @@ import dayjs from 'dayjs'
 import { useItineraryStore } from '@/store'
 import { isLocationInItinerary } from '@/store/utils'
 
-import type { Itinerary } from '@/types/itinerary'
+import type { DailyItinerary } from '@/types/itinerary'
 import type { LocationID } from '@/types/location'
 import type { Region } from '@/types/region'
 
@@ -62,10 +62,27 @@ export const useItineraryDuration = (
 /**
  * Hook to get the itinerary list for a specific region.
  *
- * @param region - The region of the itinerary list
- * @returns An object containing the itinerary list of location IDs for the specified region.
+ * @param region - The region of the itinerary
+ * @returns An object containing the itinerary list
  */
-export const useItineraryList = (region: Region): { itinerary: Itinerary } => {
-    const { itineraries } = useItineraryStore()
-    return { itinerary: itineraries[region] }
+export const useItineraryList = (
+    region: Region
+): {
+    /** The itinerary for each day */
+    itinerary: DailyItinerary[]
+    /** Function to arrange a location within the itinerary */
+    arrangeLocation: (location: LocationID, day: number, index: number) => void
+} & { itinerary: { date: string; locations: LocationID[] }[] } => {
+    const { itineraries, moveLocation } = useItineraryStore()
+    const { start: _start, locations } = itineraries[region]
+
+    const start = stringToDate(_start) // Format ensurance
+
+    return {
+        itinerary: locations.map((dailyLocations, index) => ({
+            date: dayjsToDate(dayjs(start).add(index, 'day')),
+            locations: dailyLocations
+        })),
+        arrangeLocation: (location, day, index) => moveLocation(region, location, day, index)
+    }
 }

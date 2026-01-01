@@ -18,6 +18,14 @@ const IconLabel = ({ icon, content }: { icon: IconDefinition; content?: ReactNod
     </p>
 )
 
+export type ItineraryLocationProps = {
+    identifier: LocationID
+    image?: string
+    name?: string
+    address?: string
+    hours?: string
+}
+
 const ItineraryLocation = ({
     className,
     identifier,
@@ -26,13 +34,7 @@ const ItineraryLocation = ({
     address,
     hours,
     ...props
-}: Omit<ComponentProps<typeof RegionLink>, 'href'> & {
-    identifier: LocationID
-    image?: string
-    name?: string
-    address?: string
-    hours?: string
-}) => (
+}: Omit<ComponentProps<typeof RegionLink>, 'href'> & ItineraryLocationProps) => (
     <RegionLink
         className={cn('flex items-center gap-2.5', className)}
         href={`/locations/${identifier}`}
