@@ -21,6 +21,7 @@
 
     /* Theme colors */
     --color-theme: #006ac6;
+    --color-theme-accent: #e6f3ff;
 
     /* Outline colors */
     --color-ring: oklch(0.708 0 0);
@@ -102,5 +103,36 @@
     }
     .leaflet-edit-marker-selected {
         @apply border-transparent! bg-transparent!;
+    }
+}
+
+@layer components {
+    .rdp-today {
+        &:not([data-selected='true']) {
+            @apply rounded-full;
+            > button {
+                @apply rounded-full! border-3 border-white;
+            }
+        }
+    }
+
+    .rdp-day {
+        &[data-selected-single='true'],
+        &[data-range-start='true'],
+        &[data-range-end='true'] {
+            @apply bg-theme text-primary-foreground border-theme-accent rounded-full! border-3;
+        }
+        &:last-child[data-selected='true'] {
+            > button[data-range-middle='true'],
+            > button[data-range-start='true'][data-range-end='false'] {
+                @apply after:from-theme-accent after:absolute after:inset-y-0 after:-right-3 after:w-3 after:bg-linear-to-r;
+            }
+        }
+        &:first-child[data-selected='true'] {
+            > button[data-range-middle='true'],
+            > button[data-range-end='true'][data-range-start='false'] {
+                @apply before:from-theme-accent before:absolute before:inset-y-0 before:-left-3 before:w-3 before:bg-linear-to-l;
+            }
+        }
     }
 }

@@ -1,7 +1,8 @@
 import { CategoryTile, CategoryTileSkeleton } from '@/components/custom/category-tile'
 
 import { getCategoriesByRegion } from '@/services/category'
-import type { Region } from '@/services/region'
+
+import type { Region } from '@/types/region'
 
 const Categories = async ({ region }: { region: Region }) => {
     const categories = await getCategoriesByRegion(region)
@@ -11,7 +12,7 @@ const Categories = async ({ region }: { region: Region }) => {
             {categories.map(({ key, name, image }) => (
                 <CategoryTile
                     key={key}
-                    href={`/${region}/categories/${key}`}
+                    identifier={key}
                     // Data fields below
                     name={name}
                     image={image}

@@ -1,5 +1,6 @@
-import type { LocationSortOption } from '@/services/location/sort'
-import type { Region } from '@/services/region'
+import type { CategoryKey } from '@/types/category'
+import type { LocationSortOption } from '@/types/location'
+import type { Region } from '@/types/region'
 
 type RegionalConfig = {
     /** Page title */
@@ -23,15 +24,26 @@ const appConfigs: Record<Region, RegionalConfig> = {
     }
 } as const
 
+type ItineraryConfig = {
+    /** Minimum and maximum duration (in days) for an itinerary */
+    durationLimits: { min: number; max: number }
+    /** Allowed period (in days relative to now) for selecting itinerary dates */
+    periodLimits: { start: number; end: number }
+}
+
+export const itineraryConfigs: ItineraryConfig = {
+    durationLimits: { min: 0, max: 30 }, // 1 to 30 days
+    periodLimits: { start: -7, end: 90 } // From 7 days ago to 90 days later
+} as const
+
 // Default values
 export const defaultRegion: Region = 'mo'
+export const defaultCategoryKey: CategoryKey = 'uncategorised'
 export const defaultLocationSortOption: LocationSortOption = 'ranking'
-
-// Fallbacks
-export const defaultCategory = 'uncategorised'
 
 /**
  * Gets the app configuration for a region.
+ *
  * @param region - The region to get configuration for
  * @returns The regional app configuration object
  */

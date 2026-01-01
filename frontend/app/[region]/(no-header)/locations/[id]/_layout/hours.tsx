@@ -1,7 +1,7 @@
-import { DataList, DataListSkeleton } from '@/components/atoms/data-list'
-import { DataSection, DataSectionSkeleton } from '@/components/atoms/data-section'
+import type { WeeklyHours } from '@/types/location'
 
-import type { WeeklyHours } from '@/services/location/utils'
+import { DataList, DataListSkeleton } from '../_components/list'
+import { DataSection, DataSectionSkeleton } from '../_components/section'
 
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
@@ -14,7 +14,7 @@ const LocationHours = ({ hours }: { hours?: WeeklyHours }) => (
                 className="tabular-nums"
                 items={weekdays.map((day, index) => ({
                     key: day,
-                    value: hours[index] ? `${hours[index].open} – ${hours[index].close}` : 'Closed'
+                    value: hours[index]?.formatted ?? 'Closed'
                 }))}
             />
         )}

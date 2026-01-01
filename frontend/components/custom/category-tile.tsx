@@ -1,24 +1,29 @@
 import type { ComponentProps } from 'react'
 
-import Link from 'next/link'
+import { RegionLink } from '@/components/atoms/region-link'
+import { Skeleton } from '@/components/ui/skeleton'
 
 import { cn } from '@/lib/utils'
 
-import { Skeleton } from '../ui/skeleton'
-
 const CategoryTile = ({
     className,
+    identifier,
     name,
     count,
     image,
     ...props
-}: ComponentProps<typeof Link> & {
+}: Omit<ComponentProps<typeof RegionLink>, 'href'> & {
+    identifier: string
     name: string
     count?: number
     image?: string
 }) => {
     return (
-        <Link className={cn('relative h-30 overflow-hidden rounded-xl', className)} {...props}>
+        <RegionLink
+            className={cn('relative h-30 overflow-hidden rounded-xl', className)}
+            href={`/categories/${identifier}`}
+            {...props}
+        >
             {/* Content layer */}
             <div
                 className={cn(
@@ -36,7 +41,7 @@ const CategoryTile = ({
                 className="block size-full bg-cover bg-center"
                 style={{ backgroundImage: `url('${image}')` }}
             />
-        </Link>
+        </RegionLink>
     )
 }
 

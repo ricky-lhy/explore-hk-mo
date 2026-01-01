@@ -1,10 +1,10 @@
+import { FloatingActionButton } from './fab'
 import { Header } from './header'
 
-import { parseRegion } from '@/services/region'
-
-const HeaderLayout = async ({ children, params }: LayoutProps<'/[region]'>) => (
+const HeaderLayout = ({ children }: LayoutProps<'/[region]'>) => (
     <>
-        <Header region={parseRegion((await params).region)} />
+        <Header />
+        <FloatingActionButton />
         {children}
     </>
 )

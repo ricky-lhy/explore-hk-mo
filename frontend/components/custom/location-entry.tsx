@@ -1,34 +1,37 @@
 import type { ComponentProps } from 'react'
 
-import Link from 'next/link'
-
 import { RatingStars } from '@/components/atoms/rating-stars'
+import { RegionLink } from '@/components/atoms/region-link'
 import { SmartImage } from '@/components/atoms/smart-image'
-
-import type { CategoryObject } from '@/services/category'
-import { formatRatingNumber } from '@/services/location/utils'
+import { Skeleton } from '@/components/ui/skeleton'
 
 import { cn } from '@/lib/utils'
 
-import { Skeleton } from '../ui/skeleton'
-
 const LocationEntry = ({
     className,
+    identifier,
     image,
     name,
     description,
-    rating,
+    ratingNumber = 0,
+    ratingString = 'N/A',
     category,
     ...props
-}: ComponentProps<typeof Link> & {
+}: Omit<ComponentProps<typeof RegionLink>, 'href'> & {
+    identifier: string
     image?: string
     name?: string
     description?: string
-    rating?: number
-    category: CategoryObject
+    ratingNumber?: number
+    ratingString?: string
+    category?: string
 }) => {
     return (
-        <Link className={cn('flex items-center gap-2.5', className)} {...props}>
+        <RegionLink
+            className={cn('flex items-center gap-2.5', className)}
+            href={`/locations/${identifier}`}
+            {...props}
+        >
             {/* Cover image */}
             <SmartImage
                 src={image ?? ''}
@@ -42,13 +45,13 @@ const LocationEntry = ({
                 <h3 className="line-clamp-1 font-medium">{name}</h3>
                 <p className="line-clamp-2 text-sm text-neutral-500">{description}</p>
                 <div className="flex items-center gap-1 text-xs text-neutral-500">
-                    <span className="tabular-nums">{formatRatingNumber(rating)}</span>
-                    <RatingStars rating={rating ?? 0} className="[&_svg]:size-3" />
+                    <span className="tabular-nums">{ratingString}</span>
+                    <RatingStars rating={ratingNumber} className="[&_svg]:size-3" />
                     <span>·</span>
-                    <span>{category.name}</span>
+                    <span>{category}</span>
                 </div>
             </div>
-        </Link>
+        </RegionLink>
     )
 }
 
