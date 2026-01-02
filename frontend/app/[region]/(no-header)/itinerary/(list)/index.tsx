@@ -8,9 +8,8 @@ import { useLocations } from '@/services/location-hooks'
 
 import { useRegion } from '@/lib/context'
 
-import { DragHandle } from './_components/drag-handle'
-import { ItineraryLocation } from './_components/location'
 import { locationToItineraryLocationProps } from './_components/location-utils'
+import { SortableItineraryLocationOverlay } from './_components/sortable-location'
 import { useItineraryDnd } from './_hooks/use-dnd'
 import { ItineraryLayout, ItineraryLayoutSkeleton } from './_layout'
 import { ItineraryHeader } from './header'
@@ -44,16 +43,12 @@ const ItineraryContent = () => {
             <ItineraryLayout itinerary={itinerary} details={details} />
             <DragOverlay>
                 {activeLocation && (
-                    <div className="after:border-border relative flex after:absolute after:-inset-2.25 after:z-[-1] after:rounded-[20px] after:border after:bg-white">
-                        <ItineraryLocation
-                            className="flex-1"
-                            {...locationToItineraryLocationProps(
-                                activeLocation,
-                                findContainer(activeId!)! // Date of the container
-                            )}
-                        />
-                        <DragHandle />
-                    </div>
+                    <SortableItineraryLocationOverlay
+                        {...locationToItineraryLocationProps(
+                            activeLocation,
+                            findContainer(activeId!)! // Date of the container
+                        )}
+                    />
                 )}
             </DragOverlay>
         </DndContext>

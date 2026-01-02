@@ -21,7 +21,8 @@ const PageHeader = ({
     /** Additional class names for the container div. */
     containerClassName?: typeof className
 }) => {
-    const { ref, inView } = useInView()
+    const { ref, inView } = useInView({ initialInView: true })
+
     // Scroll threshold for masking
     const threshold = typeof masking === 'number' ? masking : 0
     // Whether the header is currently masked
@@ -38,7 +39,7 @@ const PageHeader = ({
                         floating && 'absolute inset-x-0 top-0',
                         // Masking
                         'after:absolute after:inset-0 after:-z-1', // Positioning
-                        'after:bg-linear-to-b after:from-white after:to-white/0', // Background
+                        'after:bg-linear-to-b after:from-white after:via-white/75 after:to-white/0', // Background
                         'after:transition-opacity after:duration-300', // Transition
                         isMasked ? 'after:opacity-100' : 'after:opacity-0', // Opacity
                         containerClassName
