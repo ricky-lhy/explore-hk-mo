@@ -1,4 +1,4 @@
-import type { ComponentProps } from 'react'
+import type { Children, ComponentProps } from 'react'
 
 import { faChevronLeft, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,6 +15,7 @@ const buttonConfig = {
 
 const NaviButton = ({
     appearance = 'close',
+    children,
     href,
     className,
     ...props
@@ -25,7 +26,7 @@ const NaviButton = ({
     const { icon, label } = buttonConfig[appearance]
 
     const isLink = href !== undefined
-    const content = <FontAwesomeIcon icon={icon} size="lg" />
+    const content = children ?? <FontAwesomeIcon icon={icon} size="lg" />
 
     return (
         <Button
