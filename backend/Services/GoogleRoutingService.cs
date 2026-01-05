@@ -116,6 +116,7 @@ public class GoogleRoutingService : IRoutingService
 
             var fieldMask = "routes.distanceMeters," +
                             "routes.duration," +
+                            "routes.polyline.encodedPolyline," +
                             "routes.legs.steps.travelMode," +
                             "routes.legs.steps.distanceMeters," +
                             "routes.legs.steps.staticDuration," +
@@ -131,6 +132,7 @@ public class GoogleRoutingService : IRoutingService
             {
                 continue;
             }
+            var encodedPolyline = route.Polyline?.EncodedPolyline;
             var distanceMeters = route.DistanceMeters;
             int durationSeconds = 0;
             if (route.Duration != null)
@@ -184,6 +186,7 @@ public class GoogleRoutingService : IRoutingService
                 Distance: distanceMeters,
                 Duration: durationSeconds,
                 TravelMode: travelMode.ToString(),
+                Polyline: encodedPolyline,
                 Steps: stepsDto
             ));
 

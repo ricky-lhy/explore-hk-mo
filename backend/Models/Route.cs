@@ -12,6 +12,7 @@ public record RouteLegDto(
     int Distance,
     int Duration,
     string TravelMode,
+    string? Polyline,
     List<RouteStepDto> Steps
 );
 
