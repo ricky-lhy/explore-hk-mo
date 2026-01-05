@@ -51,6 +51,12 @@ const formatDistance = (meters: number) => {
     return `${meters} m` // Meters
 }
 
+const blockStyles = {
+    root: 'flex items-center gap-2.5',
+    marker: 'mr-1 flex size-6 items-center justify-center rounded-full bg-white ring-6 ring-white',
+    content: 'flex flex-1 flex-col gap-0.5'
+}
+
 const RouteSegment = ({
     duration,
     distance,
@@ -67,11 +73,11 @@ const RouteSegment = ({
     destination?: Coordinates
 }) => {
     return (
-        <li className={cn('flex items-center gap-2.5', className)} {...props}>
-            <div className="mr-1 flex size-6 items-center justify-center rounded-full bg-white ring-6 ring-white">
+        <li className={cn(blockStyles.root, className)} {...props}>
+            <div className={blockStyles.marker}>
                 <FontAwesomeIcon icon={methodIcons[method]} className="text-theme size-3" />
             </div>
-            <div className="flex flex-1 flex-col gap-0.5">
+            <div className={blockStyles.content}>
                 <span className="text-sm font-medium">{formatDuration(duration)}</span>
                 <IconLabel icon={faArrowsTurnToDots} content={formatDistance(distance)} />
             </div>
@@ -83,12 +89,15 @@ const RouteSegment = ({
 }
 
 const RouteSegmentSkeleton = ({ className }: { className?: string }) => (
-    <li className={cn('flex items-center gap-2.5', className)}>
-        <div className="mr-1 flex size-6 items-center justify-center rounded-full bg-white ring-6 ring-white">
-            <Skeleton className="size-3 rounded-full" />
-            <RouteDirectionButtonSkeleton />
+    <li className={cn(blockStyles.root, className)}>
+        <div className={blockStyles.marker}>
+            <Skeleton className="size-4 rounded-full" />
         </div>
-        <Skeleton className="h-3 w-24" />
+        <div className={cn(blockStyles.content, 'gap-1.5')}>
+            <Skeleton className="h-4 w-1/4" />
+            <Skeleton className="h-3 w-1/3" />
+        </div>
+        <RouteDirectionButtonSkeleton />
     </li>
 )
 

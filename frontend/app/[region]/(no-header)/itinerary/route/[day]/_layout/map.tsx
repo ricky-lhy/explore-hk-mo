@@ -29,15 +29,15 @@ const MapBoundsController = ({ positions }: { positions: Coordinates[] }) => {
     return null
 }
 
+const mapStyles = cn(
+    'relative -mb-2 h-74! shrink-0',
+    'after:absolute after:inset-x-0 after:bottom-0 after:z-10 after:h-8',
+    'after:bg-linear-to-b after:from-transparent after:to-white'
+)
+
 const RouteMap = ({ positions }: { positions: { marker: number; coordinates: Coordinates }[] }) => {
     return (
-        <div
-            className={cn(
-                'relative -mb-2 h-74! shrink-0',
-                'after:absolute after:inset-x-0 after:bottom-0 after:z-10 after:h-8',
-                'after:bg-linear-to-b after:from-transparent after:to-white'
-            )}
-        >
+        <div className={mapStyles}>
             <Map
                 className="min-h-74! rounded-none!"
                 // Initial state
@@ -64,7 +64,7 @@ const RouteMap = ({ positions }: { positions: { marker: number; coordinates: Coo
 }
 
 const RouteMapSkeleton = () => {
-    return <Skeleton className="h-72 shrink-0" />
+    return <Skeleton className={mapStyles} />
 }
 
 export { RouteMap, RouteMapSkeleton }

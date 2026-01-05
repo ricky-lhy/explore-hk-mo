@@ -54,7 +54,7 @@ const RouteDirectionButton = ({
 )
 
 const RouteDirectionButtonSkeleton = ({ className, ...props }: ComponentProps<'div'>) => (
-    <Skeleton className={cn('bg-accent size-9.5 rounded-full', className)} {...props} />
+    <Skeleton className={cn('size-9.5 rounded-full', className)} {...props} />
 )
 
 export { RouteDirectionButton, RouteDirectionButtonSkeleton }

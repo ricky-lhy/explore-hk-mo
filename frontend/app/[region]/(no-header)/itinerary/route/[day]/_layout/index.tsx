@@ -82,11 +82,11 @@ const RouteLayoutSkeleton = () => {
     return (
         <main>
             <RouteMapSkeleton />
-            <div className="relative z-0 flex flex-col gap-4.5 px-4.5 py-5">
+            <div className="relative z-0 flex flex-col gap-4.5 px-4.5 py-6">
                 {Array.from({ length: 4 }).map((_, index) => (
                     <Fragment key={index}>
                         <RouteLocationSkeleton />
-                        <RouteSegmentSkeleton />
+                        {index < 3 && <RouteSegmentSkeleton />}
                     </Fragment>
                 ))}
             </div>

@@ -1,6 +1,7 @@
 import type { CategoryKey } from '@/types/category'
 import type { LocationSortOption } from '@/types/location'
 import type { Region } from '@/types/region'
+import type { TransitMethod } from '@/types/route'
 
 type RegionalConfig = {
     /** Region name */
@@ -48,6 +49,7 @@ export const itineraryConfigs: ItineraryConfig = {
 export const defaultRegion: Region = 'mo'
 export const defaultCategoryKey: CategoryKey = 'uncategorised'
 export const defaultLocationSortOption: LocationSortOption = 'ranking'
+export const defaultTransitMethod: TransitMethod = 'transit'
 
 /**
  * Gets the app configuration for a region.
