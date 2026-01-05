@@ -120,7 +120,7 @@
         &[data-selected-single='true'],
         &[data-range-start='true'],
         &[data-range-end='true'] {
-            @apply bg-theme text-primary-foreground border-theme-accent rounded-full! border-3;
+            @apply bg-theme text-primary-foreground border-theme-accent hover:bg-theme/80! hover:text-primary-foreground! rounded-full! border-3;
         }
         &:last-child[data-selected='true'] {
             > button[data-range-middle='true'],

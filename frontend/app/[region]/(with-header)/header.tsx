@@ -21,7 +21,7 @@ const Header = ({ className, ...props }: ComponentProps<'header'>) => {
     const config = getAppConfigByRegion(region)
 
     return (
-        <header className={cn('my-6 flex items-end gap-2.5', className)} {...props}>
+        <header className={cn('mt-6 flex items-end gap-2.5', className)} {...props}>
             {/* Left azulejos */}
             <Azulejo className="basis-2 -scale-x-100" image={config.pattern} />
 
