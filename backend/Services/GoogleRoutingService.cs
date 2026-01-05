@@ -137,11 +137,13 @@ public class GoogleRoutingService : IRoutingService
                         var departureStopName = t.StopDetails?.DepartureStop?.Name;
                         var arrivalStopName = t.StopDetails?.ArrivalStop?.Name;
                         var lineName = t.TransitLine?.Name;
+                        var shortName = t.TransitLine?.NameShort;
                         var vehicleType = t.TransitLine?.Vehicle?.Type.ToString();
                         var stopCount = t.StopCount;
 
                         transitDto = new TransitStepDto(
                             LineName: lineName,
+                            ShortName: shortName,
                             VehicleType: vehicleType,
                             DepartureStopName: departureStopName,
                             ArrivalStopName: arrivalStopName,
