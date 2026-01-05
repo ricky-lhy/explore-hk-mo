@@ -15,8 +15,8 @@ export type Route = {
     }
     /** Transit method used for the route */
     method: TransitMethod
-    /** Distance of the route in meters */
-    distanceMeters: number
-    /** Duration of the route in seconds */
-    durationSeconds: number
+    /** Distance of the route (in meters) */
+    distance: number
+    /** Duration of the route (in seconds) */
+    duration: number
 }

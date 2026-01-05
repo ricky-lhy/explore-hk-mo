@@ -9,7 +9,7 @@ import type { Route, TransitMethod } from '@/types/route'
  * @returns Corresponding transit method
  */
 export const travelModeToTransitMethod = (mode: string): TransitMethod =>
-    mode === 'Transit' ? 'transit' : mode === 'Drive' ? 'driving' : 'walking'
+    mode === 'Drive' ? 'driving' : mode === 'Walk' ? 'walking' : 'transit' // Default to 'transit'
 
 /**
  * Converts a TransitMethod to a travel mode string.
@@ -18,7 +18,7 @@ export const travelModeToTransitMethod = (mode: string): TransitMethod =>
  * @returns - Corresponding travel mode as a string
  */
 export const transitMethodToTravelMode = (method: TransitMethod): string =>
-    method === 'transit' ? 'Transit' : method === 'driving' ? 'Drive' : 'Walk'
+    method === 'driving' ? 'Drive' : method === 'walking' ? 'Walk' : 'Transit' // Default to 'Transit'
 
 /**
  * Converts a RouteLegDto to a Route object.
@@ -31,7 +31,11 @@ export const routeLegToRoute = (leg: RouteLegDto): Route => ({
         origin: leg.fromPlaceId?.toString() ?? '', // This should never be missing...
         destination: leg.toPlaceId?.toString() ?? '' // and so should this
     },
-    method: travelModeToTransitMethod(leg.travelMode ?? ''), // Use default value if missing
-    distanceMeters: leg.distance ?? 0,
-    durationSeconds: leg.duration ?? 0
+    method: travelModeToTransitMethod(
+        leg.steps?.every((step) => step.stepTravelMode === 'Walk')
+            ? 'Walk' // All walking steps (to handle transit legs with only walking)
+            : (leg.travelMode ?? '') // Otherwise use leg travel mode
+    ),
+    distance: leg.distance ?? -1,
+    duration: leg.duration ?? -1
 })

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 
 import { useItineraryList } from '@/services/itinerary'
 import { useLocations } from '@/services/location-hooks'
+import { useRoutes } from '@/services/route-hooks'
 
 import { useRegion } from '@/lib/context'
 
@@ -23,13 +24,14 @@ const RouteContent = ({ day }: { day: number }) => {
     // Fetch details for the locations in the itinerary
     const { date, locations: locationIds } = dailyItinerary
     const { locations, loading: locationsLoading } = useLocations(locationIds)
+    const { routes, loading: routesLoading } = useRoutes(date, 'transit', locationIds)
 
     // Show fallback while loading
-    if (locationsLoading) {
+    if (locationsLoading || routesLoading) {
         return <RouteLayoutSkeleton />
     }
 
-    return <RouteLayout locationIds={locationIds} locations={locations} />
+    return <RouteLayout locationIds={locationIds} locations={locations} routes={routes} />
 }
 
 export { RouteContent, RouteHeader }
