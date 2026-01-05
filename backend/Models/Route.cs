@@ -25,7 +25,6 @@ public record RouteStepDto(
 
 public record TransitStepDto(
     string? LineName,
-    string? ShortName,
     string? VehicleType,
     string? DepartureStopName,
     string? ArrivalStopName,
