@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Geist_Mono, Inter, Noto_Sans_HK } from 'next/font/google'
 import { redirect } from 'next/navigation'
 
 import { stringToRegion, validateRegion } from '@/services/region'
@@ -6,6 +7,14 @@ import { stringToRegion, validateRegion } from '@/services/region'
 import { defaultRegion } from '@/lib/config'
 import { getAppConfigByRegion } from '@/lib/config'
 import { RegionProvider } from '@/lib/context'
+import { cn } from '@/lib/utils'
+
+import '../globals.css'
+
+// Fonts
+const sans = Inter({ variable: '--font-latin-sans', subsets: ['latin'] })
+const mono = Geist_Mono({ variable: '--font-latin-mono', subsets: ['latin'] })
+const cjk = Noto_Sans_HK({ variable: '--font-cjk-sans', subsets: ['latin'] })
 
 const RegionLayout = async ({ children, modal, sheet, params }: LayoutProps<'/[region]'>) => {
     const { region } = await params
@@ -16,11 +25,17 @@ const RegionLayout = async ({ children, modal, sheet, params }: LayoutProps<'/[r
     }
 
     return (
-        <RegionProvider region={region}>
-            {modal}
-            {sheet}
-            {children}
-        </RegionProvider>
+        <html lang="en">
+            <body className={cn(sans.variable, mono.variable, cjk.variable, 'bg-neutral-50')}>
+                <div id="root" className="bg-background w-full max-w-lg">
+                    <RegionProvider region={region}>
+                        {modal}
+                        {sheet}
+                        {children}
+                    </RegionProvider>
+                </div>
+            </body>
+        </html>
     )
 }
 
