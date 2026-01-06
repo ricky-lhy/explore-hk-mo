@@ -72,7 +72,7 @@ const RouteMap = ({
                 {positions.map(({ marker, coordinates }) => (
                     <MapMarker
                         key={marker}
-                        icon={<RouteMapMarker size="sm" children={marker} />}
+                        icon={<RouteMapMarker size="sm">{marker}</RouteMapMarker>}
                         position={coordinates}
                     />
                 ))}
