@@ -1,0 +1,40 @@
+{
+  "id": 19,
+  "name": "香港濕地公園",
+  "description": {
+    "content": "香港濕地公園擁有佔地1萬平方米的室內訪客中心和60公頃的濕地保護區。訪客中心設有主題展覽廊、放映室、禮品店、餐廳及室內遊戲區。展覽廊展示濕地在生物多樣性、文明發展和自然保育的重要性。濕地保護區包括人造濕地和為水鳥而重建的生境。座落保護區的濕地探索中心讓遊客親身體驗濕地生趣。其他設施包括溪畔漫遊徑、演替之路、紅樹林浮橋和三間觀鳥屋則引領遊客走進不同的生境。香港濕地公園的建築及園景設計享譽國際，榮獲本地及海外專業團體所頒發的多項大奬，包括香港建築師學會、英國園境師學會及美國城市土地學會。於2013年，公園更被全港市民選為21世紀香港十大傑出工程項目之一。",
+    "source": "tripadvisor"
+  },
+  "region": "hong-kong",
+  "category": "nature",
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "17:00" },
+      { "day": 3, "open": "10:00", "close": "17:00" },
+      { "day": 4, "open": "10:00", "close": "17:00" },
+      { "day": 5, "open": "10:00", "close": "17:00" },
+      { "day": 6, "open": "10:00", "close": "17:00" },
+      { "day": 7, "open": "10:00", "close": "17:00" }
+    ]
+  },
+  "location": {
+    "address": "香港 新界天水圍濕地公園路",
+    "latitude": 22.47035,
+    "longitude": 114.00591
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/98/de/df/hong-kong-wetland-park.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/3a/d2/d5/photo1jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/03/35/a1/60/hong-kong-wetland-park.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/1c/75/51/caption.jpg"
+  ],
+  "rating": 4.1,
+  "ranking": 84,
+  "phone": "+852 3152 2666",
+  "website": "http://www.wetlandpark.gov.hk",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 548055
+  }
+}

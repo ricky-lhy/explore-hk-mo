@@ -1,0 +1,42 @@
+{
+  "id": 18,
+  "name": "沙田車公廟",
+  "description": {
+    "content": "沙田車公廟由古廟及新建的車公殿兩部分組成。古廟最早見於嘉慶二十四年（1819年）記載，至少有200多年歷史，昔日廟處三河交匯之處，立於河邊以石橋連接。車公廟後枕神山，山上有祈雨石。新廟建築形制為仿中式一進，屋頂類型屬歇山式，正脊採平脊設計、入口類型為正牆凹入式。鑑於每年年初二車公誕期的善信人潮不斷增加，華人廟宇委員會於1994年斥資4,800萬港元於舊廟前興建新廟以廣納善信，並於2012年重修。",
+    "source": "tripadvisor"
+  },
+  "region": "hong-kong",
+  "category": "landmarks",
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "08:00", "close": "18:00" },
+      { "day": 2, "open": "08:00", "close": "18:00" },
+      { "day": 3, "open": "08:00", "close": "18:00" },
+      { "day": 4, "open": "08:00", "close": "18:00" },
+      { "day": 5, "open": "08:00", "close": "18:00" },
+      { "day": 6, "open": "08:00", "close": "18:00" },
+      { "day": 7, "open": "08:00", "close": "18:00" }
+    ]
+  },
+  "location": {
+    "address": "香港 沙田車公廟路7號",
+    "latitude": 22.37347,
+    "longitude": 114.18293
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/5c/b6/f6/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/06/2c/b4/24/shatianche-temple.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/28/8e/9d/che-kung-temple.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/1c/a4/32/1f/an-adventurer.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/1c/a3/72/ca/shatin-che-kung-temple.jpg"
+  ],
+  "rating": 4.0,
+  "ranking": 79,
+  "phone": "+852 2691 1733",
+  "website": "https://www.ctc.org.hk/temple/%e8%bb%8a%e5%85%ac%e5%bb%9f/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 487231
+  }
+}

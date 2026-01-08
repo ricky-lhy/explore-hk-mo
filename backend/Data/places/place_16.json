@@ -1,0 +1,42 @@
+{
+  "id": 16,
+  "name": "九龍城寨公園",
+  "description": {
+    "content": "九龍寨城公園位於香港九龍城東頭村道和東正道交界，鄰近侯王廟，有着豐富悠久的歷史背景。在香港歷史上，九龍城寨是唯一沒割讓或租借給英國的香港領地，面積2萬9千平方米。1994年闢為一座具香港特色的中國園林。九龍寨城公園座落於本港最歷史性的地點之一，原址為九龍寨城，包括一座由堅固石牆，六座瞭望台和四道城門圍着，面積達六點五英畝的寨城於一八四三至一八四七年間建成。公園將盡量保留寨城一些原有的建築物及特色。九龍城寨，被賈丙達道、樂善道、東正道、東頭村道與聯合道所包圍，面積約三公頃，在清拆前有居民約三萬三仟，十至十四層高杖宇約有伍佰幢，居住單位約有玖仟叄佰位，包括壹仟居住單位作為工商業用途，八十七間牙醫診療所，七十四間西醫診療所，其它各行各業可以說包羅萬象。因為該地環境特殊漸漸的就成為無政府的賊窩，以致很久以來都是良莠混雜，成為城市中一個毒瘤。許多在香港犯了法的人就逃到這裏，然後落地生根，又因這裏無法可管。自然販毒，走私、殺人、搶劫的亂事不斷。為了根治這個亂源，後於1987年中英政府達成協議，英國政府在香港回歸前，特別頒布拆遷的賠償法案，徹底消除這個沒有法理之地，並在現地蓋了這座九龍城寨公園。現在的公園已整頓得美輪美奐，九龍城也不再是罪惡的源頭，城寨中早年在清末民初時留下的衙門、宅院，也在肅清后掘地時陸續發現。目前已盡量恢復其原貌，並將深具歷史意義的石碑重新豎起。整座公園除了衙門與古迹外，全區仿照明末清初的江南園林建造的庭園山水，窗欞、樓閣、荷花池與悠遊錦鯉，很有樸質古意。務求把歷史融合於園林之中。現今的九龍寨城公園增加了不少建築，但石匾、大炮、柱基及清朝官府碑銘等豐富的歷史遺迹，在拆卸過程中仍然保留，置於公園陳列展覽。園內還有當代罕見的南中國“衙門”建築、城寨原有石碑、南門古迹以及戰前的混凝土廢墟，展示了城寨的滄桑變化。掌握九龍寨城公園最新奇的旅遊資訊，了解最真實的網友點評，預定最便宜的舒適酒店。",
+    "source": "tripadvisor"
+  },
+  "region": "hong-kong",
+  "category": "landmarks",
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "06:30", "close": "23:00" },
+      { "day": 2, "open": "06:30", "close": "23:00" },
+      { "day": 3, "open": "06:30", "close": "23:00" },
+      { "day": 4, "open": "06:30", "close": "23:00" },
+      { "day": 5, "open": "06:30", "close": "23:00" },
+      { "day": 6, "open": "06:30", "close": "23:00" },
+      { "day": 7, "open": "06:30", "close": "23:00" }
+    ]
+  },
+  "location": {
+    "address": "香港 九龍東正道",
+    "latitude": 22.33228,
+    "longitude": 114.19090
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/03/70/5f/6c/kowloon-walled-city-park.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/31/fd/1a/a4/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/21/87/2b/f5/yamen-kowloon-walled.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/21/87/2b/c4/yamen-kowloon-walled.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/21/87/2b/30/yamen-kowloon-walled.jpg"
+  ],
+  "rating": 4.2,
+  "ranking": 36,
+  "phone": "+852 2716 9962",
+  "website": "https://www.lcsd.gov.hk/tc/parks/kwcp/index.html",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 593175
+  }
+}

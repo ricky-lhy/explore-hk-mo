@@ -1,0 +1,42 @@
+{
+  "id": 17,
+  "name": "黃大仙祠",
+  "description": {
+    "content": "嗇色園為一所宗教慈善團體，創於1921年，恭奉赤松黃大仙師，尊崇儒、釋、道三教，並以「普濟勸善」為宗旨，廣推善行，辦理醫療、教育及安老扶幼等事務。本園管轄的黃大仙祠，終年香火鼎盛，慕道而來的善信及中外遊客絡繹不絕，每日平均訪園人數逾一萬人次。黃大仙祠共佔地18,000多平方公尺，除主殿外、還有三聖堂、從心苑、九龍壁等，各具建築特色，祠內的牌坊亦充分表現中國傳統文化。除個別建築物顯現中國傳統寺廟建築特色外，祠內建築又按左龍右鳳、五行屬性而興建，令整座建築群組更見特色。",
+    "source": "tripadvisor"
+  },
+  "region": "hong-kong",
+  "category": "landmarks",
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "07:30", "close": "16:30" },
+      { "day": 2, "open": "07:30", "close": "16:30" },
+      { "day": 3, "open": "07:30", "close": "16:30" },
+      { "day": 4, "open": "07:30", "close": "16:30" },
+      { "day": 5, "open": "07:30", "close": "16:30" },
+      { "day": 6, "open": "07:30", "close": "16:30" },
+      { "day": 7, "open": "07:30", "close": "16:30" }
+    ]
+  },
+  "location": {
+    "address": "香港 九龍竹園道2號",
+    "latitude": 22.34275,
+    "longitude": 114.19333
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/4b/69/a4/photo3jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/23/a4/a3/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/32/23/a4/aa/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/23/a4/ac/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/32/23/a4/ab/caption.jpg"
+  ],
+  "rating": 4.1,
+  "ranking": 39,
+  "phone": "+852 2327 8141",
+  "website": "http://www.siksikyuen.org.hk",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 311609
+  }
+}
