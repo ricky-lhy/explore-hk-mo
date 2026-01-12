@@ -1,9 +1,16 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono, Noto_Sans_HK } from 'next/font/google'
 
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
 import { cn } from '@/lib/utils'
 
 import '../globals.css'
+
+// Prevent icon from flashing on load
+// See: https://fontawesome.com/docs/web/use-with/react/use-with#nextjs
+config.autoAddCss = false
 
 const sans = Geist({ variable: '--font-latin-sans', subsets: ['latin'] })
 const mono = Geist_Mono({ variable: '--font-latin-mono', subsets: ['latin'] })
