@@ -64,6 +64,11 @@ export type Place = {
     _connection?: Connection
 }
 
+export type PlacesPageResponse = {
+    places?: Array<Place>
+    nextCursor?: number | null
+}
+
 export type RegularHour = {
     day?: number
     open?: string
@@ -76,8 +81,8 @@ export type RouteLegDto = {
     distance?: number
     duration?: number
     travelMode?: string
-    steps?: Array<RouteStepDto>
     polyline?: string | null
+    steps?: Array<RouteStepDto>
 }
 
 export type RouteStepDto = {
@@ -123,6 +128,7 @@ export type GetPlacesData = {
         orderBy?: string
         orderDir?: string
         limit?: number
+        cursor?: number
     }
     url: '/places'
 }
@@ -131,7 +137,7 @@ export type GetPlacesResponses = {
     /**
      * Success
      */
-    200: Array<Place>
+    200: PlacesPageResponse
 }
 
 export type GetPlacesResponse = GetPlacesResponses[keyof GetPlacesResponses]

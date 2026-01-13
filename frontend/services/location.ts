@@ -23,7 +23,8 @@ export const getLocationsByRegion = async (
     sort: LocationSortOption
 ): Promise<Location[]> => {
     // Fetch locations of the specified region
-    const places = (await getPlaces({ query: { region, ...sortQueryMap[sort] } })).data ?? []
+    const { data } = await getPlaces({ query: { region, ...sortQueryMap[sort] } })
+    const places = data?.places ?? []
 
     return places.map(placeToLocation)
 }
