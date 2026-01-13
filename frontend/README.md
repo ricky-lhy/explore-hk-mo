@@ -53,6 +53,7 @@ The project is built with **Next.js (App Router)** and follows its file system c
 
 The `app/` directory defines all application routes and pages, organized in the following hierarchy:
 
+- `(portal)/` - **Index page**
 - `[region]/` - Application entry (region-specific)
     - `(with-header)/` – Pages with the header and floating action button
         - `(home)/` – **Application home page**
