@@ -17,7 +17,7 @@ public class PlacesController : ControllerBase
 
     //GET /places?region=hk&categories=entertainment&orderBy=ranking&orderDir=asc&limit=10&cursor=13
     [HttpGet]
-    public ActionResult<IEnumerable<Place>> GetList(
+    public ActionResult<PlacesPageResponse> GetList(
         [FromQuery] string? region,
         [FromQuery] string? categories,
         [FromQuery] string? orderBy,
@@ -86,11 +86,8 @@ public class PlacesController : ControllerBase
             pagePlusOne = pagePlusOne.Take(pageSize).ToList();
         }
         
-        return Ok(new
-        {
-            places = pagePlusOne,
-            nextCursor
-        });
+        var response = new PlacesPageResponse(pagePlusOne, nextCursor);
+        return Ok(response);
     }
 
     [HttpGet("{id:int}")]
