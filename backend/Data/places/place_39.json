@@ -1,0 +1,31 @@
+{
+  "id": 39,
+  "name": "黑沙海灘",
+  "region": "macau",
+  "category": "nature",
+  "description": {
+    "content": "黑沙灘位於澳門，是一處獨特的海灘，以黑色沙粒聞名，提供浪漫的海岸景觀與清澈的海水。此地適合嬉水、曬日光浴，並享有日落美景，吸引眾多遊客前來探索與放鬆。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Estrada Nova de Hac Sá, Coloane, Macau",
+    "latitude": 22.118997546174086,
+    "longitude": 113.57000443323261
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0b/cd/76/1f/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/47/58/cd/filename-1011050-jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/12/0d/89/e7/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/1b/01/73/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/1b/00/5e/caption.jpg"
+  ],
+  "hours": null,
+  "rating": 3.7,
+  "ranking": 58,
+  "phone": null,
+  "website": null,
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2232627
+  }
+}

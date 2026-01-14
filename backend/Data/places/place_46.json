@@ -1,0 +1,43 @@
+{
+  "id": 46,
+  "name": "海事及水務局大樓(摩爾兵營)",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "1874年建成，原稱摩爾兵營，俗稱水師廠，由一位意大利人卡蘇杜（Cassuto）設計，是當時由印度來澳的警察的營地，可駐二百多名官兵。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "Calçada da Barra, Macau",
+    "latitude": 22.18749465926279,
+    "longitude": 113.53251409383707
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0a/43/d6/fb/moorish-barracks-the.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/ce/74/b0/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/7f/c2/3f/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/31/7f/c2/3e/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/02/00/18/golden-dragon-parade.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "09:00", "close": "18:00" },
+      { "day": 2, "open": "09:00", "close": "18:00" },
+      { "day": 3, "open": "09:00", "close": "18:00" },
+      { "day": 4, "open": "09:00", "close": "18:00" },
+      { "day": 5, "open": "09:00", "close": "18:00" },
+      { "day": 6, "open": "09:00", "close": "18:00" },
+      { "day": 7, "open": "09:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.6,
+  "ranking": 79,
+  "phone": null,
+  "website": "https://www.macaotourism.gov.mo/sightseeing/macao-world-heritage/moorish-barracks",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 1832196
+  }
+}

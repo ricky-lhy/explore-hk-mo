@@ -1,0 +1,43 @@
+{
+  "id": 51,
+  "name": "艾菲爾鐵塔(澳門巴黎人)",
+  "region": "macau",
+  "category": "landmarks",
+  "description": {
+    "content": "澳門巴黎人的艾菲爾鐵塔是位於路氹的標誌性建築，重現法國巴黎的浪漫風情。遊客可以登上塔頂，俯瞰路氹金光大道全景，還能在周邊享受購物和美食，帶來獨特的異國體驗。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "The Parisian, Estrada do Istmo, Cotai, Macau",
+    "latitude": 22.143595404199992,
+    "longitude": 113.56283092421714
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0d/fe/dc/7d/photo0jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/32/0c/6a/99/eiffel-tower-on-the-cotai.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0d/24/3d/25/photo6jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/17/7e/a2/ae/eiffel-tower-experience.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/fa/48/be/photo4jpg.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "12:00", "close": "21:15" },
+      { "day": 2, "open": "12:00", "close": "21:15" },
+      { "day": 3, "open": "12:00", "close": "21:15" },
+      { "day": 4, "open": "12:00", "close": "21:15" },
+      { "day": 5, "open": "12:00", "close": "21:15" },
+      { "day": 6, "open": "12:00", "close": "21:15" },
+      { "day": 7, "open": "12:00", "close": "21:15" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.1,
+  "ranking": 17,
+  "phone": "+853 8111 2768",
+  "website": "https://www.parisianmacao.com/amenities/eiffel-tower.html",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 10788767
+  }
+}

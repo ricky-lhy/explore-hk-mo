@@ -1,0 +1,42 @@
+{
+  "id": 56,
+  "name": "崗頂劇院(伯多祿五世劇院)",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "原稱伯多祿五世劇院，建於1860年，但當時只建成主體部分，至1873年才加建具新古典主義建築特色的正立面。它是中國第一所西式劇院，供戲劇及音樂會演出之用，也是當年葡人社群舉行重要活動的場所。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "Largo de Santo Agostinho, Macau",
+    "latitude": 22.19188549443312,
+    "longitude": 113.5383691587331
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/06/f2/f7/46/teatro-de-pedro-v.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/4c/79/08/dom-pedro-v-theatre-2.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/27/fe/e5/5f/dom-pedro-v-theatre-at.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/27/fe/e5/59/dom-pedro-v-theatre-at.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/1c/fa/76/96/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "18:00" },
+      { "day": 3, "open": "10:00", "close": "18:00" },
+      { "day": 4, "open": "10:00", "close": "18:00" },
+      { "day": 5, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "18:00" },
+      { "day": 7, "open": "10:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.0,
+  "ranking": 49,
+  "phone": null,
+  "website": "https://www.macaotourism.gov.mo/sightseeing/macao-world-heritage/dom-pedro-v-theatre",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 1832898
+  }
+}

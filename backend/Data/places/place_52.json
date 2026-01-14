@@ -1,0 +1,43 @@
+{
+  "id": 52,
+  "name": "媽祖文化村",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "由澳門中華媽祖基金會策劃興建的媽祖文化村位於路環島疊石塘山，其主體建築——天后宮早前舉行落成慶典。天后宮的建築風格按照中國古建築的傳統規制設計和建造，是集閩南古建築藝術、宗教、民俗、文化、休閒等價值於一身的旅遊設施。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "Estrada do Alto de Coloane, Coloane, Macau",
+    "latitude": 22.122689725388042,
+    "longitude": 113.56327638226051
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0b/18/7d/22/entry-to-the-matsu-temple.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/3a/29/89/arch-entrance-where-the.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2b/dd/8f/70/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/a0/e0/e5/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/29/fc/c8/ef/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "09:00", "close": "18:00" },
+      { "day": 2, "open": "09:00", "close": "18:00" },
+      { "day": 3, "open": "09:00", "close": "18:00" },
+      { "day": 4, "open": "09:00", "close": "18:00" },
+      { "day": 5, "open": "09:00", "close": "18:00" },
+      { "day": 6, "open": "09:00", "close": "18:00" },
+      { "day": 7, "open": "09:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.0,
+  "ranking": 73,
+  "phone": "+853 2857 1999",
+  "website": "https://www.a-ma.org.mo",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2337433
+  }
+}

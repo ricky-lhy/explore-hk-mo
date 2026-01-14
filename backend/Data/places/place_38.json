@@ -1,0 +1,31 @@
+{
+  "id": 38,
+  "name": "澳門百老匯",
+  "region": "macau",
+  "category": "entertainment",
+  "description": {
+    "content": "澳門百老匯是結合美食、購物與娛樂的綜合體。這裡不僅有各式地道的美食和特色商店，還經常舉辦精彩的表演活動，吸引眾多遊客來此體驗澳門獨特的文化魅力。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Avenida Marginal Flor de Lotus, Cotai, Macau",
+    "latitude": 22.146752363260223,
+    "longitude": 113.55188312846329
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/10/5a/48/14/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/08/2e/2a/b6/the-broadway.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0a/88/38/e0/img-20160308-wa0008-largejpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0a/88/38/df/20160307-160448-largejpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0a/88/38/de/20160307-155630-largejpg.jpg"
+  ],
+  "hours": null,
+  "rating": 4.0,
+  "ranking": 43,
+  "phone": "+853 8883 3338",
+  "website": "https://www.broadwaymacau.com.mo/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 8358132
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": 44,
+  "name": "加思欄花園",
+  "region": "macau",
+  "category": "nature",
+  "description": {
+    "content": "加思欄花園位於澳門，是一個美麗的公共公園，以其精緻的花卉和寧靜的環境聞名。遊客可以在此散步、放鬆，還能欣賞到迷人的景觀和當地的文化氛圍，非常適合拍照留念和享受閒適時光。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Avenida da Praia Grande, Macau",
+    "latitude": 22.192434805918385,
+    "longitude": 113.54466478268131
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/86/a6/fb/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/4c/56/aa/jardim-san-francisco.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/09/33/f1/c7/jardim-do-sao-francisco.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/31/cd/aa/51/jardim-do-sao-francisco.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/86/a7/02/caption.jpg"
+  ],
+  "hours": null,
+  "rating": 4.0,
+  "ranking": 93,
+  "phone": null,
+  "website": "https://www.iam.gov.mo/nature/e/facility/park/detail?id=177268cc-a435-4fcb-ace6-34309b6d8d3a",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2509097
+  }
+}

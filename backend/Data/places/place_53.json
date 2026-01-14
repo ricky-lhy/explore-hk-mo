@@ -1,0 +1,43 @@
+{
+  "id": 53,
+  "name": "主教座堂(大堂)",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "該堂大約於1622年以三合土建造。主祭壇空間深遠，設計簡單，僅僅以彩色玻璃窗為背景，因為祭壇下面掩埋著16和17世紀的主教和聖徒遺骨，為教堂帶來無限的榮光。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "1 Largo da Sé, Macau",
+    "latitude": 22.193588393421084,
+    "longitude": 113.54140085689991
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/12/ee/1c/ff/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/03/1d/ed/50/cathedral.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/06/86/79/96/cathedral.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/ba/37/d9/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2d/ba/37/d7/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "07:30", "close": "20:00" },
+      { "day": 2, "open": "07:30", "close": "20:00" },
+      { "day": 3, "open": "07:30", "close": "20:00" },
+      { "day": 4, "open": "07:30", "close": "20:00" },
+      { "day": 5, "open": "07:30", "close": "20:00" },
+      { "day": 6, "open": "07:30", "close": "20:00" },
+      { "day": 7, "open": "07:30", "close": "20:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.0,
+  "ranking": 35,
+  "phone": "+853 2837 3643",
+  "website": "https://www.semacau.org/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 1642548
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": 58,
+  "name": "路氹歷史館",
+  "region": "macau",
+  "category": "museums",
+  "description": {
+    "content": "展覽陳列內容豐富，一樓主要透過路環出土文物、氹仔前海島市政廳地下室石結構遺址、離島各村落之變化和宗教文化等；二樓展覽主題各異，分別介紹前海島市政廳歷史、農業及部分手工業概況、路氹建築特色和路氹近年發展的方向，令觀眾對路氹近現代政治發展及經濟生活有深刻的認識。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "Rua Correia da Silva, Taipa, Macau",
+    "latitude": 22.15240476872392,
+    "longitude": 113.55573560642186
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0f/a0/bc/55/museum-of-taipa-and-coloane.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/01/f8/de/61/museum-of-taipa-and-coloane.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0f/c4/23/9f/photo1jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/f1/05/7b/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/f1/05/59/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 2, "open": "10:00", "close": "18:00" },
+      { "day": 3, "open": "10:00", "close": "18:00" },
+      { "day": 4, "open": "10:00", "close": "18:00" },
+      { "day": 5, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "18:00" },
+      { "day": 7, "open": "10:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.0,
+  "ranking": 62,
+  "phone": "+853 2836 6866",
+  "website": "https://www4.icm.gov.mo/cotaimuseum/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 1892906
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": 35,
+  "name": "新濠天地",
+  "region": "macau",
+  "category": "entertainment",
+  "description": {
+    "content": "這是一家室內購物商場，超大水晶吊燈和當代藝術展品相映成輝。除了各大高端品牌，還有一家 Pierre Hermé 甜品店。",
+    "source": "tripadvisor"
+  },
+  "location": {
+    "address": "Estrada do Istmo, Cotai, Macau",
+    "latitude": 22.149256439689008,
+    "longitude": 113.5666764440739
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/08/e3/53/f4/city-of-dreams.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/02/a4/a1/30/filename-splashvol6-main.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/6a/c5/24/filename-p1130508-jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/31/ca/6a/photo0jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/14/d3/01/d8/img-20180913-211956-01.jpg"
+  ],
+  "hours": null,
+  "rating": 4.3,
+  "ranking": 5,
+  "phone": "+853 8868 6688",
+  "website": "https://www.cityofdreamsmacau.com/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2515594
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": 55,
+  "name": "盧家大屋",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "位於大堂巷七號住宅，是澳門著名商人盧華紹（盧九）家族的舊居。據屋內左次間天井檐口的題詩年份顯示，約於清光緒十五年（1889年）落成。盧家大屋是用厚青磚建造的中式兩層建築，是典型的中式大宅，也是晚清時期粵中民居溫婉纖細建築風格的典型。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "7 Travessa da Sé, Macau",
+    "latitude": 22.194228682365203,
+    "longitude": 113.54122288536868
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/10/f1/b5/48/lou-kau-mansion-macau.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/df/53/dc/casa-lou-kau-1.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/62/ce/83/portuguese-architecture.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/02/ce/55/d3/casa-de-lou-kau.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/02/ce/55/91/casa-de-lou-kau.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 2, "open": "10:00", "close": "18:00" },
+      { "day": 3, "open": "10:00", "close": "18:00" },
+      { "day": 4, "open": "10:00", "close": "18:00" },
+      { "day": 5, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "18:00" },
+      { "day": 7, "open": "10:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.0,
+  "ranking": 44,
+  "phone": "+853 8399 6699",
+  "website": "https://www.macaotourism.gov.mo/sightseeing/macao-world-heritage/lou-kau-mansion",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 1650946
+  }
+}

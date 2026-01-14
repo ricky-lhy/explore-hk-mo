@@ -1,0 +1,31 @@
+{
+  "id": 59,
+  "name": "三盞燈",
+  "region": "macau",
+  "category": "landmarks",
+  "description": {
+    "content": "三盞燈是澳門著名的歷史文化景點，以其獨特的建築風格吸引遊客。周圍環境優美，還有多家傳統小吃店，遊客可以在此品嚐地道的澳門美食，感受濃厚的文化氛圍。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Rotunda de Carlos da Maia, Macau",
+    "latitude": 22.202883497654224,
+    "longitude": 113.5459847528496
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/05/c6/f4/72/three-lamps-district.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/05/c6/f2/90/three-lamps-district.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/05/c6/f2/c9/three-lamps-district.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/05/c6/f5/a6/three-lamps-district.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/05/c6/f5/81/three-lamps-district.jpg"
+  ],
+  "hours": null,
+  "rating": 4.0,
+  "ranking": 13,
+  "phone": null,
+  "website": null,
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 6561763
+  }
+}

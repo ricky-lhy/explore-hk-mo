@@ -1,0 +1,43 @@
+{
+  "id": 48,
+  "name": "澳門保安部隊博物館",
+  "region": "macau",
+  "category": "museums",
+  "description": {
+    "content": "澳門保安部隊博物館位於嘉思欄兵營斜巷，展出一些軍事用品及介紹澳門保安部隊歷史之演變。館內珍藏多項文物與互動展覽，讓遊客深入了解本地的治安演變及保護工作。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Calçada dos Quartéis, Macau",
+    "latitude": 22.19144461792123,
+    "longitude": 113.5446168680668
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-s/07/f7/a1/da/museum-of-the-macau-security.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/07/f7/a1/9b/museum-of-the-macau-security.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/2b/9c/f8/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/daodao/photo-m/1280/1c/c0/df/da/photo0jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/daodao/photo-m/1280/1c/c0/df/db/photo1jpg.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "09:00", "close": "17:45" },
+      { "day": 2, "open": "09:00", "close": "17:45" },
+      { "day": 3, "open": "09:00", "close": "17:45" },
+      { "day": 4, "open": "09:00", "close": "17:45" },
+      { "day": 5, "open": "09:00", "close": "17:45" },
+      { "day": 6, "open": "09:00", "close": "17:00" },
+      { "day": 7, "open": "09:00", "close": "17:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.7,
+  "ranking": 159,
+  "phone": "+853 2855 9999",
+  "website": "https://www.fsm.gov.mo/dsfsm/cht/exhibition/introduction.aspx",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 7080988
+  }
+}
