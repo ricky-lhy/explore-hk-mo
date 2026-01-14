@@ -1,0 +1,6 @@
+entertainment
+heritage
+landmarks
+museums
+nature
+shopping
