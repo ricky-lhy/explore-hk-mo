@@ -21,9 +21,9 @@ Create a `.env` file in the `scripts` directory and specify the following variab
 
 ## 🤖 Scripts
 
-### Tripadvisor Data Generator
+### Place Spawner
 
-- **Script:** `generator/tripadvisor.py`
+- **Script:** `spawn-places.py`
 
 - **Usage:**
 
