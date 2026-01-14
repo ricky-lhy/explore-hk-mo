@@ -28,7 +28,7 @@ Create a `.env` file in the `scripts` directory and specify the following variab
 - **Usage:**
 
   - Fetches place details and photos from Tripadvisor API and generates standardized JSON files for the backend.
-  - Uses OpenAI to fill in missing descriptions if available.
+  - Uses OpenAI to fill in missing descriptions and determine category if available.
 
 - **Arguments:**
 
@@ -37,7 +37,8 @@ Create a `.env` file in the `scripts` directory and specify the following variab
   | `-o`, `--output` | Destination directory for the generated JSON files (e.g., `../backend/Data/places`). |
   | `-p`, `--places` | List of Tripadvisor Location IDs to process (separated by space).                    |
 
-- **Output:** Files are generated in the format `place_[id]{*#%}.json`. The suffixes indicate:
+- **Output:** Files are generated in the format `place_[id]{*#%$}.json`. The suffixes indicate:
   - **`*`:** Not yet manually verified; data may be incorrect.
-  - **`#`:** Missing description (not found in Tripadvisor + OpenAI generation failed).
+  - **`#`:** Missing description (not found in Tripadvisor + AI generation failed).
   - **`%`:** Missing region information (mapping failed).
+  - **`$`:** Unable to determine category using AI.

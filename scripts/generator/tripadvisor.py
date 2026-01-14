@@ -20,6 +20,71 @@ CURRENCY = "HKD"
 openai_client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
 
 
+def load_allowed_categories() -> list[str]:
+    """
+    Loads allowed categories from the config file.
+
+    :return: List of allowed categories
+    :rtype: list[str]
+    """
+    # Determine path relative to this script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    config_path = os.path.join(script_dir, "..", "config", "categories.txt")
+
+    categories = []
+    if os.path.exists(config_path):
+        with open(config_path, "r", encoding="utf-8") as f:
+            for line in f:
+                cat = line.strip()
+                if cat:
+                    categories.append(cat)
+    else:
+        print(f"Warning: Categories config not found at {config_path}")
+
+    return categories
+
+
+def determine_category(name: str, allowed_categories: list[str]) -> str | None:
+    """
+    Determines the category of a place using OpenAI.
+
+    :param name: Name of the place
+    :type name: str
+    :param allowed_categories: List of allowed categories
+    :type allowed_categories: list[str]
+    :return: Determined category or None
+    :rtype: str | None
+    """
+    if not openai_client or not allowed_categories:
+        return None
+
+    categories_str = ", ".join(allowed_categories)
+    prompt = f"Categorize the place '{name}' into exactly one of the following categories: {categories_str}. Return ONLY the category name. If it doesn't fit well, pick the closest one."
+
+    try:
+        response = openai_client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are a helpful categorization assistant.",
+                },
+                {"role": "user", "content": prompt},
+            ],
+            max_tokens=20,
+            temperature=0,
+        )
+        result = response.choices[0].message.content.strip().lower()
+        if result in allowed_categories:
+            return result
+        else:
+            print(f"LLM returned invalid category: {result}")
+            return None
+    except Exception as e:
+        print(f"Error determining category for {name}: {e}")
+        return None
+
+
 def get_next_id(output_dir: str) -> int:
     """
     Finds the next available internal place ID
@@ -181,7 +246,9 @@ def generate_description(name: str, region: str | None, length: int = 50) -> str
         return None
 
 
-def map_data(details: dict, photos: list[str], new_id: int) -> tuple[dict, dict]:
+def map_data(
+    details: dict, photos: list[str], new_id: int, allowed_categories: list[str]
+) -> tuple[dict, dict]:
     """
     Maps Tripadvisor API data to the internal place schema.
 
@@ -191,10 +258,16 @@ def map_data(details: dict, photos: list[str], new_id: int) -> tuple[dict, dict]
     :type photos: list[str]
     :param new_id: New internal place ID
     :type new_id: int
+    :param allowed_categories: List of allowed categories
+    :type allowed_categories: list[str]
     :return: Tuple of mapped place data and flags
     :rtype: tuple[dict, dict]
     """
-    flags = {"missing_description": False, "missing_region": False}
+    flags = {
+        "missing_description": False,
+        "missing_region": False,
+        "missing_category": False,
+    }
 
     name = details.get("name_local") or details.get("name", "")
 
@@ -242,10 +315,23 @@ def map_data(details: dict, photos: list[str], new_id: int) -> tuple[dict, dict]
     description = {"content": description_content, "source": source}
 
     # Category
-    # TA returns category: {name: "attraction", localized_name: ...}
-    category = "attraction"  # default
-    if "category" in details and isinstance(details["category"], dict):
-        category = details["category"].get("name", "attraction").lower()
+    category = ""
+    if allowed_categories:
+        determined_cat = determine_category(name, allowed_categories)
+        if determined_cat:
+            category = determined_cat
+            print(f"Category for {name}: {category}")
+        else:
+            print(f"Could not determine category for {name}")
+            flags["missing_category"] = True
+    else:
+        # Fallback to Tripadvisor category if no config
+        if "category" in details and isinstance(details["category"], dict):
+            category = details["category"].get("name", "attraction").lower()
+        else:
+            category = "attraction"
+        # Needs manual review
+        flags["missing_category"] = True
 
     # Hours
     hours_data = {"timezone": details.get("timezone", "Asia/Hong_Kong")}
@@ -365,8 +451,10 @@ def main():
             sys.exit(1)
 
     existing_taids = get_existing_taids(args.output)
+    allowed_categories = load_allowed_categories()
 
     print(f"Found {len(existing_taids)} existing Tripadvisor places.")
+    print(f"Loaded {len(allowed_categories)} allowed categories.")
 
     for taid in args.places:
         if int(taid) in existing_taids:
@@ -384,7 +472,7 @@ def main():
         # Get next ID right before mapping/writing to ensure no conflicts if running concurrent?
         # (Though this script is single threaded)
         next_id = get_next_id(args.output)
-        place_data, flags = map_data(details, photos, next_id)
+        place_data, flags = map_data(details, photos, next_id, allowed_categories)
 
         # Check description for filename suffix
         suffix = "*"
@@ -392,6 +480,8 @@ def main():
             suffix += "#"
         if flags["missing_region"]:
             suffix += "%"
+        if flags["missing_category"]:
+            suffix += "$"
 
         filename = f"place_{next_id}{suffix}.json"
         filepath = os.path.join(args.output, filename)
