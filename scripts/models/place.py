@@ -71,3 +71,29 @@ class Place:
             json.dumps(self.to_dict(), indent=2, ensure_ascii=False),
             flags=re.MULTILINE | re.DOTALL,
         )
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "Place":
+        data = data.copy()
+        if data.get("description") and isinstance(data["description"], dict):
+            data["description"] = Description(**data["description"])
+
+        if data.get("location") and isinstance(data["location"], dict):
+            data["location"] = Location(**data["location"])
+
+        if data.get("hours") and isinstance(data["hours"], dict):
+            h = data["hours"]
+            if h.get("regular"):
+                h["regular"] = [RegularHour(**rh) for rh in h["regular"]]
+            if h.get("exceptions"):
+                h["exceptions"] = [HourException(**he) for he in h["exceptions"]]
+            data["hours"] = Hours(**h)
+
+        if data.get("_connection") and isinstance(data["_connection"], dict):
+            data["_connection"] = Connection(**data["_connection"])
+
+        return cls(**data)
+
+    @classmethod
+    def from_json(cls, json_str: str) -> "Place":
+        return cls.from_dict(json.loads(json_str))

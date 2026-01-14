@@ -19,6 +19,20 @@ Create a `.env` file in the `scripts` directory and specify the following variab
 - `TRIPADVISOR_API_KEY`: API key for Tripadvisor content.
 - `OPENAI_API_KEY`: (Optional) API key for generating missing descriptions using OpenAI.
 
+### Running Scripts
+
+You can run scripts directly using:
+
+```bash
+uv run <script_name.py> [arguments]
+```
+
+For example:
+
+```bash
+uv run spawn-places.py -o ../backend/Data/places -p 123456 123457
+```
+
 ## 🤖 Scripts
 
 ### Place Spawner
@@ -42,3 +56,21 @@ Create a `.env` file in the `scripts` directory and specify the following variab
   - **`#`:** Missing description (not found in Tripadvisor + AI generation failed).
   - **`%`:** Missing region information (mapping failed).
   - **`$`:** Unable to determine category using AI.
+
+> ⚠️ **Warning:** Data fetched from Tripadvisor, especially **addresses**, is often incorrect or formatted poorly. **Coordinates** can also be inaccurate. Always verify this information manually using Google Maps or another reliable source.
+
+### Rating & Ranking Updater
+
+- **Script:** `update-ratings.py`
+
+- **Usage:**
+
+  - Scans an existing directory of place JSON files.
+  - Fetches the latest ratings and rankings from Tripadvisor for connected places.
+  - Updates (only) the `rating` and `ranking` fields in the JSON file if they have changed.
+
+- **Arguments:**
+
+  | Option        | Description                                      |
+  | :------------ | :----------------------------------------------- |
+  | `-d`, `--dir` | Directory containing Place JSON files to update. |

@@ -94,6 +94,24 @@ class TripadvisorMapper:
             )
         return sorted(hours, key=lambda x: x.day)
 
+    @staticmethod
+    def extract_rating(details: dict) -> float | None:
+        try:
+            return float(details["rating"]) if details.get("rating") else None
+        except (ValueError, TypeError):
+            return None
+
+    @staticmethod
+    def extract_ranking(details: dict) -> int | None:
+        try:
+            return (
+                int(details["ranking_data"].get("ranking"))
+                if details.get("ranking_data")
+                else None
+            )
+        except (ValueError, TypeError):
+            return None
+
     def map_place(
         self, details: dict, photos: list[str], id: int
     ) -> Tuple[Place, dict]:
@@ -140,12 +158,8 @@ class TripadvisorMapper:
 
         # 7. Other fields
         externalId = int(details.get("location_id", 0))
-        rating = float(details["rating"]) if details.get("rating") else None
-        ranking = (
-            int(details["ranking_data"]["ranking"])
-            if details.get("ranking_data")
-            else None
-        )
+        rating = self.extract_rating(details)
+        ranking = self.extract_ranking(details)
 
         place = Place(
             id=id,
