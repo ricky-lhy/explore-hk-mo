@@ -1,0 +1,43 @@
+{
+  "id": 33,
+  "name": "消防博物館",
+  "region": "macau",
+  "category": "museums",
+  "description": {
+    "content": "澳門消防博物館展示了消防歷史與文化，館內展出各式消防器材與歷史文獻，還有互動體驗區，讓遊客更深入了解消防員的英勇與奉獻。參觀此博物館，不僅增長知識，更能感受消防精神的偉大。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "2 Estrada Coelho do Amaral, Macau",
+    "latitude": 22.200190943216892,
+    "longitude": 113.54349411840457
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/04/85/04/58/the-fire-services-museum.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/41/8e/e0/the-fire-services-museum.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/da/06/84/photo0jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/29/e3/04/7c/indoor.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/29/e3/04/7b/indoor.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "18:00" },
+      { "day": 2, "open": "10:00", "close": "18:00" },
+      { "day": 3, "open": "10:00", "close": "18:00" },
+      { "day": 4, "open": "10:00", "close": "18:00" },
+      { "day": 5, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "18:00" },
+      { "day": 7, "open": "10:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.3,
+  "ranking": 102,
+  "phone": "+853 8396 0420",
+  "website": "https://www.fsm.gov.mo/cb/cht/cbmuseum.aspx",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 1211700
+  }
+}

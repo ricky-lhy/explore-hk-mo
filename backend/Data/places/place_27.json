@@ -1,0 +1,42 @@
+{
+  "id": 27,
+  "name": "松山纜車",
+  "region": "macau",
+  "category": "entertainment",
+  "description": {
+    "content": "松山纜車是澳門最具代表性的觀光景點之一，乘坐纜車可俯瞰壯麗的澳門全景，特別是夜景迷人。纜車之旅提供舒適體驗，讓遊客享受自然美景與城市風光交融的獨特魅力。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Avenida Sidónio Pais, Macau",
+    "latitude": 22.20046965234609,
+    "longitude": 113.55076620952676
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/09/17/bf/cd/guia-cable-car.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/03/1d/eb/2d/cable-guia.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/10/1d/4e/6b/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/ef/e4/33/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/ef/e4/32/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 2, "open": "08:00", "close": "18:00" },
+      { "day": 3, "open": "08:00", "close": "18:00" },
+      { "day": 4, "open": "08:00", "close": "18:00" },
+      { "day": 5, "open": "08:00", "close": "18:00" },
+      { "day": 6, "open": "08:00", "close": "18:00" },
+      { "day": 7, "open": "08:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.0,
+  "ranking": 42,
+  "phone": "+853 2833 7676",
+  "website": "https://www.iam.gov.mo/nature/e/facility/park/detail?id=c0a9fc3c-dadc-487a-bc5e-913abf5e5709",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2035682
+  }
+}

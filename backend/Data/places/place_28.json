@@ -1,0 +1,43 @@
+{
+  "id": 28,
+  "name": "新八佰伴",
+  "region": "macau",
+  "category": "shopping",
+  "description": {
+    "content": "這是一家多層百貨商店，當地家庭和遊客經常光顧，在此購買玩具、服飾和家用電子產品等。頂層美食廣場提供價格實惠的用餐選擇。",
+    "source": "tripadvisor"
+  },
+  "location": {
+    "address": "90 Avenida Doutor Mário Soares, Macau",
+    "latitude": 22.19096985245221,
+    "longitude": 113.54035402088539
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/1a/f0/cd/6d/new-yaohan-exterior.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/f0/cc/32/new-yaohan-exterior.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/f0/ca/dc/new-yaohan-front-entrance.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/05/53/47/96/new-yaohan-department.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/05/c4/91/6b/new-yaohan-department.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "22:00" },
+      { "day": 2, "open": "10:00", "close": "22:00" },
+      { "day": 3, "open": "10:00", "close": "22:00" },
+      { "day": 4, "open": "10:00", "close": "22:00" },
+      { "day": 5, "open": "10:00", "close": "22:00" },
+      { "day": 6, "open": "10:00", "close": "22:00" },
+      { "day": 7, "open": "10:00", "close": "22:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.6,
+  "ranking": 72,
+  "phone": "+853 2872 5338",
+  "website": "https://www.newyaohan.com/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 3362665
+  }
+}

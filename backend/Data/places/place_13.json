@@ -1,30 +1,31 @@
 {
-    "id": 13,
-    "name": "議事亭前地",
-    "description": {
-      "content": "議事亭前地位於澳門市中心，為世界文化遺產，融合葡式建築與中式文化，是遊客聚集與活動熱點。",
-      "source": "ai"
-    },
-    "region": "macau",
-    "category": "landmarks",
-    "hours": null,
-    "location": {
-      "address": "中國 澳門 議事亭前地",
-      "latitude": 22.193699,
-      "longitude": 113.539925
-    },
-    "images": [
-      "https://media-cdn.tripadvisor.com/media/photo-o/13/5f/e8/c9/img-20180621-wa0043-largejpg.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-w/31/9a/39/76/caption.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-w/31/9a/39/7d/caption.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-w/31/9a/39/78/caption.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-w/31/9a/39/79/caption.jpg"
-    ],
-    "rating": 4.0,
-    "ranking": 19,
-    "website": "https://www.wh.mo/zh/site/detail/12",
-    "_connection": {
-      "type": "tripadvisor",
-      "locationId": 482100
-    }
+  "id": 13,
+  "name": "議事亭前地",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "議事亭前地位於澳門市中心，為世界文化遺產，融合葡式建築與中式文化，是遊客聚集與活動熱點。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Largo do Senado, Macau",
+    "latitude": 22.193546299698127,
+    "longitude": 113.53975834076914
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/13/5f/e8/c9/img-20180621-wa0043-largejpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/31/9a/39/76/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/31/9a/39/7d/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/31/9a/39/78/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/31/9a/39/79/caption.jpg"
+  ],
+  "hours": null,
+  "rating": 4.0,
+  "ranking": 18,
+  "phone": null,
+  "website": "https://www.wh.mo/zh/site/detail/12",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 482100
+  }
 }

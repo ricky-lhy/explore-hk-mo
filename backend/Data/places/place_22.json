@@ -1,0 +1,42 @@
+{
+  "id": 22,
+  "name": "澳門藝術博物館",
+  "region": "macau",
+  "category": "museums",
+  "description": {
+    "content": "澳門藝術博物館位於市中心，展示了豐富的當代藝術作品和本地文化。博物館不定期舉辦展覽活動，吸引藝術愛好者。其獨特的建築設計和靜謐環境，讓遊客能夠沉浸於藝術的氛圍中。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Avenida Xian Xing Hai, Macau",
+    "latitude": 22.188706233048382,
+    "longitude": 113.55454026245755
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0f/3c/c7/be/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/5c/f3/15/corridor-in-the-macau.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/c5/59/09/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/c5/59/08/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2e/c5/59/07/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 2, "open": "10:00", "close": "19:00" },
+      { "day": 3, "open": "10:00", "close": "19:00" },
+      { "day": 4, "open": "10:00", "close": "19:00" },
+      { "day": 5, "open": "10:00", "close": "19:00" },
+      { "day": 6, "open": "10:00", "close": "19:00" },
+      { "day": 7, "open": "10:00", "close": "19:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.2,
+  "ranking": 52,
+  "phone": "+853 8791 9814",
+  "website": "https://www.mam.gov.mo",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 482098
+  }
+}

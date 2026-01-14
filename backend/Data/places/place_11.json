@@ -1,41 +1,41 @@
 {
-    "id": 11,
-    "name": "澳門大賽車博物館",
-    "description": {
-      "content": "澳門大賽車博物館展示賽車歷史與經典車款，結合互動體驗與珍貴藏品，感受速度與激情魅力。",
-      "source": "ai"
-    },
-    "region": "macau",
-    "category": "museums",
-    "hours": {
-      "timezone": "Asia/Hong_Kong",
-      "regular": [
-        { "day": 1, "open": "10:00", "close": "18:00" },
-        { "day": 3, "open": "10:00", "close": "18:00" },
-        { "day": 4, "open": "10:00", "close": "18:00" },
-        { "day": 5, "open": "10:00", "close": "18:00" },
-        { "day": 6, "open": "10:00", "close": "18:00" },
-        { "day": 7, "open": "10:00", "close": "18:00" }
-      ]
-    },
-    "location": {
-      "address": "中國 澳門 友誼大馬路207號",
-      "latitude": 22.194992,
-      "longitude": 113.55296
-    },
-    "images": [
-      "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/9f/51/3b/grand-prix-museum-in.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/9b/cc/d4/caption.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/9b/cc/d5/caption.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/9b/cc/d2/caption.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/9b/cc/d0/caption.jpg"
-    ],
-    "rating": 4.0,
-    "ranking": 37,
-    "phone": "+853 8593 0515",
-    "website": "https://mgpm.macaotourism.gov.mo/",
-    "_connection": {
-      "type": "tripadvisor",
-      "locationId": 487312
-    }
+  "id": 11,
+  "name": "澳門大賽車博物館",
+  "description": {
+    "content": "澳門大賽車博物館展示賽車歷史與經典車款，結合互動體驗與珍貴藏品，感受速度與激情魅力。",
+    "source": "ai"
+  },
+  "region": "macau",
+  "category": "museums",
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "18:00" },
+      { "day": 3, "open": "10:00", "close": "18:00" },
+      { "day": 4, "open": "10:00", "close": "18:00" },
+      { "day": 5, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "18:00" },
+      { "day": 7, "open": "10:00", "close": "18:00" }
+    ]
+  },
+  "location": {
+    "address": "431 Rua de Luís Gonzaga Gomes, Macau",
+    "latitude": 22.194957719661808,
+    "longitude": 113.55291471707467
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/9f/51/3b/grand-prix-museum-in.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/9b/cc/d4/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/9b/cc/d5/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/9b/cc/d2/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/9b/cc/d0/caption.jpg"
+  ],
+  "rating": 4.0,
+  "ranking": 37,
+  "phone": "+853 8593 0515",
+  "website": "https://mgpm.macaotourism.gov.mo/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 487312
+  }
 }

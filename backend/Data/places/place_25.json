@@ -1,0 +1,31 @@
+{
+  "id": 25,
+  "name": "澳門漁人碼頭",
+  "region": "macau",
+  "category": "entertainment",
+  "description": {
+    "content": "這是一個娛樂中心，環境幽靜，擁有各種古董店、精品店和餐廳。周圍的仿羅馬建築讓購物體驗變得趣味盎然。",
+    "source": "tripadvisor"
+  },
+  "location": {
+    "address": "Avenida Dr. Sun Yat-Sen, Macau",
+    "latitude": 22.192713454872354,
+    "longitude": 113.55628170383673
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2a/4d/cc/42/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/78/d3/aa/photo1jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/76/f4/12/p-20180902-135228-largejpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/76/f4/0d/p-20180902-134005-largejpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/01/5f/73/fisherman-s-warf-1-01.jpg"
+  ],
+  "hours": null,
+  "rating": 3.4,
+  "ranking": 60,
+  "phone": "+853 8299 3300",
+  "website": "https://www.fishermanswharf.com.mo/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2238815
+  }
+}

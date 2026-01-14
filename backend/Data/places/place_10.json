@@ -1,41 +1,41 @@
 {
-    "id": 10,
-    "name": "澳門科學館",
-    "description": {
-      "content": "澳門科學館以互動展覽推廣科學教育，設有天文館、常設與特展區，是集學習與娛樂於一體的科技地標。",
-      "source": "ai"
-    },
-    "region": "macau",
-    "category": "museums",
-    "hours": {
-      "timezone": "Asia/Hong_Kong",
-      "regular": [
-        { "day": 1, "open": "10:00", "close": "18:00" },
-        { "day": 2, "open": "10:00", "close": "18:00" },
-        { "day": 3, "open": "10:00", "close": "18:00" },
-        { "day": 5, "open": "10:00", "close": "18:00" },
-        { "day": 6, "open": "10:00", "close": "18:00" },
-        { "day": 7, "open": "10:00", "close": "18:00" }
-      ]
-    },
-    "location": {
-      "address": "中國 澳門 孫逸仙大馬路",
-      "latitude": 22.185446,
-      "longitude": 113.54888
-    },
-    "images": [
-      "https://media-cdn.tripadvisor.com/media/photo-o/0a/a7/4c/f9/caption.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-o/05/96/71/41/caption.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-o/04/69/49/c7/caption.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-o/11/8b/fb/d4/caption.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-o/11/8b/fb/d1/caption.jpg"
-    ],
-    "rating": 4.1,
-    "ranking": 32,
-    "phone": "+853 2888 0822",
-    "website": "http://www.msc.org.mo",
-    "_connection": {
-      "type": "tripadvisor",
-      "locationId": 2005224
-    }
+  "id": 10,
+  "name": "澳門科學館",
+  "description": {
+    "content": "澳門科學館以互動展覽推廣科學教育，設有天文館、常設與特展區，是集學習與娛樂於一體的科技地標。",
+    "source": "ai"
+  },
+  "region": "macau",
+  "category": "museums",
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "18:00" },
+      { "day": 2, "open": "10:00", "close": "18:00" },
+      { "day": 3, "open": "10:00", "close": "18:00" },
+      { "day": 5, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "18:00" },
+      { "day": 7, "open": "10:00", "close": "18:00" }
+    ]
+  },
+  "location": {
+    "address": "Avenida Dr. Sun Yat-sen, Macau",
+    "latitude": 22.18608522628183,
+    "longitude": 1113.55676165527615
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0a/a7/4c/f9/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/05/96/71/41/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/04/69/49/c7/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/8b/fb/d4/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/8b/fb/d1/caption.jpg"
+  ],
+  "rating": 4.1,
+  "ranking": 32,
+  "phone": "+853 2888 0822",
+  "website": "https://www.msc.org.mo",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2005224
+  }
 }

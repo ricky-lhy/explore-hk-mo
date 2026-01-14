@@ -1,0 +1,43 @@
+{
+  "id": 21,
+  "name": "東望洋燈塔",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "東望洋燈塔是澳門最古老的燈塔之一，建於1886年，具歷史意義。燈塔位於壯麗的海岸線上，提供壯觀的海景和美麗的日落，吸引攝影愛好者和遊客前來欣賞其獨特魅力。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Estrada do Engenheiro Trigo, Macau",
+    "latitude": 22.196536781682024,
+    "longitude": 113.54966858600677
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/1a/82/00/67/img-20200103-113329-largejpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/03/28/d2/cb/guia-lighthouse.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/31/42/1e/f2/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/ef/f5/53/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/ef/f5/52/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "17:00" },
+      { "day": 2, "open": "10:00", "close": "17:00" },
+      { "day": 3, "open": "10:00", "close": "17:00" },
+      { "day": 4, "open": "10:00", "close": "17:00" },
+      { "day": 5, "open": "10:00", "close": "17:00" },
+      { "day": 6, "open": "10:00", "close": "17:00" },
+      { "day": 7, "open": "10:00", "close": "17:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.3,
+  "ranking": 19,
+  "phone": "+853 2859 5481",
+  "website": "https://www.macaotourism.gov.mo/sightseeing/fortresses/guia-fortress-including-guia-chapel-and-lighthouse",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 3642985
+  }
+}

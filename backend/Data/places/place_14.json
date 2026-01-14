@@ -1,42 +1,42 @@
 {
-    "id": 14,
-    "name": "澳門旅遊塔會展娛樂中心",
-    "description": {
-      "content": "澳門旅遊塔集觀光、餐飲、會展與冒險娛樂於一體，登塔觀景、空中漫步與高空彈跳極受遊客歡迎。",
-      "source": "ai"
-    },
-    "region": "macau",
-    "category": "landmarks",
-    "hours": {
-      "timezone": "Asia/Hong_Kong",
-      "regular": [
-        { "day": 1, "open": "10:00", "close": "21:00" },
-        { "day": 2, "open": "10:00", "close": "21:00" },
-        { "day": 3, "open": "10:00", "close": "21:00" },
-        { "day": 4, "open": "10:00", "close": "21:00" },
-        { "day": 5, "open": "10:00", "close": "21:00" },
-        { "day": 6, "open": "09:00", "close": "21:00" },
-        { "day": 7, "open": "09:00", "close": "21:00" }
-      ]
-    },
-    "location": {
-      "address": "中國 澳門 觀光塔前地",
-      "latitude": 22.179996,
-      "longitude": 113.53688
-    },
-    "images": [
-      "https://media-cdn.tripadvisor.com/media/photo-o/0e/50/a8/69/macau-tower-is-macau.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-o/0e/50/a8/41/macau-tower-is-macau.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-o/0e/50/a7/a2/macau-tower-is-macau.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-o/01/04/dd/1c/macau.jpg",
-      "https://media-cdn.tripadvisor.com/media/photo-w/16/11/ea/ef/macau-tower-convention.jpg"
-    ],
-    "rating": 4.2,
-    "ranking": 10,
-    "phone": "+853 2893 3339",
-    "website": "http://www.macautower.com.mo/",
-    "_connection": {
-      "type": "tripadvisor",
-      "locationId": 325619
-    }
+  "id": 14,
+  "name": "澳門旅遊塔會展娛樂中心",
+  "description": {
+    "content": "澳門旅遊塔集觀光、餐飲、會展與冒險娛樂於一體，登塔觀景、空中漫步與高空彈跳極受遊客歡迎。",
+    "source": "ai"
+  },
+  "region": "macau",
+  "category": "landmarks",
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "21:00" },
+      { "day": 2, "open": "10:00", "close": "21:00" },
+      { "day": 3, "open": "10:00", "close": "21:00" },
+      { "day": 4, "open": "10:00", "close": "21:00" },
+      { "day": 5, "open": "10:00", "close": "21:00" },
+      { "day": 6, "open": "09:00", "close": "21:00" },
+      { "day": 7, "open": "09:00", "close": "21:00" }
+    ]
+  },
+  "location": {
+    "address": "Largo da Torre de Macau, Macau",
+    "latitude": 22.180022058022825,
+    "longitude": 113.53679539912243
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/50/a8/69/macau-tower-is-macau.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/50/a8/41/macau-tower-is-macau.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/50/a7/a2/macau-tower-is-macau.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/04/dd/1c/macau.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/16/11/ea/ef/macau-tower-convention.jpg"
+  ],
+  "rating": 4.2,
+  "ranking": 10,
+  "phone": "+853 2893 3339",
+  "website": "https://www.macautower.com.mo/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 325619
+  }
 }

@@ -1,0 +1,43 @@
+{
+  "id": 30,
+  "name": "普濟禪院(觀音堂)",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "觀音堂又稱普濟禪院，是澳門三大禪院中規模宏大、歷史悠久、佔地廣闊、建築雄偉的一家。其獨特的建築風格與寧靜的環境，為遊客提供了心靈的寧靜與內省的空間，非常適合靜心與冥想。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "2 Avenida do Coronel Mesquita, Macau",
+    "latitude": 22.204065055201568,
+    "longitude": 113.5501329583766
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-w/28/24/f8/f3/chinese-architecture.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/02/4d/c7/ca/kun-iam-temple-6.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/68/aa/ad/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/68/aa/a0/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/68/aa/ab/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "07:30", "close": "17:00" },
+      { "day": 2, "open": "07:30", "close": "17:00" },
+      { "day": 3, "open": "07:30", "close": "17:00" },
+      { "day": 4, "open": "07:30", "close": "17:00" },
+      { "day": 5, "open": "07:30", "close": "17:00" },
+      { "day": 6, "open": "07:30", "close": "17:00" },
+      { "day": 7, "open": "07:30", "close": "17:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.2,
+  "ranking": 68,
+  "phone": "556127",
+  "website": "https://www.macaotourism.gov.mo/sightseeing/temples/kun-iam-tong",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 321112
+  }
+}
