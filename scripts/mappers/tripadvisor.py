@@ -144,7 +144,7 @@ class TripadvisorMapper:
         # 4. Category
         category = self._determine_category(name)
         if not category:
-            category = details.get("category", {}).get("name", "attraction").lower()
+            category = (details.get("category") or {}).get("name", "attraction").lower()
             flags["missing_category"] = True
 
         # 5. Hours
