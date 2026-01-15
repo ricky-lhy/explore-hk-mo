@@ -1,0 +1,43 @@
+{
+  "id": 32,
+  "name": "大三巴哪吒廟",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "位於大三巴牌坊後右側，創建於1888年，改建於1901年，廟內供奉哪吒。哪吒廟與周圍建築相比，像一個建築小品，它不和舊城牆及大三巴牌坊競爭墩厚和雄偉，而是通過簡單裝飾材料以不同的虛實對比手法，體現其輕巧別緻的形象。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "6 Calçada de São Paulo, Macau",
+    "latitude": 22.197732771726322,
+    "longitude": 113.54065116821268
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0f/8f/6e/be/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/4c/2b/29/na-tcha-temple-1.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/09/3d/af/a9/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2b/67/f6/74/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2b/67/f6/71/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "08:00", "close": "17:00" },
+      { "day": 2, "open": "08:00", "close": "17:00" },
+      { "day": 3, "open": "08:00", "close": "17:00" },
+      { "day": 4, "open": "08:00", "close": "17:00" },
+      { "day": 5, "open": "08:00", "close": "17:00" },
+      { "day": 6, "open": "08:00", "close": "17:00" },
+      { "day": 7, "open": "08:00", "close": "17:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.6,
+  "ranking": 57,
+  "phone": null,
+  "website": "https://www.macaotourism.gov.mo/sightseeing/temples/na-tcha-temple",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 8723638
+  }
+}

@@ -29,7 +29,7 @@ const Home = async ({ params, searchParams }: PageProps<'/[region]'>) => {
     const sort = stringToLocationSortOption(unifySearchParam(_sort)[0])
 
     return (
-        <main>
+        <>
             <Shelf>
                 <ShelfHeader>
                     <ShelfTitle>by Category</ShelfTitle>
@@ -59,7 +59,7 @@ const Home = async ({ params, searchParams }: PageProps<'/[region]'>) => {
                     <LocationsList region={region} sort={sort} />
                 </ShelfContent>
             </Shelf>
-        </main>
+        </>
     )
 }
 

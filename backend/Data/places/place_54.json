@@ -1,0 +1,31 @@
+{
+  "id": 54,
+  "name": "澳門銀河時尚匯",
+  "region": "macau",
+  "category": "shopping",
+  "description": {
+    "content": "這家室內購物區跨越多個樓層，擁有 200 多家店鋪。它擁有數家首次進入澳門的品牌精品店，包括 Aesop 和 Alexander Wang。",
+    "source": "tripadvisor"
+  },
+  "location": {
+    "address": "Est. Baía N. S. Esperança, Cotai, Macau",
+    "latitude": 22.148988367285863,
+    "longitude": 113.55446143450095
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/09/67/e4/0f/fortune-diamond-galaxy.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/69/df/46/filename-p1130485-jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/69/de/6f/filename-p1130487-jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/15/30/0a/fb/img-20181022-111149-largejpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/09/9a/65/ff/caption.jpg"
+  ],
+  "hours": null,
+  "rating": 4.2,
+  "ranking": 41,
+  "phone": "+853 2888 0888",
+  "website": "https://www.galaxymacau.com/zh-hant/galaxy-promenade/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2562036
+  }
+}

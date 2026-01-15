@@ -1,0 +1,43 @@
+{
+  "id": 68,
+  "name": "大館",
+  "region": "hong-kong",
+  "category": "heritage",
+  "description": {
+    "content": "大館是一座結合歷史與現代藝術的文化地標，原為香港警察總部及中區警署，周圍有一系列古蹟建築群。現今經過活化，新建了美術館展示當代藝術展覽、美食和購物。遊客可在這裡感受香港的文化脈動與創意魅力，是不容錯過的旅遊熱點。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 中環荷李活道10號",
+    "latitude": 22.28137,
+    "longitude": 114.15426
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/9b/4a/ac/tai-kwun-footbridge-gate.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/9b/4b/1d/aerial-shot-of-tai-kwun.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/9b/4b/1f/jc-contemporary.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/9b/4b/1e/laundry-steps.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/9b/4a/f3/jc-contemporary.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "08:00", "close": "23:00" },
+      { "day": 2, "open": "08:00", "close": "23:00" },
+      { "day": 3, "open": "08:00", "close": "23:00" },
+      { "day": 4, "open": "08:00", "close": "23:00" },
+      { "day": 5, "open": "08:00", "close": "23:00" },
+      { "day": 6, "open": "08:00", "close": "23:00" },
+      { "day": 7, "open": "08:00", "close": "23:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.3,
+  "ranking": 3,
+  "phone": "+852 3559 2600",
+  "website": "https://www.taikwun.hk/zh/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 14143982
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 73,
+  "name": "時代廣場",
+  "region": "hong-kong",
+  "category": "shopping",
+  "description": {
+    "content": "這間購物中心是香港的熱門購物目的地之一，匯聚了各類時尚、高端產品，其中包括：Bottega Veneta、古馳、迪奧和 Saint Laurent 等著名品牌產品。 另外還有不容錯過的高品質美食區。",
+    "source": "tripadvisor"
+  },
+  "location": {
+    "address": "香港  銅鑼灣勿地臣街1號",
+    "latitude": 22.27817,
+    "longitude": 114.18218
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/eb/70/46/situated-at-causeway.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/12/3e/04/19/nighttime-of-times-square.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/eb/6f/19/situated-at-causeway.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/1b/eb/6f/17/situated-at-causeway.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/eb/6f/15/times-square-houses-more.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "22:00" },
+      { "day": 2, "open": "10:00", "close": "22:00" },
+      { "day": 3, "open": "10:00", "close": "22:00" },
+      { "day": 4, "open": "10:00", "close": "22:00" },
+      { "day": 5, "open": "10:00", "close": "22:00" },
+      { "day": 6, "open": "10:00", "close": "22:00" },
+      { "day": 7, "open": "10:00", "close": "22:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.0,
+  "ranking": 65,
+  "phone": "+852 2118 8900",
+  "website": "https://timessquare.com.hk",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2173838
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": 75,
+  "name": "香港電影資料館",
+  "region": "hong-kong",
+  "category": "museums",
+  "description": {
+    "content": "香港電影資料館籌劃辦事處於1993年成立，標誌著本地電影工業與文化更緊密的結合，收藏數以千計的香港電影膠卷、影帶和劇本，還會定期舉辦放映和展覽活動。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 西灣河鯉景道50號",
+    "latitude": 22.28517,
+    "longitude": 114.22272
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/0f/9e/04/hong-kong-film-archive.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0a/92/2d/00/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/15/97/33/de/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2c/7a/2e/1b/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2c/7a/2e/1a/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "20:00" },
+      { "day": 3, "open": "10:00", "close": "20:00" },
+      { "day": 4, "open": "10:00", "close": "20:00" },
+      { "day": 5, "open": "10:00", "close": "20:00" },
+      { "day": 6, "open": "10:00", "close": "20:00" },
+      { "day": 7, "open": "10:00", "close": "20:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.7,
+  "ranking": 10,
+  "phone": "+852 2739 2139",
+  "website": "https://www.filmarchive.gov.hk/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 593204
+  }
+}

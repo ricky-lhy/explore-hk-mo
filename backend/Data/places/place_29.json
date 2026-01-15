@@ -1,0 +1,31 @@
+{
+  "id": 29,
+  "name": "戀愛巷",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "戀愛巷是澳門隱秘的小巷，以其古老的石階、彩色牆面和獨特的街頭藝術吸引遊客。這裡充滿了文化氣息，適合拍照與漫遊，讓人感受澳門的歷史魅力與藝術氛圍。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Travessa da Paixao, Macau",
+    "latitude": 22.197123135308814,
+    "longitude": 113.54039594579933
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-w/2b/a9/53/4e/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/06/73/59/04/travessa-da-paixao.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/06/73/58/77/travessa-da-paixao.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2b/a9/53/51/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2b/a9/53/50/caption.jpg"
+  ],
+  "hours": null,
+  "rating": 4.1,
+  "ranking": 75,
+  "phone": null,
+  "website": null,
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 6603520
+  }
+}

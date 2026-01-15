@@ -35,7 +35,7 @@ const Header = ({ className, ...props }: ComponentProps<'header'>) => {
                     `before:bg-[url('/assets/brand/explore.svg')]`
                 )}
             >
-                <Image src={config.logo} className="h-6 w-auto!" height={24} width={200} alt="" />
+                <Image src={config.logo} className="h-6 w-auto!" height={24} width={0} alt="" />
                 <span className="sr-only">{config.title}</span>
             </Link>
 

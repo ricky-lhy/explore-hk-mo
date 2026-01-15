@@ -1,0 +1,43 @@
+{
+  "id": 34,
+  "name": "聖味基墳場/聖彌額爾小堂",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "聖彌額爾小堂位於環境幽靜的西洋墳場內，這幢小教堂建於1875年，1898年重修，是目前本澳保存得最好的古老建築物之一，其內部漆上綠色及白色，教堂的窗戶均裝有濾色玻璃。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "2-A Estrada do Cemitério, Macau",
+    "latitude": 22.19845239922155,
+    "longitude": 113.54549654740093
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/08/2c/1b/6a/st-michaels-chapel-and.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/4d/4b/6d/st-micheal-chapel-1.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/10/5e/f7/cemeterio-do-sao-miguel.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/28/cc/85/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/28/cc/83/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "08:00", "close": "18:00" },
+      { "day": 2, "open": "08:00", "close": "18:00" },
+      { "day": 3, "open": "08:00", "close": "18:00" },
+      { "day": 4, "open": "08:00", "close": "18:00" },
+      { "day": 5, "open": "08:00", "close": "18:00" },
+      { "day": 6, "open": "08:00", "close": "18:00" },
+      { "day": 7, "open": "08:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.1,
+  "ranking": 63,
+  "phone": null,
+  "website": "https://www.macaotourism.gov.mo/sightseeing/churches/chapel-of-st-michael",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 1878995
+  }
+}

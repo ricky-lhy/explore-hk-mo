@@ -1,0 +1,31 @@
+{
+  "id": 43,
+  "name": "白鴿巢前地",
+  "region": "macau",
+  "category": "landmarks",
+  "description": {
+    "content": "位於澳門著名的白鴿巢公園前面，鄰近民居，歷史建築東方基金會會址、聖安多尼教堂，以及著名的基督教墳場就在附近。白鴿巢公園內的綠樹林蔭延展而出，兩旁設有長椅，是居民休憩的好去處。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "Praça de Luís de Camões, Macau",
+    "latitude": 22.199855975691516,
+    "longitude": 113.53946784913947
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/12/7d/9d/e2/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/6a/31/67/filename-p1130616-jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/91/09/9f/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/91/09/a0/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/91/09/a3/caption.jpg"
+  ],
+  "hours": null,
+  "rating": 3.9,
+  "ranking": 53,
+  "phone": null,
+  "website": "https://www.iam.gov.mo/nature/e/facility/rest/detail?id=78c5085b-210b-4b15-abef-835c0ccdb73f",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 506173
+  }
+}

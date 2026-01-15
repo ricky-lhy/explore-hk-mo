@@ -1,0 +1,31 @@
+{
+  "id": 49,
+  "name": "黑沙龍爪角海岸徑",
+  "region": "macau",
+  "category": "nature",
+  "description": {
+    "content": "黑沙龍爪角海岸徑是澳門的隱藏寶石，擁有壯觀的海岸線與原始自然景觀。遊客可漫遊於美麗的步道，欣賞海浪拍打岩石的壯麗景緻，還可享受寧靜的自然氣息，非常適合健行與攝影愛好者。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Rua de Hac Sá Long Chao Kok, Coloane, Macau",
+    "latitude": 22.115801913423994,
+    "longitude": 113.57355899843715
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/2a/9f/4d/48/long-chao-kok-coastal.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/42/98/4c/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/19/49/a0/hac-sa-long-chao-kok.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/19/49/87/hac-sa-long-chao-kok.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/1b/19/49/7b/hac-sa-long-chao-kok.jpg"
+  ],
+  "hours": null,
+  "rating": 5.0,
+  "ranking": 166,
+  "phone": "+853 2888 0087",
+  "website": "https://www.iam.gov.mo/nature/e/facility/trail/detail?id=4a8be116-77eb-4a35-95e9-5d6e82ba4b23",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 14920272
+  }
+}

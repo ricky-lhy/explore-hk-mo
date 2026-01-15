@@ -1,0 +1,43 @@
+{
+  "id": 67,
+  "name": "Airside",
+  "region": "hong-kong",
+  "category": "shopping",
+  "description": {
+    "content": "香港的「Airside」是一個獨特的旅遊體驗區，提供富有國際色彩的免稅商品、美食選擇及舒適空間。遊客可在此輕鬆購物、享用美食，附近還有經常舉辦大型盛事的啟德體育園，方便遊客安排一系列的行程。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 九龍啟德協調道2號",
+    "latitude": 22.33151,
+    "longitude": 114.19859
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-w/2b/20/8c/9c/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/30/86/12/ae/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/30/86/12/af/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/fb/23/f0/airside-may-2025.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2f/87/82/01/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "22:00" },
+      { "day": 2, "open": "10:00", "close": "22:00" },
+      { "day": 3, "open": "10:00", "close": "22:00" },
+      { "day": 4, "open": "10:00", "close": "22:00" },
+      { "day": 5, "open": "10:00", "close": "22:00" },
+      { "day": 6, "open": "10:00", "close": "22:00" },
+      { "day": 7, "open": "10:00", "close": "22:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.8,
+  "ranking": 400,
+  "phone": null,
+  "website": "https://airside.com.hk/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 26839816
+  }
+}

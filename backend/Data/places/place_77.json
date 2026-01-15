@@ -1,0 +1,43 @@
+{
+  "id": 77,
+  "name": "志蓮淨苑",
+  "region": "hong-kong",
+  "category": "heritage",
+  "description": {
+    "content": "志蓮淨苑是一座融合佛教修行、建築美學與自然園林的清修之地。整個園區依照唐代木構建築法式而建，不用一根鐵釘，展現出古樸莊嚴而嚴謹的東方建築精神，2012年列入中國的世界文化遺產預備名錄。園內布局對稱，蓮池、松柏、假山與長廊相互呼應，營造出寧靜祥和的氛圍，讓人暫離城市喧囂、沉澱心境。志蓮淨苑不僅是佛教修行與弘法的場所，也因其獨特的文化與景觀價值，成為香港著名的靜心與文化參訪地點。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 九龍鑽石山志蓮道5號",
+    "latitude": 22.34058,
+    "longitude": 114.20523
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/12/eb/dd/0c/pagode.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/05/c1/f7/c3/chi-lin-nunnery.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/26/c3/0c/5d/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/26/c3/0c/5c/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/1a/a7/61/b8/the-door-of-mountain.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "09:00", "close": "16:30" },
+      { "day": 2, "open": "09:00", "close": "16:30" },
+      { "day": 3, "open": "09:00", "close": "16:30" },
+      { "day": 4, "open": "09:00", "close": "16:30" },
+      { "day": 5, "open": "09:00", "close": "16:30" },
+      { "day": 6, "open": "09:00", "close": "16:30" },
+      { "day": 7, "open": "09:00", "close": "16:30" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.6,
+  "ranking": 11,
+  "phone": "+852 2354 1888",
+  "website": "http://www.chilin.org/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 437839
+  }
+}

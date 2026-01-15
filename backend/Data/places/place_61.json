@@ -1,0 +1,41 @@
+{
+  "id": 61,
+  "name": "李鄭屋漢墓博物館",
+  "region": "hong-kong",
+  "category": "museums",
+  "description": {
+    "content": "李鄭屋漢墓博物館位於香港新界，展示漢代古墓與文物，讓遊客深入了解嶺南文化。博物館擁有精美的文物，並提供導覽解說，是歷史愛好者不可錯過的旅遊景點。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 九龍深水埗東京街41號",
+    "latitude": 22.33816,
+    "longitude": 114.16059
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/d0/77/9d/photo7jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/62/50/e3/filename-p1010346-small.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1d/f9/45/05/lei-cheng-uk-han-tomb.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/1d/f9/45/03/lei-cheng-uk-han-tomb.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "18:00" },
+      { "day": 2, "open": "10:00", "close": "18:00" },
+      { "day": 3, "open": "10:00", "close": "18:00" },
+      { "day": 5, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "18:00" },
+      { "day": 7, "open": "10:00", "close": "18:00" }
+    ],
+    "exceptions": "聖誕前夕及農曆新年除夕: 10:00 - 17:00"
+  },
+  "rating": 3.6,
+  "ranking": 377,
+  "phone": "+852 2386 2863",
+  "website": "https://hk.history.museum/tc/web/mh/about-us/lei-cheng-uk-han-tomb-museum.html",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 593168
+  }
+}

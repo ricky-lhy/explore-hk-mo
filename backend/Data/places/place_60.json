@@ -1,0 +1,42 @@
+{
+  "id": 60,
+  "name": "香港杜莎夫人蠟像館",
+  "region": "hong-kong",
+  "category": "museums",
+  "description": {
+    "content": "香港杜莎夫人蠟像館位於太平山頂凌霄閣，是香港著名的互動式蠟像博物館。館內展示多位國際巨星、體壇名人、政治領袖及亞洲娛樂偶像的逼真蠟像，並設有多個主題展區，讓遊客近距離合影留念。結合沉浸式場景與互動體驗，適合親子、情侶及影迷造訪，是登山頂時不可錯過的熱門景點。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 山頂道128號凌霄閣P1樓",
+    "latitude": 22.27138,
+    "longitude": 114.15008
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/24/4a/86/13/mthk-admission.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/f7/67/b3/boxing-champ-manny-pacquiao.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/f7/67/a6/madame-tussauds-hong.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/23/f7/67/70/nation-s-first-love-suzy.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:30", "close": "21:30" },
+      { "day": 2, "open": "10:30", "close": "21:30" },
+      { "day": 3, "open": "10:30", "close": "21:30" },
+      { "day": 4, "open": "10:30", "close": "21:30" },
+      { "day": 5, "open": "10:30", "close": "21:30" },
+      { "day": 6, "open": "10:30", "close": "21:30" },
+      { "day": 7, "open": "10:30", "close": "21:30" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.9,
+  "ranking": 68,
+  "phone": "+852 2849 6966",
+  "website": "https://www.madametussauds.com/hong-kong/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 1645935
+  }
+}

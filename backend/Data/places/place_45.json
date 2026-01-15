@@ -1,0 +1,42 @@
+{
+  "id": 45,
+  "name": "澳門國父紀念館",
+  "region": "macau",
+  "category": "museums",
+  "description": {
+    "content": "紀念館原是孫中山先生家人的寓所，是一幢富有回教色彩的建築物。於1958年才闢為「國父紀念館」。館內陳設的是孫逸仙先生在澳門行醫及在廣州出任大元帥時所用的家具和物品。此外，還珍藏了一些孫中山先生留下的真跡以及革命烈士們的合照。館側的花園裡，矗立著一尊國父的銅像，以供遊人瞻仰。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "1 Rua de Silva Mendes, Macau",
+    "latitude": 22.19987392116381,
+    "longitude": 113.54893819644172
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/a2/fd/6a/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/ce/75/5b/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/28/b6/46/5c/statue-of-sun.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/28/b6/46/1c/balcony.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/28/b6/45/cd/national-symbol.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "17:00" },
+      { "day": 3, "open": "10:00", "close": "17:00" },
+      { "day": 4, "open": "10:00", "close": "17:00" },
+      { "day": 5, "open": "10:00", "close": "17:00" },
+      { "day": 6, "open": "10:00", "close": "17:00" },
+      { "day": 7, "open": "10:00", "close": "17:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.9,
+  "ranking": 84,
+  "phone": "+853 2857 4064",
+  "website": "https://www.teco-mo.org/cp.aspx?n=371E76B9584F8E89",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 321118
+  }
+}

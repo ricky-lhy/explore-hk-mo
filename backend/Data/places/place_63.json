@@ -1,0 +1,42 @@
+{
+  "id": 63,
+  "name": "香港太空館",
+  "region": "hong-kong",
+  "category": "museums",
+  "description": {
+    "content": "香港太空館位於尖沙咀，是探索宇宙奧秘的理想場所。館內擁有最新的天文展覽、互動體驗及全天域電影，讓遊客在娛樂中學習天文知識，一飽眼福，增進對太空的了解。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 九龍尖沙咀梳士巴利道10號",
+    "latitude": 22.29444,
+    "longitude": 114.17218
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/12/f5/ca/36/space-museum-planets.jpg",
+    "https://media-cdn.tripadvisor.com/media/daodao/photo-s/01/ca/46/78/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/00/61/93/view-from-the-rear-exit.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/15/d1/1f/35/20181222-153342-largejpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/15/c0/0c/5f/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "13:00", "close": "21:00" },
+      { "day": 3, "open": "13:00", "close": "21:00" },
+      { "day": 4, "open": "13:00", "close": "21:00" },
+      { "day": 5, "open": "13:00", "close": "21:00" },
+      { "day": 6, "open": "10:00", "close": "21:00" },
+      { "day": 7, "open": "10:00", "close": "21:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.5,
+  "ranking": 164,
+  "phone": "+852 2721 0226",
+  "website": "https://hk.space.museum/tc/web/spm/home.html",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 456275
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 47,
+  "name": "塔石藝文館",
+  "region": "macau",
+  "category": "museums",
+  "description": {
+    "content": "塔石藝文館位於澳門，是一座融合藝術與文化的特色館舍。館內展示當代藝術作品及本地創作，定期舉辦展覽及活動，吸引藝術愛好者前來探索與交流，讓遊客體驗獨特的文化氛圍。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "95 Av. Conselheiro Ferreira de Almeida, Macau",
+    "latitude": 22.198966860493307,
+    "longitude": 113.54710263358827
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/09/13/7e/0f/tap-seac-gallery.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/48/67/be/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/4c/28/52/tap-seac-gallery.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/27/fa/b6/5f/tap-seac-gallery-shadow.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/27/fa/b6/3b/tap-seac-gallery-shadow.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "19:00" },
+      { "day": 2, "open": "10:00", "close": "19:00" },
+      { "day": 3, "open": "10:00", "close": "19:00" },
+      { "day": 4, "open": "10:00", "close": "19:00" },
+      { "day": 5, "open": "10:00", "close": "19:00" },
+      { "day": 6, "open": "10:00", "close": "19:00" },
+      { "day": 7, "open": "10:00", "close": "19:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.8,
+  "ranking": 142,
+  "phone": "+853 2836 6866",
+  "website": "https://www.icm.gov.mo/cn/TapSiac",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2509055
+  }
+}

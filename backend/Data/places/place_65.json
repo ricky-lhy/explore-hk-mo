@@ -1,0 +1,43 @@
+{
+  "id": 65,
+  "name": "西九龍中心",
+  "region": "hong-kong",
+  "category": "shopping",
+  "description": {
+    "content": "西九龍中心是一座集購物、美食與娛樂於一體的綜合商場，設有多間熱門品牌專門店及國際美食餐廳，還有流行文化商店。遊客可在此盡情享受繁華都市的魅力，讓購物和用餐成為愉悅的體驗。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 九龍深水埗欽州街37K號",
+    "latitude": 22.33107,
+    "longitude": 114.16006
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/d7/f5/bc/photo2jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/daodao/photo-s/03/b5/4a/c6/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/10/ef/b3/dc/enter-the-dragon.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/cc/45/01/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/cc/45/00/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "22:00" },
+      { "day": 2, "open": "10:00", "close": "22:00" },
+      { "day": 3, "open": "10:00", "close": "22:00" },
+      { "day": 4, "open": "10:00", "close": "22:00" },
+      { "day": 5, "open": "10:00", "close": "22:00" },
+      { "day": 6, "open": "10:00", "close": "22:00" },
+      { "day": 7, "open": "10:00", "close": "22:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.5,
+  "ranking": 327,
+  "phone": "+852 2360 0982",
+  "website": "https://dragoncentre.com.hk/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 3362858
+  }
+}

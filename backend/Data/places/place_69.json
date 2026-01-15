@@ -1,0 +1,35 @@
+{
+  "id": 69,
+  "name": "星光大道",
+  "region": "hong-kong",
+  "category": "landmarks",
+  "description": {
+    "content": "香港的「星光大道」位於尖沙咀，是紀念香港電影的文化景點。遊客可欣賞到電影明星的手印、銅像及壯觀的維港景色，非常適合拍照留念，也是影迷必訪之地。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 九龍尖沙咀星光大道",
+    "latitude": 22.29314,
+    "longitude": 114.17446
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2b/c9/84/0b/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/1f/f7/ff/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/1f/f7/fc/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/32/1f/f7/fa/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/daodao/photo-s/02/36/79/42/2.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": null,
+    "exceptions": null
+  },
+  "rating": 3.9,
+  "ranking": 61,
+  "phone": "+852 2918 1722",
+  "website": "https://www.avenueofstars.com.hk/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 1642695
+  }
+}

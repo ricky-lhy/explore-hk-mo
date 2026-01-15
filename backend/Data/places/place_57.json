@@ -1,0 +1,42 @@
+{
+  "id": 57,
+  "name": "觀音蓮花苑(觀音像)",
+  "region": "macau",
+  "category": "landmarks",
+  "description": {
+    "content": "觀音像高20米，由青銅製成，觀音蓮花寶座是一所佛教文化中心。中心內的展品為觀眾提供了有關儒家學說、佛教和道教等思想和宗教方面的資料。觀音蓮花苑內並有出售與蓮花苑及澳門博物館有關的紀念品，以及文化局的其他書籍和刊物，如有關澳門歷史的著作、檔案資料、文學作品和文化雜誌等。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "Avenida Dr. Sun Yat-sen, Macau",
+    "latitude": 22.185790797917406,
+    "longitude": 113.55209222787103
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-s/06/da/48/aa/kun-iam-statue.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/fa/6e/f3/kun-lam-statue.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/9e/96/18/i-just-love-the-myths.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/31/ae/81/62/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/31/ae/81/84/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "18:00" },
+      { "day": 2, "open": "10:00", "close": "18:00" },
+      { "day": 3, "open": "10:00", "close": "18:00" },
+      { "day": 4, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "18:00" },
+      { "day": 7, "open": "10:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.7,
+  "ranking": 51,
+  "phone": "+853 2875 1516",
+  "website": "https://www.icm.gov.mo/cn/KunIamEcumenical",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2175270
+  }
+}

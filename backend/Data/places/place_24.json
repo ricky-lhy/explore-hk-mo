@@ -1,0 +1,42 @@
+{
+  "id": 24,
+  "name": "鄭家大屋",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "鄭家大屋是澳門著名的歷史建築，融合了中西建築風格，展現了獨特的文化魅力。遊客可以欣賞精美的雕刻及古老的家族故事，感受澳門的多元文化遺產，是歷史愛好者的必訪之地。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "10 Travessa de António da Silva, Macau",
+    "latitude": 22.188717695124268,
+    "longitude": 113.53488591971848
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/09/1d/d9/ad/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/e5/97/94/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/2d/59/b0/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/12/16/45/26/mandarin-house-world.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/12/16/44/fa/lion-dance-performance.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "18:00" },
+      { "day": 2, "open": "10:00", "close": "18:00" },
+      { "day": 4, "open": "10:00", "close": "18:00" },
+      { "day": 5, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "18:00" },
+      { "day": 7, "open": "10:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.3,
+  "ranking": 4,
+  "phone": "+853 2896 8820",
+  "website": "https://www.macaotourism.gov.mo/sightseeing/macao-world-heritage/mandarins-house",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 1868250
+  }
+}

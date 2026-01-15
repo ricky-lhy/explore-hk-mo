@@ -1,0 +1,42 @@
+{
+  "id": 72,
+  "name": "藍屋",
+  "region": "hong-kong",
+  "category": "heritage",
+  "description": {
+    "content": "藍屋極具代表性的歷史建築群，包括藍屋、黃屋與橙屋。藍屋建於20世紀初，因外牆漆成鮮明的藍色而得名，融合了嶺南騎樓式建築特色，見證了灣仔由漁村發展為都市社區的歷史變遷。這裡曾是醫館、學校與居民住所，承載著濃厚的社區生活記憶。近年藍屋群以「留屋留人」的活化理念進行保育，讓原居民繼續居住，同時對外開放，成為結合歷史、文化與社區精神的重要地標。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 灣仔石水渠街72A 號街 4 號地舖地舖及慶雲",
+    "latitude": 22.27395,
+    "longitude": 114.17414
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/1c/8d/63/6c/photo1jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/1c/bf/35/5c/the-blue-house-is-a-classic.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2b/b1/18/2f/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/2b/25/3e/43/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/1c/55/9f/cb/more-information-about.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "18:00" },
+      { "day": 2, "open": "10:00", "close": "18:00" },
+      { "day": 4, "open": "10:00", "close": "18:00" },
+      { "day": 5, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "18:00" },
+      { "day": 7, "open": "10:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.7,
+  "ranking": 343,
+  "phone": "+852 2833 4608",
+  "website": "https://vivabluehouse.hk/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 294217
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": 23,
+  "name": "玫瑰聖母堂(板樟堂)",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "澳門玫瑰聖母堂是一座風格獨特的宗教建築，融合了巴洛克與中國元素。其宏偉的外觀和絢麗的彩繪玻璃吸引了眾多遊客，來此不僅可欣賞藝術之美，還能感受歷史的深厚底蘊。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Largo de São Domingos, Macau",
+    "latitude": 22.19460476661738,
+    "longitude": 113.54040071368418
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0f/87/5b/eb/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/02/92/bf/16/filename-img-6562-jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/5d/d1/9a/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/1a/42/f7/59/this-is-a-must-go-place.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/31/7f/ce/dc/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "18:00" },
+      { "day": 2, "open": "10:00", "close": "18:00" },
+      { "day": 3, "open": "10:00", "close": "18:00" },
+      { "day": 4, "open": "10:00", "close": "18:00" },
+      { "day": 5, "open": "10:00", "close": "18:00" },
+      { "day": 6, "open": "10:00", "close": "18:00" },
+      { "day": 7, "open": "10:00", "close": "18:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.0,
+  "ranking": 20,
+  "phone": "+853 2836 7706",
+  "website": "https://www.macaotourism.gov.mo/sightseeing/churches/st-dominics-church",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 1590798
+  }
+}

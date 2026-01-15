@@ -1,0 +1,31 @@
+{
+  "id": 50,
+  "name": "俊秀圍/俊秀里",
+  "region": "macau",
+  "category": "landmarks",
+  "description": {
+    "content": "俊秀圍以往匯集懷舊和古董店家，而現時則有不少特色餐廳和小店進駐，逐步發展成為新舊融合的文青小巷。巷弄兩旁的文創商店及路上的新潮塗鴉，配合空中掛滿了裝飾，是文藝青年的新興打卡熱點。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "Pátio de Chôn Sau, Macau",
+    "latitude": 22.196775089422935,
+    "longitude": 113.54003955881964
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/12/11/b4/9a/patio-de-chon-sau-cny.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/10/c5/30/8f/tradition-flea-market.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/10/c5/30/85/heritage-shops.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/10/c5/30/61/heritage-shops.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/10/c5/30/41/heritage-shops.jpg"
+  ],
+  "hours": null,
+  "rating": 4.2,
+  "ranking": 76,
+  "phone": null,
+  "website": null,
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 7738066
+  }
+}

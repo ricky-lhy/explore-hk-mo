@@ -1,0 +1,43 @@
+{
+  "id": 71,
+  "name": "PMQ元創方",
+  "region": "hong-kong",
+  "category": "shopping",
+  "description": {
+    "content": "元創方是一棟歷史性建築，最近被改造為創意中心，是本地的設計人才集中地。現在這裡展示了超過 100 個獨立時尚、設計及家庭用品商店；這裡也有絕佳的餐館。",
+    "source": "tripadvisor"
+  },
+  "location": {
+    "address": "香港 中環鴨巴甸街35號",
+    "latitude": 22.28369,
+    "longitude": 114.15205
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/2a/e0/70/ea/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/75/c8/3f/the-pmq-heritage-site.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0c/f1/02/4c/mid-autumn-festival-decoration.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/07/55/8b/70/pmq.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/06/39/82/73/pmq.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "12:00", "close": "23:00" },
+      { "day": 2, "open": "12:00", "close": "23:00" },
+      { "day": 3, "open": "12:00", "close": "23:00" },
+      { "day": 4, "open": "12:00", "close": "23:00" },
+      { "day": 5, "open": "12:00", "close": "23:00" },
+      { "day": 6, "open": "12:00", "close": "23:00" },
+      { "day": 7, "open": "12:00", "close": "23:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.1,
+  "ranking": 8,
+  "phone": "+852 2870 2335",
+  "website": "https://pmq.org.hk",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 6725566
+  }
+}

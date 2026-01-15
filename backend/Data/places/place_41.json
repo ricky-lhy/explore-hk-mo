@@ -1,0 +1,43 @@
+{
+  "id": 41,
+  "name": "石排灣郊野公園",
+  "region": "macau",
+  "category": "nature",
+  "description": {
+    "content": "石排灣郊野公園位於路環西面。園內設有大熊貓館、大熊貓資訊中心、珍稀動物館、土地暨自然博物館、觀鳥園及藥用和趣異植物園等。還有兒童遊樂區和公園徑等完備的康樂設施。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "Estrada de Seac Pai Van, Coloane, Macau",
+    "latitude": 22.126269568150473,
+    "longitude": 113.55784407030556
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/8e/9e/c6/seac-pai-van.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/0c/a1/79/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/32/0c/a1/85/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/0c/a1/76/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/32/0c/a1/86/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "06:00", "close": "22:00" },
+      { "day": 2, "open": "06:00", "close": "22:00" },
+      { "day": 3, "open": "06:00", "close": "22:00" },
+      { "day": 4, "open": "06:00", "close": "22:00" },
+      { "day": 5, "open": "06:00", "close": "22:00" },
+      { "day": 6, "open": "06:00", "close": "22:00" },
+      { "day": 7, "open": "06:00", "close": "22:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.1,
+  "ranking": 59,
+  "phone": "+853 2839 9817",
+  "website": "https://www.iam.gov.mo/nature/e/facility/park/detail?id=ab9120fe-2598-4084-8a6d-1b68db5c0428",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2103225
+  }
+}

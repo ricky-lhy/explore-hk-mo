@@ -1,0 +1,31 @@
+{
+  "id": 37,
+  "name": "永利皇宮",
+  "region": "macau",
+  "category": "entertainment",
+  "description": {
+    "content": "樓高28層的永利皇宮位處路氹的優越地段，並設有1,706間優雅華貴的客房及套房，配備一系列頂級服務設施，，耗資41億美元精心建成，讓賓客恍如置身於宏偉瑰麗的皇宮之中。其中偌大的表演湖是一個集音樂、燈光與水舞表演的夢幻舞台；觀光纜車則提供壯麗的城市全景與壯觀的自然景觀，成為旅遊中的獨特體驗。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Avenida da Nave Desportiva, Cotai, Macau",
+    "latitude": 22.14760174641228,
+    "longitude": 113.57120206438005
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0c/94/55/71/wynn-palace.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/cf/f2/6e/skycab.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/cf/f2/71/wynn-palace-pool.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0e/ce/28/b5/balloons.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0c/94/55/77/ferris-wheel.jpg"
+  ],
+  "hours": null,
+  "rating": 4.8,
+  "ranking": 5,
+  "phone": "+853 8889 8889",
+  "website": "https://www.wynnresortsmacau.com/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 8662602
+  }
+}

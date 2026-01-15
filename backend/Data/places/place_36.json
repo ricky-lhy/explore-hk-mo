@@ -1,0 +1,31 @@
+{
+  "id": 36,
+  "name": "新葡京酒店",
+  "region": "macau",
+  "category": "entertainment",
+  "description": {
+    "content": "新葡京酒店是澳門著名地標，以其壯觀的建築和奢華的內部設計吸引遊客。提供多元的賭博遊戲、高水準的餐飲選擇，以及精彩的娛樂表演，是遊客必訪的旅遊熱點。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "Avenida de Lisboa, Macau",
+    "latitude": 22.190753296904315,
+    "longitude": 113.54342492860604
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0c/a7/a2/ee/9-n2sgqphk4-largejpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/02/22/fc/34/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/c2/75/ea/macau-october-2023.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/be/64/f3/macau-october-2023.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2a/b2/f4/df/macau-october-2023.jpg"
+  ],
+  "hours": null,
+  "rating": 3.9,
+  "ranking": 25,
+  "phone": "+853 2828 3838",
+  "website": "https://www.grandlisboa.com/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2304163
+  }
+}

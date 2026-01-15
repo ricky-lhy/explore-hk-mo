@@ -1,0 +1,43 @@
+{
+  "id": 40,
+  "name": "市政署大樓(澳門市政廳舊址)",
+  "region": "macau",
+  "category": "heritage",
+  "description": {
+    "content": "市政署大樓前身為澳門市政廳，建於1784年，後曾多次重修，目前規模是1874年重修時形成的，具有明顯的南歐建築藝術特色。二樓的圖書館於1929年啟用，以葡國瑪弗拉修道院的圖書館為設計藍本，裝潢和傢具陳設具有濃厚的古典氣息，現在專門收藏17至20世紀50年代的外文古籍。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "163 Avenida de Almeida Ribeiro, Macau",
+    "latitude": 22.193283252186777,
+    "longitude": 113.53952795303935
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/da/60/c6/leal-senado-municipal.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/33/3d/da/senado-square.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/16/66/f3/27/leal-senado-cny-2019.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/13/bd/d4/a9/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2e/ba/cb/8f/leal-senado-chamber-rooms.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Macau",
+    "regular": [
+      { "day": 1, "open": "09:00", "close": "21:00" },
+      { "day": 2, "open": "09:00", "close": "21:00" },
+      { "day": 3, "open": "09:00", "close": "21:00" },
+      { "day": 4, "open": "09:00", "close": "21:00" },
+      { "day": 5, "open": "09:00", "close": "21:00" },
+      { "day": 6, "open": "09:00", "close": "21:00" },
+      { "day": 7, "open": "09:00", "close": "21:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.1,
+  "ranking": 24,
+  "phone": null,
+  "website": "https://www.iam.gov.mo/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 321115
+  }
+}

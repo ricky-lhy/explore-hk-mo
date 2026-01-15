@@ -1,0 +1,31 @@
+{
+  "id": 31,
+  "name": "大潭山眺望台",
+  "region": "macau",
+  "category": "landmarks",
+  "description": {
+    "content": "擁乘依山坡而建的斜行式升降機到氹仔大潭山自來水蓄水池的平台，可眺望到路氹城區的旅遊娛樂酒店的建築群和景色。",
+    "source": "dst-macau"
+  },
+  "location": {
+    "address": "Estrada Padre Estêvão Eusébio Sítu, Taipa, Macau",
+    "latitude": 22.15543135408598,
+    "longitude": 113.56138788911262
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/18/7d/40/view-of-lifts-and-surrounding.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/18/7d/78/the-viewing-platform.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/fd/c0/8f/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/fd/c0/8e/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2f/fd/c0/90/caption.jpg"
+  ],
+  "hours": null,
+  "rating": 4.6,
+  "ranking": 132,
+  "phone": null,
+  "website": null,
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 17205791
+  }
+}

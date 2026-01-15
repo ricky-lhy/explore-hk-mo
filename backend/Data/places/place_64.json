@@ -1,0 +1,43 @@
+{
+  "id": 64,
+  "name": "海港城",
+  "region": "hong-kong",
+  "category": "shopping",
+  "description": {
+    "content": "「海港城」為香港最大型的購物中心，集購物、美食、娛樂、景觀於一身，在維多利亞港海旁聳立五十多年至今，與香港一同成長，是香港一個不可或缺的名勝。 「海港城」為顧客提供一站式購物消閑服務,擁有超過四百五十家各類型商店、包括八十多家餐廳、美術館及觀景台。商場以外還有三間星級酒店及郵輪碼頭。海港城坐擁欣賞世界聞名維多利亞港夜景的最佳位置,而近在咫尺則有代表着香港的天星小輪,讓旅客總是日與夜流連忘返,亦使海港城站穩業界行內的領導地位。",
+    "source": "tripadvisor"
+  },
+  "location": {
+    "address": "香港 九龍尖沙咀廣東道3-27號",
+    "latitude": 22.29537,
+    "longitude": 114.16892
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0b/9d/a9/c0/ocean-terminal-and-forecourt.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/0c/55/09/93/view-from-the-rooftop.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/22/3e/ac/ocean-terminal-deck.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/1c/44/14/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/1c/44/15/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "22:00" },
+      { "day": 2, "open": "10:00", "close": "22:00" },
+      { "day": 3, "open": "10:00", "close": "22:00" },
+      { "day": 4, "open": "10:00", "close": "22:00" },
+      { "day": 5, "open": "10:00", "close": "22:00" },
+      { "day": 6, "open": "10:00", "close": "22:00" },
+      { "day": 7, "open": "10:00", "close": "22:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.1,
+  "ranking": 40,
+  "phone": "+852 2118 8666",
+  "website": "http://www.harbourcity.com.hk/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2296809
+  }
+}
