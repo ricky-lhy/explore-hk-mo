@@ -151,7 +151,7 @@ def main():
         place, flags = mapper.map_place(details, photos, id)
 
         # Check description for filename suffix
-        suffix = "*"
+        suffix = "_"
         if flags["missing_description"]:
             suffix += "#"
         if flags["missing_region"]:
