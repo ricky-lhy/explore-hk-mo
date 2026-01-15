@@ -20,6 +20,7 @@ export type {
     Hours,
     Location,
     Place,
+    PlacesPageResponse,
     PostRoutesDayData,
     PostRoutesDayResponse,
     PostRoutesDayResponses,
