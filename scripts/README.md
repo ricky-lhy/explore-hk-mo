@@ -51,8 +51,8 @@ uv run spawn-places.py -o ../backend/Data/places -p 123456 123457
   | `-o`, `--output` | Destination directory for the generated JSON files (e.g., `../backend/Data/places`). |
   | `-p`, `--places` | List of Tripadvisor Location IDs to process (separated by space).                    |
 
-- **Output:** Files are generated in the format `place_[id]{*#%$}.json`. The suffixes indicate:
-  - **`*`:** Not yet manually verified; data may be incorrect.
+- **Output:** Files are generated in the format `place_[id]{_#%$}.json`. The suffixes indicate:
+  - **`_`:** Not yet manually verified; data may be incorrect.
   - **`#`:** Missing description (not found in Tripadvisor + AI generation failed).
   - **`%`:** Missing region information (mapping failed).
   - **`$`:** Unable to determine category using AI.
