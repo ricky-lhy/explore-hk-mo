@@ -23,7 +23,9 @@ export const getLocationsByRegion = async (
     sort: LocationSortOption,
     startCursor?: LocationID
 ): Promise<LocationsPage> => {
-    const cursor = startCursor ? parseInt(startCursor) : undefined
+    const cursor = startCursor
+        ? parseInt(startCursor) || undefined // Handle invalid cursor
+        : undefined
 
     // Fetch locations of the specified region
     const { data } = await getPlaces({ query: { region, cursor, ...sortQueryMap[sort] } })
