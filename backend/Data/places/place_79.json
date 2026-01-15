@@ -1,0 +1,43 @@
+{
+  "id": 79,
+  "name": "南豐紗廠",
+  "region": "hong-kong",
+  "category": "heritage",
+  "description": {
+    "content": "南豐紗廠是香港歷史悠久的紡織工廠，現今轉型為文化及藝術中心。遊客可欣賞到復古工業風格的建築，參加各類展覽和工作坊，體驗傳統與現代藝術的交融，是探索本地文化的必訪之地。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 荃灣白田霸街45號",
+    "latitude": 22.37525,
+    "longitude": 114.11070
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/63/e6/08/the-park-is-spacious.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/63/e6/2d/the-original-staircase.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/16/63/e5/f0/the-hall-is-the-heart.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/16/63/e5/e0/the-hall-is-the-heart.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/16/63/e5/c7/entrance-of-the-mills.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "22:00" },
+      { "day": 2, "open": "10:00", "close": "22:00" },
+      { "day": 3, "open": "10:00", "close": "22:00" },
+      { "day": 4, "open": "10:00", "close": "22:00" },
+      { "day": 5, "open": "10:00", "close": "22:00" },
+      { "day": 6, "open": "10:00", "close": "22:00" },
+      { "day": 7, "open": "10:00", "close": "22:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.0,
+  "ranking": 157,
+  "phone": "+852 3979 2300",
+  "website": "http://www.themills.com.hk/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 15687373
+  }
+}

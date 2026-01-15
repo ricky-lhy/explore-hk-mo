@@ -1,0 +1,43 @@
+{
+  "id": 66,
+  "name": "尖沙咀天星碼頭",
+  "region": "hong-kong",
+  "category": "landmarks",
+  "description": {
+    "content": "天星小輪是香港著名的渡輪，提供壯麗的維港景色。遊客可以在船上悠閒地欣賞兩岸的都市美景，感受港島與九龍的獨特魅力。是體驗香港文化與風情的必遊景點。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 九龍尖沙咀梳士巴利道",
+    "latitude": 22.29418,
+    "longitude": 114.16906
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-o/0a/8f/59/20/star-ferry.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/26/15/68/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/26/15/6a/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/26/15/67/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/32/26/15/66/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "06:30", "close": "23:30" },
+      { "day": 2, "open": "06:30", "close": "23:30" },
+      { "day": 3, "open": "06:30", "close": "23:30" },
+      { "day": 4, "open": "06:30", "close": "23:30" },
+      { "day": 5, "open": "06:30", "close": "23:30" },
+      { "day": 6, "open": "06:30", "close": "23:30" },
+      { "day": 7, "open": "06:30", "close": "23:30" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.6,
+  "ranking": 1,
+  "phone": "+852 2367 7065",
+  "website": "http://www.starferry.com.hk",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2228870
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": 78,
+  "name": "饒宗頤文化館",
+  "region": "hong-kong",
+  "category": "museums",
+  "description": {
+    "content": "饒宗頤文化館座落於擁有百年歷史的三級歷史建築群，以收藏和展示饒宗頤教授的藝術與文化作品聞名。館內的歷史建築是香港罕有的大型園林式建築群，保留了中國傳統的屋頂和迴廊設計，又採用了大面積玻璃幕牆等西式元素，彰顯了東西方文化的交融。館內展覽融合傳統與現代，帶領公眾穿越這座百年古蹟的「八變」時光，並提供互動文化體驗，是歷史愛好者和文化探索者的理想之地。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 九龍荔枝角青山道800號",
+    "latitude": 22.33800,
+    "longitude": 114.14241
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/4a/ce/b5/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/08/cb/63/05/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/5c/88/ab/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/28/5c/88/aa/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/28/5c/88/a9/caption.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [],
+    "exceptions": null
+  },
+  "rating": 4.0,
+  "ranking": 329,
+  "phone": "+852 2100 2828",
+  "website": "http://www.jtia.hk",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 8051405
+  }
+}

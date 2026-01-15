@@ -1,0 +1,42 @@
+{
+  "id": 76,
+  "name": "香港抗戰及海防博物館",
+  "region": "hong-kong",
+  "category": "museums",
+  "description": {
+    "content": "香港抗戰及海防博物館於2024年9月3日(中國人民抗日戰爭勝利紀念日)由香港海防博物館改設成立，重點介紹抗戰歷史及香港的海防和軍事變遷，彰顯「抗戰」與「海防」的保家衛國中心主題，提升市民的民族自信和愛國精神。博物館為常設展覽及史蹟徑注入了更多多媒體元素，以新穎的演繹手法和主題形式，訴說抗戰歷史及香港海防故事，傳承和弘揚愛國主義精神。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 筲箕灣東喜道175號",
+    "latitude": 22.28199,
+    "longitude": 114.23628
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-w/2d/73/3a/ce/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/14/77/ad/6d/torpedo.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/01/1e/97/a7/entrance-to-hk-museum.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-w/2d/73/3a/cf/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/27/5e/04/0d/hong-kong-museum-of-coastal.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "10:00", "close": "17:00" },
+      { "day": 2, "open": "10:00", "close": "17:00" },
+      { "day": 3, "open": "10:00", "close": "17:00" },
+      { "day": 5, "open": "10:00", "close": "17:00" },
+      { "day": 6, "open": "10:00", "close": "17:00" },
+      { "day": 7, "open": "10:00", "close": "17:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 4.3,
+  "ranking": 52,
+  "phone": "+852 2569 1500",
+  "website": "http://www.lcsd.gov.hk/CE/Museum/Coastal",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 315464
+  }
+}

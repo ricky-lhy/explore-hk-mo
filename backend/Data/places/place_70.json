@@ -1,0 +1,43 @@
+{
+  "id": 70,
+  "name": "香港摩天輪及AIA Vitality 公園",
+  "region": "hong-kong",
+  "category": "entertainment",
+  "description": {
+    "content": "位於中環海濱的香港摩天輪可以讓你欣賞香港日與夜的著名維港景色。 現時香港摩天輪票價已下降至20港元，希望讓更多人能享受到經濟實惠的體驗。利用網上預約系統預購門票可減少等候時間。 從中環／香港港鐵站或中環碼頭徒步片刻，即可看到摩天輪及 AIA Vitality 公園：擁有一片草坪、提供輕盈小食以及免費運動班的康體主題公園。AIA Vitality 公園不時會舉辦不同形式的康體課堂及活動，包括健身班、瑜珈、拳擊、搖擺舞蹈班和巴西戰舞等。 我們會繼續為此國際地標加人更多新元素，例如：七月下旬開放的／現已開放的旋轉木馬和燈塔滑梯。",
+    "source": "tripadvisor"
+  },
+  "location": {
+    "address": "香港 中環民光街33號",
+    "latitude": 22.28538,
+    "longitude": 114.16187
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/02/19/dc/view-of-the-wheel-with.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/14/02/16/dd/wheel-with-new-led-centrepiece.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/77/1e/6d/night-time-view.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/77/1e/61/skyline-including-the.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/2c/40/45/36/view-of-the-hong-kong.jpg"
+  ],
+  "hours": {
+    "timezone": "Asia/Hong_Kong",
+    "regular": [
+      { "day": 1, "open": "12:00", "close": "22:00" },
+      { "day": 2, "open": "12:00", "close": "22:00" },
+      { "day": 3, "open": "12:00", "close": "22:00" },
+      { "day": 4, "open": "12:00", "close": "22:00" },
+      { "day": 5, "open": "11:00", "close": "23:00" },
+      { "day": 6, "open": "11:00", "close": "23:00" },
+      { "day": 7, "open": "11:00", "close": "23:00" }
+    ],
+    "exceptions": null
+  },
+  "rating": 3.9,
+  "ranking": 69,
+  "phone": "+852 2339 0777",
+  "website": "https://hkow.hk/",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 7296243
+  }
+}

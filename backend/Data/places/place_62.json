@@ -1,0 +1,31 @@
+{
+  "id": 62,
+  "name": "大帽山郊野公園",
+  "region": "hong-kong",
+  "category": "nature",
+  "description": {
+    "content": "大帽山郊野公園是香港最高峰，擁有壯麗的山景和豐富的生態資源。遊客沿着大帽山道可輕鬆攀登，享受步道漫遊及觀鳥活動，是遠足愛好者的理想去處，亦適合家庭一起享受大自然的美好。",
+    "source": "ai"
+  },
+  "location": {
+    "address": "香港 荃灣區大帽山",
+    "latitude": 22.40674,
+    "longitude": 114.10893
+  },
+  "images": [
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/43/03/b4/photo3jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/08/5e/1b/7f/caption.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/db/e6/f5/photo4jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/db/e6/f1/photo1jpg.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-o/11/1f/3e/69/p-20171022-122356-largejpg.jpg"
+  ],
+  "hours": null,
+  "rating": 4.4,
+  "ranking": 269,
+  "phone": "+852 2498 9326",
+  "website": "http://www.afcd.gov.hk/english/country/cou_vis/cou_vis_cou/cou_vis_cou_tms/cou_vis_cou_tms.html",
+  "_connection": {
+    "type": "tripadvisor",
+    "locationId": 2004047
+  }
+}
