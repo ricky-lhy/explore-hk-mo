@@ -39,6 +39,8 @@ export const useLocationsByRegion = (
     /** Any error encountered during fetching. */
     error: unknown
 } => {
+    // NOTE: `undefined` means no filtering, while `[]` means "filter to no categories".
+    // These are handled differently here intentionally.
     const _categories = categories?.sort().join(',')
 
     const { data, size, setSize, isValidating, error } = useSWRInfinite<LocationsPage>(
@@ -49,8 +51,10 @@ export const useLocationsByRegion = (
                 : ([region, sort, _categories, prevPage?.nextCursor] as const), // Otherwise, return the key for fetching
 
         // Fetcher function
-        ([region, sort, _categories, cursor]: SWRInfiniteKey) =>
-            getLocationsByRegion(region, sort, _categories?.split(','), cursor)
+        ([region, sort, _categories, cursor]: SWRInfiniteKey) => {
+            const categories = _categories?.split(',').filter(Boolean) // Boolean filter to handle empty for no categories
+            return getLocationsByRegion(region, sort, categories, cursor)
+        }
     )
 
     const loading =

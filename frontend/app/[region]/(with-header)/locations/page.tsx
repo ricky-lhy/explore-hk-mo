@@ -18,7 +18,9 @@ const LocationsPage = async ({ params, searchParams }: PageProps<'/[region]/loca
 
     const region = stringToRegion(_region)
     const sort = stringToLocationSortOption(unifySearchParam(_sort)[0])
-    const categories = unifySearchParam(_categories).flatMap((c) => c.split(' '))
+    const categories = unifySearchParam(_categories)
+        .flatMap((c) => c.split(' '))
+        .filter(Boolean)
 
     return (
         <main>
