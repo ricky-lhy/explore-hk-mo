@@ -1,6 +1,14 @@
 import { postRoutesDay } from '@/integrations/client'
+import {
+    isPostRoutesInvalidDateFormatError,
+    isPostRoutesNotInSameRegionError,
+    isPostRoutesOnlyOnePlaceError,
+    isPostRoutesPlaceNotFoundError,
+    isPostRoutesSearchingPastDatesError
+} from '@/integrations/errors'
 
-import { isPresent } from '@/lib/utils'
+import { AppError } from '@/lib/errors'
+import { hasErrorMessage, isPresent } from '@/lib/utils'
 
 import type { LocationID } from '@/types/location'
 import type { Route, TransitMethod } from '@/types/route'
@@ -21,7 +29,7 @@ export const computeRoutes = async (
     locations: LocationID[]
 ): Promise<Route[]> => {
     // Fetch route data from the API
-    const route = await postRoutesDay({
+    const { data: route, error } = await postRoutesDay({
         body: {
             date,
             mode: transitMethodToTravelMode(method),
@@ -29,7 +37,20 @@ export const computeRoutes = async (
         }
     })
 
-    return (route.data?.legs ?? [])
+    if (error) {
+        // Domain-specific error handling
+        if (isPostRoutesInvalidDateFormatError(error)) throw new AppError('INVALID_DATE_FORMAT')
+        if (isPostRoutesSearchingPastDatesError(error)) throw new AppError('INVALID_DATE_RANGE')
+        if (isPostRoutesNotInSameRegionError(error)) throw new AppError('INVALID_LOCATION_PAIRS')
+        if (isPostRoutesPlaceNotFoundError(error)) throw new AppError('LOCATION_NOT_FOUND')
+        if (isPostRoutesOnlyOnePlaceError(error)) return [] // No need to handle, empty response is enough
+
+        // General error
+        const errorMessage = hasErrorMessage(error) ? error.message : String(error)
+        throw new AppError('UNKNOWN', errorMessage)
+    }
+
+    return (route?.legs ?? [])
         .map(routeLegToRoute) // Convert to Route objects
         .filter(isPresent) // Filter out undefined entries
 }
