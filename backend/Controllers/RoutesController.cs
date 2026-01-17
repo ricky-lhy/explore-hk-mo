@@ -26,10 +26,9 @@ public class RoutesController : ControllerBase
 
         if (!DateTime.TryParseExact(request.Date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var requestDate))
         {
-            return UnprocessableEntity(new
-            {
-                message = "錯誤的日期格式"
-            });
+            return UnprocessableEntity(new ErrorResponse(
+                Message: "錯誤的日期格式"
+            ));
         }
 
         var hkTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Asia/Hong_Kong");
@@ -37,18 +36,22 @@ public class RoutesController : ControllerBase
 
         if (requestDate.Date < todayHk)
         {
-            return UnprocessableEntity(new
-            {
-                message = "不能搜索過去的日期",
-                inputDate = request.Date,
-                today = todayHk.ToString("yyyy-MM-dd"),
-                timezone = "Asia/Hong_Kong"
-            });
+            return UnprocessableEntity(new ErrorResponse(
+                Message: "不能搜索過去的日期",
+                Details: new Dictionary<string, object>
+                {
+                    ["inputDate"] = request.Date,
+                    ["today"] = todayHk.ToString("yyyy-MM-dd"),
+                    ["timezone"] = "Asia/Hong_Kong"
+                }
+            ));
         }
 
         if (request.PlaceIds == null || request.PlaceIds.Count < 2)
         {
-            return BadRequest("需要至少兩個地點");
+            return UnprocessableEntity(new ErrorResponse(
+                Message: "需要至少兩個地點"
+            ));
         }
         
 
@@ -59,7 +62,13 @@ public class RoutesController : ControllerBase
         {
             if (!placeMap.TryGetValue(id, out var place))
             {
-                return BadRequest($"找不到地點 id={id}");
+                return UnprocessableEntity(new ErrorResponse(
+                    Message: "找不到地點",
+                    Details: new Dictionary<string, object>
+                    {
+                        ["id"] = id
+                    }
+                ));
             }
             orderedPlaces.Add(place);
         }
@@ -68,11 +77,13 @@ public class RoutesController : ControllerBase
         var allSameRegion = orderedPlaces.All(p => string.Equals(p.Region, firstRegion, StringComparison.OrdinalIgnoreCase));
         if (!allSameRegion)
         {
-            return UnprocessableEntity(new
-            {
-                message = "所有地點必須在同一地區",
-                regions = orderedPlaces.Select(p => new {p.Id, p.Region})
-            });
+            return UnprocessableEntity(new ErrorResponse(
+                Message: "所有地點必須在同一地區",
+                Details: new Dictionary<string, object>
+                {
+                    ["regions"] = orderedPlaces.Select(p => new {p.Id, p.Region}).ToList()
+                }
+            ));
         }
 
         var result = await _routingService.ComputeDayRouteAsync(request, orderedPlaces, cancellationToken);

@@ -65,15 +65,17 @@ public class PlacesController : ControllerBase
             var idx = orderedList.FindIndex(p => p.Id == cursor.Value);
             if (idx < 0)
             {
-                return UnprocessableEntity(new
-                {
-                    message = "Invalid cursor. The cursor ID was not found in the filtered/sorted result.",
-                    cursor = cursor.Value,
-                    region,
-                    categories,
-                    orderBy = key,
-                    orderDir = dir
-                });
+                return UnprocessableEntity(new ErrorResponse(
+                    Message: "Invalid cursor. The cursor ID was not found in the filtered/sorted result.",
+                    Details: new Dictionary<string, object>
+                    {
+                        ["cursor"] = cursor.Value,
+                        ["region"] = region ?? "",
+                        ["categories"] = categories ?? "",
+                        ["orderBy"] = key,
+                        ["orderDir"] = dir
+                    }
+                ));
             }
             startIndex = idx;
         }
