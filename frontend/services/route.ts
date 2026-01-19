@@ -38,15 +38,22 @@ export const computeRoutes = async (
     })
 
     if (error) {
+        const errorMessage = hasErrorMessage(error) ? error.message : String(error)
+
         // Domain-specific error handling
-        if (isPostRoutesInvalidDateFormatError(error)) throw new AppError('INVALID_DATE_FORMAT')
-        if (isPostRoutesSearchingPastDatesError(error)) throw new AppError('INVALID_DATE_RANGE')
-        if (isPostRoutesNotInSameRegionError(error)) throw new AppError('INVALID_LOCATION_PAIRS')
-        if (isPostRoutesPlaceNotFoundError(error)) throw new AppError('LOCATION_NOT_FOUND')
-        if (isPostRoutesOnlyOnePlaceError(error)) return [] // No need to handle, empty response is enough
+        if (isPostRoutesInvalidDateFormatError(error))
+            throw new AppError('INVALID_DATE_FORMAT', errorMessage)
+        if (isPostRoutesSearchingPastDatesError(error))
+            throw new AppError('INVALID_DATE_RANGE', errorMessage)
+        if (isPostRoutesNotInSameRegionError(error))
+            throw new AppError('INVALID_LOCATION_PAIRS', errorMessage)
+        if (isPostRoutesPlaceNotFoundError(error))
+            throw new AppError('LOCATION_NOT_FOUND', errorMessage)
+        if (isPostRoutesOnlyOnePlaceError(error))
+            // No need to handle, empty response is enough
+            return []
 
         // General error
-        const errorMessage = hasErrorMessage(error) ? error.message : String(error)
         throw new AppError('UNKNOWN', errorMessage)
     }
 

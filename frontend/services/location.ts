@@ -46,11 +46,13 @@ export const getLocationsByRegion = async (
     })
 
     if (error) {
+        const errorMessage = hasErrorMessage(error) ? error.message : String(error)
+
         // Domain-specific error handling
-        if (isGetPlacesInvalidCursorError(error)) throw new AppError('INVALID_LOCATION_CURSOR')
+        if (isGetPlacesInvalidCursorError(error))
+            throw new AppError('INVALID_LOCATION_CURSOR', errorMessage)
 
         // General error
-        const errorMessage = hasErrorMessage(error) ? error.message : String(error)
         throw new AppError('UNKNOWN', errorMessage)
     }
 
@@ -74,11 +76,13 @@ export const getLocationById = async (id: LocationID): Promise<Location | undefi
     const { data: place, error } = await getPlacesById({ path: { id: parseInt(id) } })
 
     if (error) {
+        const errorMessage = hasErrorMessage(error) ? error.message : String(error)
+
         // Domain-specific error handling
-        if (isGetPlacesByIdNotFoundError(error)) throw new AppError('LOCATION_NOT_FOUND')
+        if (isGetPlacesByIdNotFoundError(error))
+            throw new AppError('LOCATION_NOT_FOUND', errorMessage)
 
         // General error
-        const errorMessage = hasErrorMessage(error) ? error.message : String(error)
         throw new AppError('UNKNOWN', errorMessage)
     }
 
