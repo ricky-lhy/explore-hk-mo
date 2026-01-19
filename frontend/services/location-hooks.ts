@@ -1,6 +1,7 @@
 import useSWR from 'swr'
 import useSWRInfinite from 'swr/infinite'
 
+import { AppError, toAppError } from '@/lib/errors'
 import { isPresent } from '@/lib/utils'
 
 import type { Location, LocationID, LocationSortOption, LocationsPage } from '@/types/location'
@@ -36,8 +37,8 @@ export const useLocationsByRegion = (
     loadMore: () => void
     /** Indicates whether there are more locations to load. */
     hasMore: boolean
-    /** Any error encountered during fetching. */
-    error: unknown
+    /** AppError object thrown by fetcher. `undefined` if no error occurred. */
+    error: AppError | undefined
 } => {
     // NOTE: `undefined` means no filtering, while `[]` means "filter to no categories".
     // These are handled differently here intentionally.
@@ -68,7 +69,7 @@ export const useLocationsByRegion = (
         loading: !!loading, // Convert to boolean
         loadMore: () => setSize(size + 1),
         hasMore,
-        error
+        error: error ? toAppError(error) : undefined
     }
 }
 
@@ -85,8 +86,8 @@ export const useLocations = (
     locations: Location[]
     /** Indicates whether the data is currently being loaded. */
     loading: boolean
-    /** Any error encountered during fetching. */
-    error: unknown
+    /** AppError object thrown by fetcher. `undefined` if no error occurred. */
+    error: AppError | undefined
 } => {
     const sortedIds = ids.toSorted()
 
@@ -98,6 +99,6 @@ export const useLocations = (
     return {
         locations: (data ?? []).filter(isPresent),
         loading: isLoading,
-        error
+        error: error ? toAppError(error) : undefined
     }
 }

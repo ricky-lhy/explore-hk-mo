@@ -1,5 +1,9 @@
 import { getPlaces } from '@/integrations/client'
 import { getPlacesById } from '@/integrations/client'
+import { isGetPlacesByIdNotFoundError, isGetPlacesInvalidCursorError } from '@/integrations/errors'
+
+import { AppError } from '@/lib/errors'
+import { hasErrorMessage } from '@/lib/utils'
 
 import type { CategoryKey } from '@/types/category'
 import type { Location, LocationID, LocationSortOption, LocationsPage } from '@/types/location'
@@ -32,7 +36,7 @@ export const getLocationsByRegion = async (
         : undefined
 
     // Fetch locations of the specified region
-    const { data } = await getPlaces({
+    const { data, error } = await getPlaces({
         query: {
             region,
             cursor,
@@ -40,6 +44,18 @@ export const getLocationsByRegion = async (
             ...sortQueryMap[sort]
         }
     })
+
+    if (error) {
+        const errorMessage = hasErrorMessage(error) ? error.message : String(error)
+
+        // Domain-specific error handling
+        if (isGetPlacesInvalidCursorError(error))
+            throw new AppError('INVALID_LOCATION_CURSOR', errorMessage)
+
+        // General error
+        throw new AppError('UNKNOWN', errorMessage)
+    }
+
     const places = data?.places ?? []
     const nextCursor = data?.nextCursor?.toString()
 
@@ -57,7 +73,18 @@ export const getLocationsByRegion = async (
  */
 export const getLocationById = async (id: LocationID): Promise<Location | undefined> => {
     // Fetch place with the specified ID
-    const place = (await getPlacesById({ path: { id: parseInt(id) } })).data
+    const { data: place, error } = await getPlacesById({ path: { id: parseInt(id) } })
+
+    if (error) {
+        const errorMessage = hasErrorMessage(error) ? error.message : String(error)
+
+        // Domain-specific error handling
+        if (isGetPlacesByIdNotFoundError(error))
+            throw new AppError('LOCATION_NOT_FOUND', errorMessage)
+
+        // General error
+        throw new AppError('UNKNOWN', errorMessage)
+    }
 
     return place
         ? placeToLocation(place) // Convert to Location object
