@@ -17,7 +17,7 @@ const LocationErrorPage = ({ error }: { error: Error }) => {
                 description: 'Please try again later.'
             }
         })
-    }, [error])
+    }, [error, showToast])
 
     return (
         <>
