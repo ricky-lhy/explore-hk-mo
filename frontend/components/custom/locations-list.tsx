@@ -7,6 +7,9 @@ import { useInView } from 'react-intersection-observer'
 import { LocationEntry, LocationEntrySkeleton } from '@/components/custom/location-entry'
 
 import { useLocationsByRegion } from '@/services/location-hooks'
+import { showToast } from '@/services/toast'
+
+import { getAppErrorDescription } from '@/lib/errors'
 
 import type { LocationSortOption } from '@/types/location'
 import type { Region } from '@/types/region'
@@ -20,7 +23,11 @@ const LocationsList = ({
     sort: LocationSortOption
     categories?: string[]
 }) => {
-    const { locations, loading, loadMore, hasMore } = useLocationsByRegion(region, sort, categories)
+    const { locations, loading, loadMore, hasMore, error } = useLocationsByRegion(
+        region,
+        sort,
+        categories
+    )
     const { ref, inView } = useInView()
 
     useEffect(() => {
@@ -30,6 +37,19 @@ const LocationsList = ({
         // 3. not currently loading
         if (inView && hasMore && !loading) loadMore()
     }, [inView, hasMore, loading, loadMore])
+
+    // Handle errors
+    useEffect(() => {
+        if (error) {
+            showToast({
+                type: 'error',
+                message: {
+                    title: 'Failed to load locations',
+                    description: getAppErrorDescription(error)
+                }
+            })
+        }
+    }, [error])
 
     return (
         <>

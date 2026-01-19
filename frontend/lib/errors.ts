@@ -45,3 +45,30 @@ export const toAppError = (e: unknown): AppError => {
     const errorMessage = hasErrorMessage(e) ? e.message : String(e)
     return new AppError('UNKNOWN', errorMessage)
 }
+
+/**
+ * Generates a user-friendly description for the given AppError.
+ * @param error - The AppError instance.
+ * @returns The error description.
+ */
+export const getAppErrorDescription = (error: AppError): string => {
+    switch (error.code) {
+        case 'LOCATION_NOT_FOUND':
+            return 'The requested location could not be found.'
+        case 'INVALID_DATE_FORMAT':
+            return 'The provided date format is invalid.'
+        case 'INVALID_DATE_RANGE':
+            return 'Cannot search for dates in the past.'
+        case 'INVALID_LOCATION_CURSOR':
+            return 'The location cursor provided is invalid.'
+        case 'INVALID_LOCATION_PAIRS':
+            return 'All locations must be in the same region.'
+        case 'NETWORK':
+            return 'A network error occurred. Please check your connection.'
+        case 'TIMEOUT':
+            return 'The request timed out. Please try again later.'
+        case 'UNKNOWN':
+        default:
+            return error.message || 'An unknown error occurred.'
+    }
+}

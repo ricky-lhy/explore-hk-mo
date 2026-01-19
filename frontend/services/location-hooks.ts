@@ -38,7 +38,7 @@ export const useLocationsByRegion = (
     /** Indicates whether there are more locations to load. */
     hasMore: boolean
     /** AppError object thrown by fetcher. `undefined` if no error occurred. */
-    error: unknown
+    error: AppError | undefined
 } => {
     // NOTE: `undefined` means no filtering, while `[]` means "filter to no categories".
     // These are handled differently here intentionally.

@@ -2,6 +2,8 @@
 
 import { createContext, useContext } from 'react'
 
+import { Toaster } from '@/components/ui/sonner'
+
 import type { Region } from '@/types/region'
 
 import { SWRConfigProvider } from './swr-config'
@@ -20,7 +22,7 @@ export const useRegion = () => {
     return context
 }
 
-export const RegionProvider = ({
+export const AppProvider = ({
     children,
     region
 }: {
@@ -29,7 +31,10 @@ export const RegionProvider = ({
 }) => {
     return (
         <RegionContext.Provider value={{ region }}>
-            <SWRConfigProvider>{children}</SWRConfigProvider>
+            <SWRConfigProvider>
+                {children}
+                <Toaster />
+            </SWRConfigProvider>
         </RegionContext.Provider>
     )
 }
