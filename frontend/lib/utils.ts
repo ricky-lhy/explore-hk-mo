@@ -37,3 +37,18 @@ export const unifySearchParam = (param: string | string[] | undefined): string[]
 export const isPresent = <T>(value: T | null | undefined): value is NonNullable<T> => {
     return value !== null && value !== undefined
 }
+
+/**
+ * Checks whether an error object has a message property.
+ *
+ * @param error - The error object to check
+ * @returns True if the error has a message property, otherwise false
+ */
+export const hasErrorMessage = (error: unknown): error is { message: string } => {
+    return (
+        typeof error === 'object' &&
+        error !== null &&
+        'message' in error &&
+        typeof (error as Record<string, unknown>).message === 'string'
+    )
+}

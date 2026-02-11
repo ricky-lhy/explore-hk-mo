@@ -7,9 +7,11 @@ import dayjs from 'dayjs'
 import { useItineraryList } from '@/services/itinerary'
 import { useLocations } from '@/services/location-hooks'
 import { useRoutes } from '@/services/route-hooks'
+import { showToast } from '@/services/toast'
 
 import { getAppConfigByRegion } from '@/lib/config'
 import { useRegion } from '@/lib/context'
+import { getAppErrorDescription } from '@/lib/errors'
 
 import { useRouteMethod } from './_hooks/context'
 import { RouteLayout, RouteLayoutSkeleton } from './_layout'
@@ -28,12 +30,32 @@ const RouteContent = ({ day }: { day: number }) => {
 
     // Fetch details for the locations in the itinerary
     const { date, locations: locationIds } = dailyItinerary
-    const { locations, loading: locationsLoading } = useLocations(locationIds)
-    const { routes, loading: routesLoading } = useRoutes(date, method, locationIds)
+    const {
+        locations,
+        loading: locationsLoading,
+        error: locationsError
+    } = useLocations(locationIds)
+    const {
+        routes,
+        loading: routesLoading,
+        error: routesError
+    } = useRoutes(date, method, locationIds)
 
     // Show fallback while loading
     if (locationsLoading || routesLoading) {
         return <RouteLayoutSkeleton />
+    }
+
+    // Handle errors
+    const error = routesError || locationsError // Prioritize route errors
+    if (error) {
+        showToast({
+            type: 'error',
+            message: {
+                title: 'Failed to compute routes',
+                description: getAppErrorDescription(error)
+            }
+        })
     }
 
     // Generate page title

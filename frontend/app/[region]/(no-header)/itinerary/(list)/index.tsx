@@ -5,8 +5,10 @@ import { restrictToVerticalAxis } from '@dnd-kit/modifiers'
 
 import { useItineraryList } from '@/services/itinerary'
 import { useLocations } from '@/services/location-hooks'
+import { showToast } from '@/services/toast'
 
 import { useRegion } from '@/lib/context'
+import { getAppErrorDescription } from '@/lib/errors'
 
 import { locationToItineraryLocationProps } from './_components/location-utils'
 import { SortableItineraryLocationOverlay } from './_components/sortable-location'
@@ -19,14 +21,29 @@ const ItineraryContent = () => {
     const { itinerary, arrangeLocation } = useItineraryList(region)
 
     // Fetch details for all locations in the itinerary
-    const { locations: details, loading } = useLocations(itinerary.flatMap((day) => day.locations))
+    const {
+        locations: details,
+        loading,
+        error
+    } = useLocations(itinerary.flatMap((day) => day.locations))
 
     const { activeId, sensors, handleDragStart, handleDragOver, handleDragEnd, findContainer } =
         useItineraryDnd(itinerary, arrangeLocation)
 
+    // Show fallback while loading
     if (loading) {
-        // Show fallback while loading
         return <ItineraryLayoutSkeleton />
+    }
+
+    // Handle errors
+    if (error) {
+        showToast({
+            type: 'error',
+            message: {
+                title: 'Failed to load location details',
+                description: getAppErrorDescription(error)
+            }
+        })
     }
 
     const activeLocation = activeId ? details.find((loc) => loc.id === activeId) : null

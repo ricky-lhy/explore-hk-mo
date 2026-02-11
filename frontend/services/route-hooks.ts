@@ -1,5 +1,7 @@
 import useSWR from 'swr'
 
+import { AppError, toAppError } from '@/lib/errors'
+
 import type { LocationID } from '@/types/location'
 import type { Route, TransitMethod } from '@/types/route'
 
@@ -14,8 +16,8 @@ export const useRoutes = (
     routes: Route[]
     /** Indicates whether the data is currently being loaded. */
     loading: boolean
-    /** Any error encountered during fetching. */
-    error: unknown
+    /** AppError object thrown by fetcher. `undefined` if no error occurred. */
+    error: AppError | undefined
 } => {
     const { data, error, isLoading } = useSWR(
         ['itinerary-routes', date, method, locations.join(',')], // SWR key
@@ -25,6 +27,6 @@ export const useRoutes = (
     return {
         routes: data ?? [],
         loading: isLoading,
-        error
+        error: error ? toAppError(error) : undefined
     }
 }

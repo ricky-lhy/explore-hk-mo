@@ -166,4 +166,49 @@
             @apply w-12! rounded-full! opacity-100!;
         }
     }
+
+    /* Toasts */
+    ol.toaster {
+        /* Toast body */
+        [data-sonner-toast] {
+            @apply bg-background text-foreground border-border rounded-2xl border shadow-lg;
+            @apply flex w-full items-start gap-x-2.5 px-3.5 py-3;
+        }
+
+        /* Toast -> Icon */
+        [data-icon] {
+            @apply h-5 w-5 shrink-0 scale-105;
+            /* Variants */
+            &:is([data-type='success'] *) {
+                @apply text-emerald-600;
+            }
+            &:is([data-type='info'] *) {
+                @apply text-sky-600;
+            }
+            &:is([data-type='warning'] *) {
+                @apply text-yellow-600;
+            }
+            &:is([data-type='error'] *) {
+                @apply text-red-600;
+            }
+        }
+
+        /* Toast -> Content */
+        [data-content] {
+            @apply flex-1 space-y-px!;
+            [data-title] {
+                @apply text-primary! text-sm font-semibold;
+            }
+            [data-description] {
+                @apply text-primary! text-sm leading-snug!;
+            }
+        }
+
+        /* Toast -> Button */
+        [data-close-button] {
+            @apply text-primary! relative! bg-transparent!; /* Overwrite */
+            @apply -mr-2 -ml-1 flex shrink-0 self-center! p-2 opacity-50! [&>svg]:size-5!;
+            @apply order-4!;
+        }
+    }
 }

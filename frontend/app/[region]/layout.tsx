@@ -4,9 +4,8 @@ import { redirect } from 'next/navigation'
 
 import { stringToRegion, validateRegion } from '@/services/region'
 
-import { defaultRegion } from '@/lib/config'
-import { getAppConfigByRegion } from '@/lib/config'
-import { RegionProvider } from '@/lib/context'
+import { defaultRegion, getAppConfigByRegion } from '@/lib/config'
+import { AppProvider } from '@/lib/context'
 import { cn } from '@/lib/utils'
 
 import '../globals.css'
@@ -28,11 +27,11 @@ const RegionLayout = async ({ children, modal, sheet, params }: LayoutProps<'/[r
         <html lang="en">
             <body className={cn(sans.variable, mono.variable, cjk.variable, 'bg-neutral-50')}>
                 <div id="root" className="bg-background w-full max-w-lg">
-                    <RegionProvider region={region}>
+                    <AppProvider region={region}>
                         {modal}
                         {sheet}
                         {children}
-                    </RegionProvider>
+                    </AppProvider>
                 </div>
             </body>
         </html>
