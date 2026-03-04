@@ -1,6 +1,9 @@
 using System.Globalization;
+using System.Text.Json;
 using ExploreHKMOApi.Models;
 using ExploreHKMOApi.Services;
+using ExploreHKMOApi.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExploreHKMOApi.Controllers;
@@ -9,12 +12,12 @@ namespace ExploreHKMOApi.Controllers;
 [Route("routes")]
 public class RoutesController : ControllerBase
 {
-    private readonly IPlaceMemory _placeMemory;
+    private readonly AppDbContext _db;
     private readonly IRoutingService _routingService;
 
-    public RoutesController(IPlaceMemory placeMemory, IRoutingService routingService)
+    public RoutesController(AppDbContext db, IRoutingService routingService)
     {
-        _placeMemory = placeMemory;
+        _db = db;
         _routingService = routingService;
     }
 
@@ -53,31 +56,79 @@ public class RoutesController : ControllerBase
             return UnprocessableEntity(new { message = "At least two places are required" });
         }
         
+        var ids = request.PlaceIds.Distinct().ToList();
+        var entities = await _db.Places.AsNoTracking().Where(p => ids.Contains(p.Id)).ToListAsync();
+        var placeMap = entities.ToDictionary(x => x.Id);
 
-        var allPlaces = _placeMemory.GetAll();
-        var placeMap = allPlaces.ToDictionary(p => p.Id);
-        var orderedPlaces = new List<Models.Place>();
+        var orderedPlaces = new List<Place>(request.PlaceIds.Count);
         foreach(var id in request.PlaceIds)
         {
-            if (!placeMap.TryGetValue(id, out var place))
+            if (!placeMap.TryGetValue(id, out var entity))
             {
                 return UnprocessableEntity(new { message = "Place not found", id });
             }
-            orderedPlaces.Add(place);
+            orderedPlaces.Add(MapToPlace(entity));
         }
         
         var firstRegion = orderedPlaces[0].Region;
-        var allSameRegion = orderedPlaces.All(p => string.Equals(p.Region, firstRegion, StringComparison.OrdinalIgnoreCase));
-        if (!allSameRegion)
+        if (orderedPlaces.Any(p => !string.Equals(p.Region, firstRegion, StringComparison.OrdinalIgnoreCase)))
         {
             return UnprocessableEntity(new
             {
                 message = "All places must be in the same region",
-                regions = orderedPlaces.Select(p => new {p.Id, p.Region})
+                regions = orderedPlaces.Select(p => new {p.Id, p.Region}).ToList()
             });
         }
 
         var result = await _routingService.ComputeDayRouteAsync(request, orderedPlaces, cancellationToken);
         return Ok(result);
+    }
+
+    private static readonly JsonSerializerOptions _jsonOptions = new()
+    {
+        PropertyNameCaseInsensitive = true
+    };
+
+    private static Place MapToPlace(PlaceEntity e)
+    {
+        List<string> images;
+        try
+        {
+            images = string.IsNullOrWhiteSpace(e.ImagesJson)
+                ? new List<string>()
+                : JsonSerializer.Deserialize<List<string>>(e.ImagesJson, _jsonOptions) ?? new List<string>();
+        }
+        catch (JsonException)
+        {
+            images = new List<string>();
+        }
+
+        Hours? hours = null;
+        try
+        {
+            if (!string.IsNullOrWhiteSpace(e.HoursJson))
+                hours = JsonSerializer.Deserialize<Hours>(e.HoursJson, _jsonOptions);
+        }
+        catch (JsonException)
+        {
+            hours = null;
+        }
+
+        return new Place
+        {
+            Id = e.Id,
+            Name = e.Name,
+            Description = e.Description,
+            Region = e.Region,
+            Category = e.Category,
+            Hours = hours,
+            Location = e.Location,
+            Images = images,
+            Rating = e.Rating,
+            Ranking = e.Ranking,
+            Phone = e.Phone,
+            Website = e.Website,
+            Connection = e.Connection
+        };
     }
 }

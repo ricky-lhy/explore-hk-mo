@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using ExploreHKMOApi.Data;
 using ExploreHKMOApi.Services;
 using Google.Maps.Routing.V2;
 using Google.Api.Gax.Grpc;
@@ -13,6 +15,10 @@ if (!string.IsNullOrWhiteSpace(googleCredentialsJson) && string.IsNullOrEmpty(En
     Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", filePath);
 }
 
+builder.Services.AddDbContext<AppDbContext>(options => 
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("Default")
+    ));
 var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
 builder.Services.AddCors(options =>
 {
@@ -39,6 +45,15 @@ builder.Services.AddSingleton<RoutesClient>(sp =>
 builder.Services.AddSingleton<IRoutingService, GoogleRoutingService>();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    var env = scope.ServiceProvider.GetRequiredService<IHostEnvironment>();
+    var placesFolder = Path.Combine(env.ContentRootPath, "Data", "places");
+
+    await DbSeeder.SeedPlacesIfEmptyAsync(db, placesFolder);
+}
 
 app.UseCors("DefaultCorsPolicy");
 app.UseSwagger();
