@@ -36,7 +36,7 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SupportNonNullableReferenceTypes();
 });
-builder.Services.AddSingleton<IPlaceMemory, JsonPlaceMemory>();
+
 builder.Services.AddSingleton<RoutesClient>(sp =>
 {
     var clientbuilder = new RoutesClientBuilder();

@@ -36,7 +36,7 @@ public class PlacesController : ControllerBase
         if (!string.IsNullOrEmpty(region))
         {
             var normalized = NormalizeRegion(region);
-            query = query.Where(p => p.Region.Equals(normalized, StringComparison.OrdinalIgnoreCase));
+            query = query.Where(p => p.Region == normalized);
         }
 
         if (!string.IsNullOrEmpty(categories))
